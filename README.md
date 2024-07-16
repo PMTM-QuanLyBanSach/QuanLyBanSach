@@ -9,23 +9,23 @@
 - .Net Framework version
 - Visual studio 2022
   -----------------------------------------------
-  ### Chi tiết
+### Chi tiết
 
-  -----------------------------------------------
-  # Dự án
+-----------------------------------------------
+# Dự án
 
-  ## Hệ thống quản lý bán sách
-  <h5>Mô tả dự án: </h5>
-  <p></p>
+## Hệ thống quản lý bán sách
+<h5>Mô tả dự án: </h5>
+<p></p>
 
-  ### Yêu cầu
-  <p>AI: Tóm tắt nội dung sách</p>
+### Yêu cầu
+<p>AI: Tóm tắt nội dung sách</p>
 
-  <p>Web: MVC ASP, LinQ</p>
-  <p>Ngôn ngữ: C#</p>
-  <p>Framework: </p>
+<p>Web: MVC ASP, LinQ</p>
+<p>Ngôn ngữ: C#</p>
+<p>Framework: </p>
 
-  <p>Nghiệp vụ </p>
-  ## Chức năng
-  #### Website
-  #### Application
+<p>Nghiệp vụ </p>
+## Chức năng
+#### Website
+#### Application
