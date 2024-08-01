@@ -19,6 +19,14 @@ namespace GUI
             InitializeComponent();
             btnSave.Click += btnSave_Click;
             cboDB.DropDown += cboDB_DropDown;
+            btnHuy.Click += BtnHuy_Click;
+        }
+
+        private void BtnHuy_Click(object sender, EventArgs e)
+        {
+            Program.loginForm = new frmLogin();
+            Program.loginForm.Show();
+            this.Visible = false;
         }
 
         public static string connectionString = Properties.Settings.Default.connectionString;
@@ -58,7 +66,7 @@ namespace GUI
         void saveConfig()
         {
             Properties.Settings.Default.connectionString = 
-                phanQuyenBLL.saveConfig(txtServerName.Text, txtUsername.Text, txtPass.Text, cboDB.SelectedValue.ToString());
+                phanQuyenBLL.saveConfig(txtServerName.Text, txtUsername.Text, txtPass.Text, cboDB.Text);
             Properties.Settings.Default.Save();
         }
     }

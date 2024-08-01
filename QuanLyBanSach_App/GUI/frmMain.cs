@@ -16,5 +16,19 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void thêmNgườiDùngVàoNhómToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.themNDVaoNhomForm = new frmThemNDVaoNhom();
+            Program.themNDVaoNhomForm.Show();
+            this.Dispose();
+        }
+
+        private void ngườiDùngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.nguoiDungForm = new frmNguoiDung();
+            Program.nguoiDungForm.Show();
+            this.Dispose();
+        }
     }
 }
