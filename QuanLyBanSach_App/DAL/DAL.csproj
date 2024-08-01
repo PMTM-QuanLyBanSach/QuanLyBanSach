@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dsQLBS.cs">
+      <DependentUpon>dsQLBS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dsQLBS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

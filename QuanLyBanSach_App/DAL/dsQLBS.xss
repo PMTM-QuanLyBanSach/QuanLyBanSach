@@ -11,7 +11,7 @@
     <Shape ID="DesignTable:QL_NguoiDungNhomNguoiDung" ZOrder="6" X="525" Y="133" Height="158" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
     <Shape ID="DesignTable:QL_NhomNguoiDung" ZOrder="5" X="97" Y="421" Height="227" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
     <Shape ID="DesignTable:QL_PhanQuyen" ZOrder="4" X="1015" Y="347" Height="158" Width="275" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
-    <Shape ID="DesignTable:QL_NguoiDungNhomNguoiDung_Nhom" ZOrder="2" X="924" Y="135" Height="135" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="76" />
+    <Shape ID="DesignTable:QL_NguoiDungNhomNguoiDung_DK" ZOrder="2" X="925" Y="135" Height="204" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

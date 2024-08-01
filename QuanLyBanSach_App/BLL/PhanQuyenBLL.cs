@@ -135,9 +135,29 @@ namespace BLL
         }
         #endregion
 
-        public List<string> GetMaNhomNguoiDung(string pTDN)
+        public DataTable getNND_DK(string maNhom)
         {
-            return phanQuyenDAL.GetMaNhomNguoiDung(pTDN);
+            return phanQuyenDAL.getNND_DK(maNhom);
         }
+
+        public bool ktraKCNND_DK(string tenDN, string maNhom)
+        {
+            return phanQuyenDAL.ktraKCNND_DK(tenDN, maNhom);
+        }
+
+        public void themNDVaoNhom(string tenDN, string maNhom, string ghiChu)
+        {
+            phanQuyenDAL.themNDVaoNhom(tenDN, maNhom, ghiChu);
+        }
+
+        public void xoaNDKhoiNhom(string tenDN, string maNhom)
+        {
+            phanQuyenDAL.xoaNDKhoiNhom(tenDN, maNhom);
+        }
+
+        //public List<string> GetMaNhomNguoiDung(string pTDN)
+        //{
+        //    return phanQuyenDAL.getNND_DK(pTDN);
+        //}
     }
 }

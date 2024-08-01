@@ -148,22 +148,49 @@ namespace DAL
         }
         #endregion
 
-        public List<string> GetMaNhomNguoiDung(string pTDN)
+        QL_NguoiDungNhomNguoiDung_DKTableAdapter daNND_DK = new QL_NguoiDungNhomNguoiDung_DKTableAdapter();
+
+        public DataTable getNND_DK(string maNhom)
         {
-            List<string> lst = new List<string>();
-
-            QL_NguoiDungNhomNguoiDung_NhomTableAdapter da = new QL_NguoiDungNhomNguoiDung_NhomTableAdapter();
-
-            dsQLBS.QL_NguoiDungNhomNguoiDung_NhomDataTable dt = da.GetData_Nhom(pTDN);
-
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                string maNhom = dt.Rows[i][0].ToString();
-                lst.Add(maNhom);
-            }
-
-            return lst;
+            return daNND_DK.GetData_DK(maNhom);
         }
+
+        public bool ktraKCNND_DK(string tenDN, string maNhom)
+        {
+            int? n = daNND_DK.ktraKCNND_DK(tenDN, maNhom);
+
+            if (n > 0)
+                return true;// có trùng
+
+            return false;
+        }
+
+        public void themNDVaoNhom(string tenDN, string maNhom, string ghiChu)
+        {
+            daNND_DK.Insert(tenDN, maNhom, ghiChu);
+        }
+
+        public void xoaNDKhoiNhom(string tenDN, string maNhom)
+        {
+            daNND_DK.DeleteT_NND_DK(tenDN, maNhom);
+        }
+
+        //public List<string> GetMaNhomNguoiDung(string pTDN)
+        //{
+        //    List<string> lst = new List<string>();
+
+        //    QL_NguoiDungNhomNguoiDung_NhomTableAdapter da = new QL_NguoiDungNhomNguoiDung_NhomTableAdapter();
+
+        //    dsQLBS.QL_NguoiDungNhomNguoiDung_NhomDataTable dt = da.GetData_Nhom(pTDN);
+
+        //    for (int i = 0; i < dt.Rows.Count; i++)
+        //    {
+        //        string maNhom = dt.Rows[i][0].ToString();
+        //        lst.Add(maNhom);
+        //    }
+
+        //    return lst;
+        //}
 
         //public DataTable GetMaManHinh(string pMaNhom)
         //{

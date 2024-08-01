@@ -19,9 +19,9 @@ namespace GUI
 
         private void thêmNgườiDùngVàoNhómToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Program.themNDVaoNhomForm = new frmThemNDVaoNhom();
-            //Program.themNDVaoNhomForm.Show();
-            //this.Dispose();
+            Program.themNDVaoNhomForm = new frmThemNDVaoNhom();
+            Program.themNDVaoNhomForm.Show();
+            this.Dispose();
         }
 
         private void ngườiDùngToolStripMenuItem_Click(object sender, EventArgs e)
