@@ -95,6 +95,7 @@ namespace GUI
             this.phânQuyềnToolStripMenuItem.Name = "phânQuyềnToolStripMenuItem";
             this.phânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(280, 26);
             this.phânQuyềnToolStripMenuItem.Text = "Phân quyền";
+            this.phânQuyềnToolStripMenuItem.Click += new System.EventHandler(this.phânQuyềnToolStripMenuItem_Click);
             // 
             // frmMain
             // 

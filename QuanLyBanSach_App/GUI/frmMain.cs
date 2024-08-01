@@ -44,5 +44,12 @@ namespace GUI
             Program.manHinhForm.Show();
             this.Dispose();
         }
+
+        private void phânQuyềnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.phanQuyenForm = new frmPhanQuyen();
+            Program.phanQuyenForm.Show();
+            this.Dispose();
+        }
     }
 }

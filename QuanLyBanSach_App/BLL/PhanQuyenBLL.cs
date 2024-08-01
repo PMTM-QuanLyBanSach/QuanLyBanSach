@@ -135,6 +135,7 @@ namespace BLL
         }
         #endregion
 
+        #region Quản lý thêm người dùng vào nhóm
         public DataTable getNND_DK(string maNhom)
         {
             return phanQuyenDAL.getNND_DK(maNhom);
@@ -153,6 +154,27 @@ namespace BLL
         public void xoaNDKhoiNhom(string tenDN, string maNhom)
         {
             phanQuyenDAL.xoaNDKhoiNhom(tenDN, maNhom);
+        }
+        #endregion
+
+        public DataTable getManHinhTheoNhom(string maNhom)
+        {
+            return phanQuyenDAL.getManHinhTheoNhom(maNhom);
+        }
+
+        public bool ktraKC_PQ(string maNhom, string maMH)
+        {
+            return ktraKC_PQ(maNhom, maMH);
+        }
+
+        public void themQuyen(string MaNhomNguoiDung, string maMH, bool coQuyen)
+        {
+            phanQuyenDAL.themQuyen(MaNhomNguoiDung, maMH, coQuyen);
+        }
+
+        public void suaMH(bool coQuyen, string maNhom, string maMH)
+        {
+            phanQuyenDAL.suaQuyen(coQuyen, maNhom, maMH);
         }
 
         //public List<string> GetMaNhomNguoiDung(string pTDN)

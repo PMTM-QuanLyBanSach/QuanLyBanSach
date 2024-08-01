@@ -148,6 +148,7 @@ namespace DAL
         }
         #endregion
 
+        #region Quản lý thêm người dùng vào nhóm
         QL_NguoiDungNhomNguoiDung_DKTableAdapter daNND_DK = new QL_NguoiDungNhomNguoiDung_DKTableAdapter();
 
         public DataTable getNND_DK(string maNhom)
@@ -174,12 +175,38 @@ namespace DAL
         {
             daNND_DK.DeleteT_NND_DK(tenDN, maNhom);
         }
+        #endregion
+
+        QL_PhanQuyen_PQTableAdapter daPQ = new QL_PhanQuyen_PQTableAdapter();
+
+        public DataTable getManHinhTheoNhom(string maNhom)
+        {
+            return daPQ.GetData_DK(maNhom);
+        }
+
+        public bool ktraKC_PQ(string maNhom, string maMH)
+        {
+            int? n = daPQ.ktrKC_PQ(maNhom, maMH);
+
+            if (n > 0)
+                return true; // trùng
+
+            return false;
+        }
+
+        public void themQuyen(string MaNhomNguoiDung, string maMH, bool coQuyen)
+        {
+            daPQ.InsertT_PQ(MaNhomNguoiDung, maMH, coQuyen);
+        }
+
+        public void suaQuyen(bool coQuyen,string maNhom, string maMH)
+        {
+            daPQ.UpdateT_PQ(coQuyen, maNhom, maMH);
+        }
 
         //public List<string> GetMaNhomNguoiDung(string pTDN)
         //{
         //    List<string> lst = new List<string>();
-
-        //    QL_NguoiDungNhomNguoiDung_NhomTableAdapter da = new QL_NguoiDungNhomNguoiDung_NhomTableAdapter();
 
         //    dsQLBS.QL_NguoiDungNhomNguoiDung_NhomDataTable dt = da.GetData_Nhom(pTDN);
 
@@ -190,13 +217,6 @@ namespace DAL
         //    }
 
         //    return lst;
-        //}
-
-        //public DataTable GetMaManHinh(string pMaNhom)
-        //{
-        //    QL_PhanQuyen_PQTableAdapter da = new QL_PhanQuyen_PQTableAdapter();
-        //    DataTable dt = da.GetData(pMaNhom);
-        //    return dt;
         //}
     }
 }
