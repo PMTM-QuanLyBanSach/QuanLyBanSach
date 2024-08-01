@@ -41,7 +41,7 @@ namespace GUI
 
         private void BtnSua_Click(object sender, EventArgs e)
         {
-            phanQuyenBLL.suaND(txtTDN.Text, txtMK.Text, ckHD.Checked);
+            phanQuyenBLL.suaND(txtMK.Text, ckHD.Checked, txtTDN.Text);
             loadND();
         }
 
@@ -54,7 +54,10 @@ namespace GUI
         private void BtnThem_Click(object sender, EventArgs e)
         {
             if (phanQuyenBLL.ktraKC(txtTDN.Text) == true)
+            {
                 MessageBox.Show("Tên đăng nhập đã tồn tại vui lòng đổi tên khác");
+                txtTDN.Focus();
+            }
             else
             {
                 phanQuyenBLL.themND(txtTDN.Text, txtMK.Text, ckHD.Checked);

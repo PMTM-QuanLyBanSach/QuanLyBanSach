@@ -51,33 +51,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmConfig.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmConfig.cs" />
     <Compile Include="frmConfig.Designer.cs">
       <DependentUpon>frmConfig.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmLogin.cs" />
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmMain.cs" />
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNguoiDung.cs">
+    <Compile Include="frmManHinh.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmManHinh.Designer.cs">
+      <DependentUpon>frmManHinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNguoiDung.cs" />
     <Compile Include="frmNguoiDung.Designer.cs">
       <DependentUpon>frmNguoiDung.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThemNDVaoNhom.cs">
-      <SubType>Form</SubType>
+    <Compile Include="frmNhomNguoiDung.cs" />
+    <Compile Include="frmNhomNguoiDung.Designer.cs">
+      <DependentUpon>frmNhomNguoiDung.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThemNDVaoNhom.cs" />
     <Compile Include="frmThemNDVaoNhom.Designer.cs">
       <DependentUpon>frmThemNDVaoNhom.cs</DependentUpon>
     </Compile>
@@ -92,8 +92,14 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmManHinh.resx">
+      <DependentUpon>frmManHinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNguoiDung.resx">
       <DependentUpon>frmNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhomNguoiDung.resx">
+      <DependentUpon>frmNhomNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemNDVaoNhom.resx">
       <DependentUpon>frmThemNDVaoNhom.cs</DependentUpon>

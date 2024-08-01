@@ -30,5 +30,19 @@ namespace GUI
             Program.nguoiDungForm.Show();
             this.Dispose();
         }
+
+        private void nhómNgườiDùngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.nhomNguoiDungForm = new frmNhomNguoiDung();
+            Program.nhomNguoiDungForm.Show();
+            this.Dispose();
+        }
+
+        private void mànHìnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.manHinhForm = new frmManHinh();
+            Program.manHinhForm.Show();
+            this.Dispose();
+        }
     }
 }

@@ -19,8 +19,7 @@ namespace BLL
 
         }
 
-        
-
+        #region Login và Config
         public enumLogin.LoginResult Check_User(string pUser, string pPass)
         {
             return phanQuyenDAL.Check_User(pUser, pPass);
@@ -53,7 +52,9 @@ namespace BLL
         {
             return phanQuyenDAL.getDBName(pServer, pUser, pPass);
         }
+        #endregion
 
+        #region Quản lý người dùng
         public DataTable getND()
         {
             return phanQuyenDAL.getND();
@@ -69,15 +70,70 @@ namespace BLL
             phanQuyenDAL.themND(tenDN, matKhau, hoatDong);
         }
 
-        public void suaND(string tenDN, string matKhau, bool hoatDong)
+        public void suaND(string matKhau, bool hoatDong, string tenDN)
         {
-            phanQuyenDAL.suaND(tenDN, matKhau, hoatDong);
+            phanQuyenDAL.suaND(matKhau, hoatDong, tenDN);
         }
 
         public void xoaND(string tenDN)
         {
             phanQuyenDAL.xoaND(tenDN);
         }
+        #endregion
+
+        #region Quản lý nhóm người dùng
+        public DataTable getNND()
+        {
+            return phanQuyenDAL.getNND();
+        }
+
+        public bool ktrKC_NND(string maNhom)
+        {
+            return phanQuyenDAL.ktrKC_NND(maNhom);
+        }
+
+        public void themNND(string maNhom, string tenNhom, string ghiChu)
+        {
+            phanQuyenDAL.themNND(maNhom, tenNhom, ghiChu);
+        }
+
+        public void suaNND(string tenNhom, string ghiChu, string maNhom)
+        {
+            phanQuyenDAL.suaNND(tenNhom, ghiChu, maNhom);
+        }
+
+        public void xoaNND(string maNhom)
+        {
+            phanQuyenDAL.xoaNND(maNhom);
+        }
+        #endregion
+
+        #region Quản lý màn hình
+        public DataTable loadMH()
+        {
+            return phanQuyenDAL.loadMH();
+        }
+
+        public bool ktraKC_MH(string maMH)
+        {
+            return phanQuyenDAL.ktraKC_MH(maMH);
+        }
+
+        public void themMH(string maMH, string tenMH)
+        {
+            phanQuyenDAL.themMH(maMH, tenMH);
+        }
+
+        public void suaMH(string tenMH, string maMH)
+        {
+            phanQuyenDAL.suaMH(tenMH, maMH);
+        }
+
+        public void xoaMH(string maMH)
+        {
+            phanQuyenDAL.xoaMH(maMH);
+        }
+        #endregion
 
         public List<string> GetMaNhomNguoiDung(string pTDN)
         {

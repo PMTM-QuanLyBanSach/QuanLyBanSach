@@ -74,12 +74,14 @@ namespace GUI
             this.nhómNgườiDùngToolStripMenuItem.Name = "nhómNgườiDùngToolStripMenuItem";
             this.nhómNgườiDùngToolStripMenuItem.Size = new System.Drawing.Size(280, 26);
             this.nhómNgườiDùngToolStripMenuItem.Text = "Nhóm người dùng";
+            this.nhómNgườiDùngToolStripMenuItem.Click += new System.EventHandler(this.nhómNgườiDùngToolStripMenuItem_Click);
             // 
             // mànHìnhToolStripMenuItem
             // 
             this.mànHìnhToolStripMenuItem.Name = "mànHìnhToolStripMenuItem";
             this.mànHìnhToolStripMenuItem.Size = new System.Drawing.Size(280, 26);
             this.mànHìnhToolStripMenuItem.Text = "Màn hình";
+            this.mànHìnhToolStripMenuItem.Click += new System.EventHandler(this.mànHìnhToolStripMenuItem_Click);
             // 
             // thêmNgườiDùngVàoNhómToolStripMenuItem
             // 

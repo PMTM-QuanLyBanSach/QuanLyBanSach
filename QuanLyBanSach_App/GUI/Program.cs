@@ -12,6 +12,8 @@ namespace GUI
         public static frmLogin loginForm;
         public static frmConfig configForm;
         public static frmNguoiDung nguoiDungForm;
+        public static frmNhomNguoiDung nhomNguoiDungForm;
+        public static frmManHinh manHinhForm;
         public static frmThemNDVaoNhom themNDVaoNhomForm;
 
         /// <summary>

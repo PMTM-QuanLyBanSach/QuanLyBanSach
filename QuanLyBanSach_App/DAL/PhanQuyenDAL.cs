@@ -20,8 +20,7 @@ namespace DAL
 
         }
 
-        QL_NguoiDungTableAdapter da = new QL_NguoiDungTableAdapter();
-
+        #region Login và Config
         public enumLogin.LoginResult Check_User(string pUser, string pPass)
         {
             SqlDataAdapter daUser = new SqlDataAdapter("select * from QL_NguoiDung where TenDangNhap='" + pUser + "' and MatKhau ='" + pPass + "'",
@@ -45,6 +44,10 @@ namespace DAL
             da.Fill(dt);
             return dt;
         }
+        #endregion
+
+        #region Quản lý người dùng
+        QL_NguoiDungTableAdapter da = new QL_NguoiDungTableAdapter();
 
         public DataTable getND()
         {   
@@ -66,15 +69,84 @@ namespace DAL
             da.Insert(tenDN, matKhau, hoatDong);
         }
 
-        public void suaND(string tenDN, string matKhau, bool hoatDong)
+        public void suaND(string matKhau, bool hoatDong, string tenDN)
         {
-            da.UpdateT(tenDN, matKhau, hoatDong);
+            da.UpdateT(matKhau, hoatDong, tenDN);
         }
 
         public void xoaND(string tenDN)
         {
             da.DeleteT(tenDN);
         }
+        #endregion
+
+        #region Quản lý nhóm người dùng
+        QL_NhomNguoiDungTableAdapter daNND = new QL_NhomNguoiDungTableAdapter();
+
+        public DataTable getNND()
+        {
+            return daNND.GetData();
+        }
+
+        public bool ktrKC_NND(string maNhom)
+        {
+            int? n = daNND.ktrKC_NND(maNhom);
+            
+            if (n > 0)
+                return true; // trùng
+
+            return false;
+        }
+
+        public void themNND(string maNhom, string tenNhom, string ghiChu)
+        {
+            daNND.Insert(maNhom, tenNhom, ghiChu);
+        }
+
+        public void suaNND(string tenNhom, string ghiChu, string maNhom)
+        {
+            daNND.UpdateT_NND(tenNhom, ghiChu, maNhom);
+        }
+
+        public void xoaNND(string maNhom)
+        {
+            daNND.DeleteT_NND(maNhom);
+        }
+        #endregion
+
+        #region Quản lý màn hình
+        DM_ManHinhTableAdapter daMH = new DM_ManHinhTableAdapter();
+
+        public DataTable loadMH()
+        {
+            return daMH.GetData();
+        }
+
+        public bool ktraKC_MH(string maMH)
+        {
+            int? n = daMH.ktraKC_MH(maMH);
+
+            if (n > 0)
+                return true; // trùng
+
+            return false;
+        }
+
+        public void themMH(string maMH, string tenMH)
+        {
+            daMH.Insert(maMH, tenMH);
+        }
+
+        public void suaMH(string tenMH, string maMH)
+        {
+            daMH.UpdateT_MH(tenMH, maMH);
+        }
+
+        public void xoaMH(string maMH)
+        {
+            daMH.DeleteT_MH(maMH);
+        }
+        #endregion
 
         public List<string> GetMaNhomNguoiDung(string pTDN)
         {
