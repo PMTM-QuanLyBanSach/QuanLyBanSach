@@ -51,15 +51,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmConfig.cs" />
+    <Compile Include="frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmConfig.Designer.cs">
       <DependentUpon>frmConfig.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
@@ -69,17 +75,17 @@
     <Compile Include="frmManHinh.Designer.cs">
       <DependentUpon>frmManHinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNguoiDung.cs" />
+    <Compile Include="frmNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmNguoiDung.Designer.cs">
       <DependentUpon>frmNguoiDung.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNhomNguoiDung.cs" />
+    <Compile Include="frmNhomNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmNhomNguoiDung.Designer.cs">
       <DependentUpon>frmNhomNguoiDung.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmThemNDVaoNhom.cs" />
-    <Compile Include="frmThemNDVaoNhom.Designer.cs">
-      <DependentUpon>frmThemNDVaoNhom.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,9 +106,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhomNguoiDung.resx">
       <DependentUpon>frmNhomNguoiDung.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmThemNDVaoNhom.resx">
-      <DependentUpon>frmThemNDVaoNhom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -41,7 +41,7 @@ namespace GUI
         {
             if (phanQuyenBLL.ktrKC_NND(txtMaNhom.Text))
             {
-                MessageBox.Show("Mã nhóm đã tồn tại vui lòng nhập lại");
+                MessageBox.Show("Tên đăng nhập đã bị trùng vui lòng nhập lại");
                 txtMaNhom.Focus();
             }
             else

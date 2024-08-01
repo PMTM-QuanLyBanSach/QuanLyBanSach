@@ -13,6 +13,8 @@ namespace GUI
 {
     public partial class frmConfig : Form
     {
+        public static string connectionString = Properties.Settings.Default.connectionString;
+
         PhanQuyenBLL phanQuyenBLL = new PhanQuyenBLL();
         public frmConfig()
         {
@@ -28,8 +30,6 @@ namespace GUI
             Program.loginForm.Show();
             this.Visible = false;
         }
-
-        public static string connectionString = Properties.Settings.Default.connectionString;
 
         void cboDB_DropDown(object sender, EventArgs e)
         {
@@ -65,7 +65,7 @@ namespace GUI
 
         void saveConfig()
         {
-            Properties.Settings.Default.connectionString = 
+            Properties.Settings.Default.connectionString =
                 phanQuyenBLL.saveConfig(txtServerName.Text, txtUsername.Text, txtPass.Text, cboDB.Text);
             Properties.Settings.Default.Save();
         }

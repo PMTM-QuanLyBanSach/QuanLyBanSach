@@ -92,6 +92,7 @@ namespace GUI
             // 
             // dgvManHinh
             // 
+            this.dgvManHinh.AllowUserToAddRows = false;
             this.dgvManHinh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvManHinh.Location = new System.Drawing.Point(100, 172);
             this.dgvManHinh.Name = "dgvManHinh";

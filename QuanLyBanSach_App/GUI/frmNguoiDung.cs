@@ -53,9 +53,9 @@ namespace GUI
 
         private void BtnThem_Click(object sender, EventArgs e)
         {
-            if (phanQuyenBLL.ktraKC(txtTDN.Text) == true)
+            if (phanQuyenBLL.ktraKC(txtTDN.Text))
             {
-                MessageBox.Show("Tên đăng nhập đã tồn tại vui lòng đổi tên khác");
+                MessageBox.Show("Tên đăng nhập đã bị trùng vui lòng nhập lại");
                 txtTDN.Focus();
             }
             else

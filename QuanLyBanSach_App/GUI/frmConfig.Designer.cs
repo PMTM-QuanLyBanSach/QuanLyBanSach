@@ -43,14 +43,14 @@ namespace GUI
             // 
             // txtServerName
             // 
-            this.txtServerName.Location = new System.Drawing.Point(160, 43);
+            this.txtServerName.Location = new System.Drawing.Point(176, 45);
             this.txtServerName.Name = "txtServerName";
             this.txtServerName.Size = new System.Drawing.Size(221, 22);
             this.txtServerName.TabIndex = 20;
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(285, 246);
+            this.btnHuy.Location = new System.Drawing.Point(301, 248);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(97, 33);
@@ -60,7 +60,7 @@ namespace GUI
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(160, 246);
+            this.btnSave.Location = new System.Drawing.Point(176, 248);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(97, 33);
@@ -70,7 +70,7 @@ namespace GUI
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(160, 141);
+            this.txtPass.Location = new System.Drawing.Point(176, 143);
             this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(221, 22);
@@ -78,7 +78,7 @@ namespace GUI
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(160, 89);
+            this.txtUsername.Location = new System.Drawing.Point(176, 91);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(221, 22);
@@ -87,7 +87,7 @@ namespace GUI
             // cboDB
             // 
             this.cboDB.FormattingEnabled = true;
-            this.cboDB.Location = new System.Drawing.Point(160, 195);
+            this.cboDB.Location = new System.Drawing.Point(176, 197);
             this.cboDB.Margin = new System.Windows.Forms.Padding(4);
             this.cboDB.Name = "cboDB";
             this.cboDB.Size = new System.Drawing.Size(221, 24);
@@ -96,7 +96,7 @@ namespace GUI
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 199);
+            this.label4.Location = new System.Drawing.Point(56, 201);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 17);
@@ -106,7 +106,7 @@ namespace GUI
             // labPass
             // 
             this.labPass.AutoSize = true;
-            this.labPass.Location = new System.Drawing.Point(40, 145);
+            this.labPass.Location = new System.Drawing.Point(56, 147);
             this.labPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labPass.Name = "labPass";
             this.labPass.Size = new System.Drawing.Size(73, 17);
@@ -116,7 +116,7 @@ namespace GUI
             // labUN
             // 
             this.labUN.AutoSize = true;
-            this.labUN.Location = new System.Drawing.Point(40, 93);
+            this.labUN.Location = new System.Drawing.Point(56, 95);
             this.labUN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labUN.Name = "labUN";
             this.labUN.Size = new System.Drawing.Size(81, 17);
@@ -126,7 +126,7 @@ namespace GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 46);
+            this.label1.Location = new System.Drawing.Point(56, 48);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 17);
@@ -137,7 +137,7 @@ namespace GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 355);
+            this.ClientSize = new System.Drawing.Size(509, 367);
             this.Controls.Add(this.txtServerName);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnSave);

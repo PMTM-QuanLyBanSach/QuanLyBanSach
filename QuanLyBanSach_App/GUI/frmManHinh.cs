@@ -41,7 +41,7 @@ namespace GUI
         {
             if (phanQuyenBLL.ktraKC_MH(txtMMH.Text))
             {
-                MessageBox.Show("Mã màn hình đã tồn tại vui lòng nhập lại");
+                MessageBox.Show("Tên đăng nhập đã bị trùng vui lòng nhập lại");
                 txtMMH.Focus();
             }
             else

@@ -42,7 +42,7 @@ namespace GUI
                 return;
             }
 
-            int kq = phanQuyenBLL.Check_Config(); //hàm Check_Config() thuộc Class QL_NguoiDung
+            int kq = phanQuyenBLL.Check_Config(); //hàm Check_Config()
             if (kq == 0)
             {
                 ProcessLogin();// Cấu hình phù hợp xử lý đăng nhập

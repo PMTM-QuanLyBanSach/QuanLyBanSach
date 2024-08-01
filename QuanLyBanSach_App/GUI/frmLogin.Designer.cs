@@ -39,7 +39,7 @@ namespace GUI
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(194, 161);
+            this.btnHuy.Location = new System.Drawing.Point(217, 171);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 28);
@@ -49,7 +49,7 @@ namespace GUI
             // 
             // btnDN
             // 
-            this.btnDN.Location = new System.Drawing.Point(61, 161);
+            this.btnDN.Location = new System.Drawing.Point(84, 171);
             this.btnDN.Margin = new System.Windows.Forms.Padding(4);
             this.btnDN.Name = "btnDN";
             this.btnDN.Size = new System.Drawing.Size(105, 28);
@@ -59,7 +59,7 @@ namespace GUI
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(61, 114);
+            this.txtPass.Location = new System.Drawing.Point(84, 124);
             this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(207, 22);
@@ -67,7 +67,7 @@ namespace GUI
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(61, 46);
+            this.txtUsername.Location = new System.Drawing.Point(84, 56);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(207, 22);
@@ -76,7 +76,7 @@ namespace GUI
             // labPass
             // 
             this.labPass.AutoSize = true;
-            this.labPass.Location = new System.Drawing.Point(57, 95);
+            this.labPass.Location = new System.Drawing.Point(80, 105);
             this.labPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labPass.Name = "labPass";
             this.labPass.Size = new System.Drawing.Size(68, 17);
@@ -86,7 +86,7 @@ namespace GUI
             // labUsername
             // 
             this.labUsername.AutoSize = true;
-            this.labUsername.Location = new System.Drawing.Point(57, 26);
+            this.labUsername.Location = new System.Drawing.Point(80, 36);
             this.labUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labUsername.Name = "labUsername";
             this.labUsername.Size = new System.Drawing.Size(112, 17);
@@ -97,7 +97,7 @@ namespace GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 249);
+            this.ClientSize = new System.Drawing.Size(371, 293);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnDN);
             this.Controls.Add(this.txtPass);

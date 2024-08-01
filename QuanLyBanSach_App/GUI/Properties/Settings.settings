@@ -5,5 +5,8 @@
     <Setting Name="connectionString" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=DESKTOP-MIJ3F8K;Initial Catalog=QuanLyBanSach;User ID=sa;Password=123</Value>
     </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
