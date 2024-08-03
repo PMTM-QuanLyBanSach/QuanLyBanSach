@@ -131,5 +131,12 @@ namespace GUI
             Program.loginForm.Show();
             this.Dispose();
         }
+
+        private void sáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.sachForm = new frmSach();
+            Program.sachForm.Show();
+            this.Dispose();
+        }
     }
 }

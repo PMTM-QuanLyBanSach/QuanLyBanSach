@@ -61,6 +61,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SachDAL.cs" />
     <Compile Include="TacGiaDAL.cs" />
   </ItemGroup>
   <ItemGroup>
