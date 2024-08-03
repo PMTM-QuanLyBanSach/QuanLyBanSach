@@ -14,7 +14,7 @@
     <Shape ID="DesignTable:QL_NguoiDungNhomNguoiDung_DK" ZOrder="8" X="737" Y="96" Height="227" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
     <Shape ID="DesignTable:QL_PhanQuyen_PQ" ZOrder="6" X="740" Y="380" Height="250" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="122" />
     <Shape ID="DesignTable:DanhMucSach" ZOrder="5" X="31" Y="758" Height="227" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="76" />
-    <Shape ID="DesignTable:TacGia" ZOrder="4" X="758" Y="758" Height="135" Width="213" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="76" />
+    <Shape ID="DesignTable:TacGia" ZOrder="4" X="759" Y="758" Height="227" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="76" />
     <Shape ID="DesignTable:Sach" ZOrder="3" X="391" Y="744" Height="227" Width="199" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="168" />
   </Shapes>
   <Connectors>
@@ -33,7 +33,7 @@
     <Connector ID="DesignRelation:FK_Sach_TacGia" ZOrder="1" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>758</X>
+          <X>759</X>
           <Y>815</Y>
         </Point>
         <Point>

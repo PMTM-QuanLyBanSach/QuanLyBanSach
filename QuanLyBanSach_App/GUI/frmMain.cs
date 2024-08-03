@@ -117,5 +117,19 @@ namespace GUI
             Program.danhMucSachForm.Show();
             this.Dispose();
         }
+
+        private void tácGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.tacGiaForm = new frmTacGia();
+            Program.tacGiaForm.Show();
+            this.Dispose();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.loginForm = new frmLogin();
+            Program.loginForm.Show();
+            this.Dispose();
+        }
     }
 }

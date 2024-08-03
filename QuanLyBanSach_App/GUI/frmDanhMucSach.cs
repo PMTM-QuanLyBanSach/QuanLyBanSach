@@ -88,7 +88,6 @@ namespace GUI
                 MessageBox.Show("Mã danh mục đã trùng vui lòng nhập lại");
                 txtMaDM.Focus();
             }
-
         }
 
         void loadDT()

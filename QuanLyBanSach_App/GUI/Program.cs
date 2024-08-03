@@ -17,6 +17,7 @@ namespace GUI
         public static frmThemNDVaoNhom themNDVaoNhomForm;
         public static frmPhanQuyen phanQuyenForm;
         public static frmDanhMucSach danhMucSachForm;
+        public static frmTacGia tacGiaForm;
 
         /// <summary>
         /// The main entry point for the application.
