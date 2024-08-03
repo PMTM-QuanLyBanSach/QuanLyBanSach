@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DanhMucSachDAL.cs" />
     <Compile Include="dsQLBS.cs">
       <DependentUpon>dsQLBS.xsd</DependentUpon>
     </Compile>

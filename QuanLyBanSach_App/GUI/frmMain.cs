@@ -110,5 +110,12 @@ namespace GUI
             Program.phanQuyenForm.Show();
             this.Dispose();
         }
+
+        private void danhMụcSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.danhMucSachForm = new frmDanhMucSach();
+            Program.danhMucSachForm.Show();
+            this.Dispose();
+        }
     }
 }
