@@ -15,11 +15,14 @@ namespace GUI
     public partial class frmLogin : Form
     {
         PhanQuyenBLL phanQuyenBLL = new PhanQuyenBLL();
+        public static string tenND;
+        
         public frmLogin()
         {
             InitializeComponent();
             btnDN.Click += btnDN_Click;
             btnHuy.Click += btnHuy_Click;
+            tenND = txtUsername.Text;
         }
 
         void btnHuy_Click(object sender, EventArgs e)

@@ -164,7 +164,7 @@ namespace BLL
 
         public bool ktraKC_PQ(string maNhom, string maMH)
         {
-            return ktraKC_PQ(maNhom, maMH);
+            return phanQuyenDAL.ktraKC_PQ(maNhom, maMH);
         }
 
         public void themQuyen(string MaNhomNguoiDung, string maMH, bool coQuyen)

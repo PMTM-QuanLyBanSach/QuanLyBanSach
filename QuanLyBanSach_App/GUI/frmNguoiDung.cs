@@ -28,6 +28,7 @@ namespace GUI
         private void BtnMain_Click(object sender, EventArgs e)
         {
             Program.mainForm = new frmMain();
+            Program.mainForm.TenDangNhap = frmLogin.tenND;
             Program.mainForm.Show();
             this.Dispose();
         }
@@ -73,6 +74,14 @@ namespace GUI
         private void FrmNguoiDung_Load(object sender, EventArgs e)
         {
             loadND();
+        }
+
+        public static void processMain(Form f)
+        {
+            Program.mainForm = new frmMain();
+            Program.mainForm.TenDangNhap = frmLogin.tenND;
+            Program.mainForm.Show();
+            f.Dispose();
         }
     }
 }

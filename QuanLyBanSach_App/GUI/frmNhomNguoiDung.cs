@@ -53,9 +53,7 @@ namespace GUI
 
         private void BtnMain_Click(object sender, EventArgs e)
         {
-            Program.mainForm = new frmMain();
-            Program.mainForm.Show();
-            this.Dispose();
+            frmNguoiDung.processMain(this);
         }
 
         private void DgvNhomNguoiDung_SelectionChanged(object sender, EventArgs e)

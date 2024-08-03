@@ -29,18 +29,22 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPhanQuyen));
             this.btnLuu = new System.Windows.Forms.Button();
             this.dgvNND = new System.Windows.Forms.DataGridView();
             this.dgvPQ = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnMain = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNND)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPQ)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(30, 24);
+            this.btnLuu.Location = new System.Drawing.Point(30, 40);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(92, 43);
             this.btnLuu.TabIndex = 0;
@@ -87,11 +91,31 @@ namespace GUI
             this.label2.TabIndex = 4;
             this.label2.Text = "Danh sách nhóm người dùng";
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnMain});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1305, 27);
+            this.toolStrip1.TabIndex = 5;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnMain
+            // 
+            this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
+            this.btnMain.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(97, 24);
+            this.btnMain.Text = "Trang chủ";
+            // 
             // frmPhanQuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1305, 750);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvPQ);
@@ -101,6 +125,8 @@ namespace GUI
             this.Text = "frmPhanQuyen";
             ((System.ComponentModel.ISupportInitialize)(this.dgvNND)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPQ)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,5 +139,7 @@ namespace GUI
         private System.Windows.Forms.DataGridView dgvPQ;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton btnMain;
     }
 }

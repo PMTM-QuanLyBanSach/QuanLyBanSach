@@ -20,6 +20,12 @@ namespace GUI
             this.Load += FrmPhanQuyen_Load;
             dgvNND.SelectionChanged += DgvNND_SelectionChanged;
             btnLuu.Click += BtnLuu_Click;
+            btnMain.Click += BtnMain_Click;
+        }
+
+        private void BtnMain_Click(object sender, EventArgs e)
+        {
+            frmNguoiDung.processMain(this);
         }
 
         private void BtnLuu_Click(object sender, EventArgs e)
@@ -28,7 +34,7 @@ namespace GUI
             for (int i = 0; i < dgvPQ.Rows.Count; i++)
             {
                 string maMH = dgvPQ.Rows[i].Cells[0].Value.ToString();
-                bool coQuyen = (bool)(dgvPQ.Rows[i].Cells[2].Value);
+                bool coQuyen = (bool)(dgvPQ.Rows[i].Cells[1].Value);
                 bool ktr = phanQuyenBLL.ktraKC_PQ(maNhomND, maMH);
 
                 if (ktr)
@@ -56,7 +62,7 @@ namespace GUI
             {
                 try
                 {
-                    phanQuyenBLL.getManHinhTheoNhom(maNhom);
+                    dgvPQ.DataSource = phanQuyenBLL.getManHinhTheoNhom(maNhom);
                 }
                 catch (System.Exception ex)
                 {

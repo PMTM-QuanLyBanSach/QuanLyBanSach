@@ -22,6 +22,12 @@ namespace GUI
             cboNND.SelectedIndexChanged += CboNND_SelectedIndexChanged;
             btnThem.Click += BtnThem_Click;
             btnXoa.Click += BtnXoa_Click;
+            btnMain.Click += BtnMain_Click;
+        }
+
+        private void BtnMain_Click(object sender, EventArgs e)
+        {
+            frmNguoiDung.processMain(this);
         }
 
         private void BtnXoa_Click(object sender, EventArgs e)
