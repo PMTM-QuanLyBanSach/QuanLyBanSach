@@ -177,9 +177,9 @@ namespace BLL
             phanQuyenDAL.suaQuyen(coQuyen, maNhom, maMH);
         }
 
-        //public List<string> GetMaNhomNguoiDung(string pTDN)
-        //{
-        //    return phanQuyenDAL.getNND_DK(pTDN);
-        //}
+        public List<string> GetMaNhomNguoiDung(string pTDN)
+        {
+            return phanQuyenDAL.GetMaNhomNguoiDung(pTDN);
+        }
     }
 }

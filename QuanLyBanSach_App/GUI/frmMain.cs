@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace GUI
 {
@@ -15,7 +16,65 @@ namespace GUI
         public frmMain()
         {
             InitializeComponent();
+            this.Load += FrmMain_Load;
         }
+        PhanQuyenBLL phanQuyenBLL = new PhanQuyenBLL();
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            List<string> nhomND = phanQuyenBLL.GetMaNhomNguoiDung(_TenDangNhap);
+            foreach (string item in nhomND)
+            {
+                DataTable dsQuyen = phanQuyenBLL.getManHinhTheoNhom(item);
+                foreach (DataRow mh in dsQuyen.Rows)
+                {
+                    FindMenuPhanQuyen(this.menuStrip1.Items,
+                    mh[0].ToString(), Convert.ToBoolean(mh[1].ToString()));
+                }
+            }
+        }
+
+        private void FindMenuPhanQuyen(ToolStripItemCollection mnuItems, string pScreenName, bool pEnable)
+        {
+
+            foreach (ToolStripItem menu in mnuItems)
+            {
+                if (menu is ToolStripMenuItem &&
+                ((ToolStripMenuItem)(menu)).DropDownItems.Count > 0)
+                {
+                    FindMenuPhanQuyen(((ToolStripMenuItem)(menu)).DropDownItems,
+                    pScreenName, pEnable);
+                    menu.Enabled =
+                    CheckAllMenuChildVisible(((ToolStripMenuItem)(menu)).DropDownItems);
+                    menu.Visible = menu.Enabled;
+                }
+                else if (string.Equals(pScreenName, menu.Tag))
+                {
+                    menu.Enabled = pEnable;
+                    menu.Visible = pEnable;
+                }
+            }
+        }
+
+        private bool CheckAllMenuChildVisible(ToolStripItemCollection mnuItems)
+        {
+            foreach (ToolStripItem menuItem in mnuItems)
+            {
+                if (menuItem is ToolStripMenuItem && menuItem.Enabled)
+                {
+                    return true;
+                }
+                else if (menuItem is ToolStripSeparator)
+                {
+                    continue;
+                }
+            }
+            return false;
+        }
+
+        string _TenDangNhap;
+
+        public string TenDangNhap { get => _TenDangNhap; set => _TenDangNhap = value; }
 
         private void thêmNgườiDùngVàoNhómToolStripMenuItem_Click(object sender, EventArgs e)
         {

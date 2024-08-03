@@ -204,19 +204,19 @@ namespace DAL
             daPQ.UpdateT_PQ(coQuyen, maNhom, maMH);
         }
 
-        //public List<string> GetMaNhomNguoiDung(string pTDN)
-        //{
-        //    List<string> lst = new List<string>();
+        public List<string> GetMaNhomNguoiDung(string pTDN)
+        {
+            List<string> lst = new List<string>();
 
-        //    dsQLBS.QL_NguoiDungNhomNguoiDung_NhomDataTable dt = da.GetData_Nhom(pTDN);
+            dsQLBS.QL_NguoiDungNhomNguoiDung_DKDataTable dt = daNND_DK.GetData_Nhom(pTDN);
 
-        //    for (int i = 0; i < dt.Rows.Count; i++)
-        //    {
-        //        string maNhom = dt.Rows[i][0].ToString();
-        //        lst.Add(maNhom);
-        //    }
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                string maNhom = dt.Rows[i][0].ToString();
+                lst.Add(maNhom);
+            }
 
-        //    return lst;
-        //}
+            return lst;
+        }
     }
 }

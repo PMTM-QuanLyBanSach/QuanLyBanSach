@@ -5545,7 +5545,7 @@ SELECT TenDangNhap, MaNhomNguoiDung, GhiChu FROM QL_NguoiDungNhomNguoiDung WHERE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT TenDangNhap, MaNhomNguoiDung, GhiChu\r\nFROM     QL_NguoiDungNhomNguoiDung\r\n" +
@@ -5561,11 +5561,17 @@ SELECT TenDangNhap, MaNhomNguoiDung, GhiChu FROM QL_NguoiDungNhomNguoiDung WHERE
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@maNhom", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "MaNhomNguoiDung", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT COUNT(*) AS Expr1\r\nFROM     QL_NguoiDungNhomNguoiDung\r\nWHERE  (TenDangNhap" +
-                " = @tenDN) AND (MaNhomNguoiDung = @maNhom)";
+            this._commandCollection[2].CommandText = "SELECT MaNhomNguoiDung, TenDangNhap\r\nFROM     QL_NguoiDungNhomNguoiDung\r\nWHERE  (" +
+                "TenDangNhap = @tenDN)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tenDN", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "TenDangNhap", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@maNhom", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "MaNhomNguoiDung", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "SELECT COUNT(*) AS Expr1\r\nFROM     QL_NguoiDungNhomNguoiDung\r\nWHERE  (TenDangNhap" +
+                " = @tenDN) AND (MaNhomNguoiDung = @maNhom)";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tenDN", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "TenDangNhap", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@maNhom", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "MaNhomNguoiDung", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5598,6 +5604,42 @@ SELECT TenDangNhap, MaNhomNguoiDung, GhiChu FROM QL_NguoiDungNhomNguoiDung WHERE
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(maNhom));
+            }
+            dsQLBS.QL_NguoiDungNhomNguoiDung_DKDataTable dataTable = new dsQLBS.QL_NguoiDungNhomNguoiDung_DKDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int Fill_Nhom(dsQLBS.QL_NguoiDungNhomNguoiDung_DKDataTable dataTable, string tenDN) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((tenDN == null)) {
+                throw new global::System.ArgumentNullException("tenDN");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(tenDN));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual dsQLBS.QL_NguoiDungNhomNguoiDung_DKDataTable GetData_Nhom(string tenDN) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((tenDN == null)) {
+                throw new global::System.ArgumentNullException("tenDN");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(tenDN));
             }
             dsQLBS.QL_NguoiDungNhomNguoiDung_DKDataTable dataTable = new dsQLBS.QL_NguoiDungNhomNguoiDung_DKDataTable();
             this.Adapter.Fill(dataTable);
@@ -5819,7 +5861,7 @@ SELECT TenDangNhap, MaNhomNguoiDung, GhiChu FROM QL_NguoiDungNhomNguoiDung WHERE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual global::System.Nullable<int> ktraKCNND_DK(string tenDN, string maNhom) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
             if ((tenDN == null)) {
                 throw new global::System.ArgumentNullException("tenDN");
             }

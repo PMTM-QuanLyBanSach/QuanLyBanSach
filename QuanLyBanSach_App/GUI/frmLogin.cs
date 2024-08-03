@@ -81,7 +81,7 @@ namespace GUI
                 Program.mainForm = new frmMain();
             }
             this.Visible = false;
-            //Program.mainForm.TenDangNhap = txtUsername.Text;
+            Program.mainForm.TenDangNhap = txtUsername.Text;
             Program.mainForm.Show();
         }
 

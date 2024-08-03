@@ -19,24 +19,51 @@ namespace GUI
             InitializeComponent();
             this.Load += FrmPhanQuyen_Load;
             dgvNND.SelectionChanged += DgvNND_SelectionChanged;
+            btnLuu.Click += BtnLuu_Click;
+        }
+
+        private void BtnLuu_Click(object sender, EventArgs e)
+        {
+            string maNhomND = dgvNND.CurrentRow.Cells[0].Value.ToString();
+            for (int i = 0; i < dgvPQ.Rows.Count; i++)
+            {
+                string maMH = dgvPQ.Rows[i].Cells[0].Value.ToString();
+                bool coQuyen = (bool)(dgvPQ.Rows[i].Cells[2].Value);
+                bool ktr = phanQuyenBLL.ktraKC_PQ(maNhomND, maMH);
+
+                if (ktr)
+                {
+                    phanQuyenBLL.suaMH(coQuyen, maNhomND, maMH);
+                }
+                else
+                {
+                    phanQuyenBLL.themQuyen(maNhomND, maMH, coQuyen);
+                }
+            }
+            loadQ(maNhomND);
         }
 
         private void DgvNND_SelectionChanged(object sender, EventArgs e)
         {
-            loadQ();
+            string maNhom = dgvNND.CurrentRow.Cells[0].Value.ToString();
+            loadQ(maNhom);
         }
 
-        void loadQ()
+        void loadQ(string maNhom)
         {
-            int n = dgvNND.SelectedRows.Count;
-            if(n > 0 )
+            int row = dgvNND.SelectedRows.Count;
+            if (row > 0)
             {
-                string maNhom = dgvNND.CurrentRow.Cells[0].Value.ToString();
-                if(maNhom == string.Empty)
-                    maNhom = dgvNND.CurrentRow.Cells[0].Value.ToString();
-                dgvPQ.DataSource = phanQuyenBLL.getManHinhTheoNhom(maNhom);
-            }    
-            
+                try
+                {
+                    phanQuyenBLL.getManHinhTheoNhom(maNhom);
+                }
+                catch (System.Exception ex)
+                {
+                    System.Windows.Forms.MessageBox.Show(ex.Message);
+                }
+            }
+
         }
 
         private void FrmPhanQuyen_Load(object sender, EventArgs e)
