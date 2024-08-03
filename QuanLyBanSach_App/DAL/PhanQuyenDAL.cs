@@ -177,6 +177,7 @@ namespace DAL
         }
         #endregion
 
+        #region Phân quyền
         QL_PhanQuyen_PQTableAdapter daPQ = new QL_PhanQuyen_PQTableAdapter();
 
         public DataTable getManHinhTheoNhom(string maNhom)
@@ -218,5 +219,6 @@ namespace DAL
 
             return lst;
         }
+        #endregion
     }
 }

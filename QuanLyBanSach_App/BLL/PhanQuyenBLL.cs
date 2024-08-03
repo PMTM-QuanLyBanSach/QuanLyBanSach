@@ -157,6 +157,7 @@ namespace BLL
         }
         #endregion
 
+        #region Phân quyền
         public DataTable getManHinhTheoNhom(string maNhom)
         {
             return phanQuyenDAL.getManHinhTheoNhom(maNhom);
@@ -181,5 +182,6 @@ namespace BLL
         {
             return phanQuyenDAL.GetMaNhomNguoiDung(pTDN);
         }
+        #endregion
     }
 }
