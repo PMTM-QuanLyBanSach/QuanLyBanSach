@@ -52,6 +52,8 @@ namespace GUI
             this.txtSLK = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtGB = new System.Windows.Forms.TextBox();
+            this.btnThemDM = new System.Windows.Forms.Button();
+            this.btnThemTG = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSach)).BeginInit();
             this.SuspendLayout();
@@ -252,11 +254,31 @@ namespace GUI
             this.txtGB.Size = new System.Drawing.Size(109, 32);
             this.txtGB.TabIndex = 43;
             // 
+            // btnThemDM
+            // 
+            this.btnThemDM.Location = new System.Drawing.Point(619, 111);
+            this.btnThemDM.Name = "btnThemDM";
+            this.btnThemDM.Size = new System.Drawing.Size(127, 32);
+            this.btnThemDM.TabIndex = 45;
+            this.btnThemDM.Text = "Thêm danh mục";
+            this.btnThemDM.UseVisualStyleBackColor = true;
+            // 
+            // btnThemTG
+            // 
+            this.btnThemTG.Location = new System.Drawing.Point(887, 111);
+            this.btnThemTG.Name = "btnThemTG";
+            this.btnThemTG.Size = new System.Drawing.Size(106, 32);
+            this.btnThemTG.TabIndex = 46;
+            this.btnThemTG.Text = "Thêm tác giả";
+            this.btnThemTG.UseVisualStyleBackColor = true;
+            // 
             // frmSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1175, 718);
+            this.Controls.Add(this.btnThemTG);
+            this.Controls.Add(this.btnThemDM);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtGB);
             this.Controls.Add(this.label6);
@@ -312,5 +334,7 @@ namespace GUI
         private System.Windows.Forms.TextBox txtSLK;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtGB;
+        private System.Windows.Forms.Button btnThemDM;
+        private System.Windows.Forms.Button btnThemTG;
     }
 }

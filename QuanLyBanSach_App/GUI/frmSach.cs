@@ -24,6 +24,22 @@ namespace GUI
             btnXoa.Click += BtnXoa_Click;
             btnClear.Click += BtnClear_Click;
             btnLoc.Click += BtnLoc_Click;
+            btnThemDM.Click += BtnThemDM_Click;
+            btnThemTG.Click += BtnThemTG_Click;
+        }
+
+        private void BtnThemTG_Click(object sender, EventArgs e)
+        {
+            Program.tacGiaForm = new frmTacGia();
+            Program.tacGiaForm.ShowDialog();
+            loadTG();
+        }
+
+        private void BtnThemDM_Click(object sender, EventArgs e)
+        {
+            Program.danhMucSachForm = new frmDanhMucSach();
+            Program.danhMucSachForm.ShowDialog();
+            loadDM();
         }
 
         SachBLL sachBLL = new SachBLL();
@@ -143,11 +159,19 @@ namespace GUI
         void loadDT()
         {
             dgvSach.DataSource = sachBLL.loadSH();
+            loadDM();
+            loadTG();
+        }
 
+        void loadDM()
+        {
             cboDM.DataSource = sachBLL.loadDM();
             cboDM.ValueMember = "MaDanhMuc";
             cboDM.DisplayMember = "TenDanhMuc";
+        }
 
+        void loadTG()
+        {
             cboTG.DataSource = sachBLL.loadTG();
             cboTG.ValueMember = "MaTG";
             cboTG.DisplayMember = "TenTG";
