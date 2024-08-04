@@ -37,6 +37,11 @@ namespace BLL
             return sachDAL.ktraKC(maSH);
         }
 
+        public bool ktraTenSH(string tenSH)
+        {
+            return sachDAL.ktraTenSH(tenSH);
+        }
+
         public void themDL(string maSH, string maTG, string maDM, decimal giaBan, int slKho, string tenSH)
         {
             sachDAL.themDL(maSH, maTG, maDM, giaBan, slKho, tenSH);
@@ -52,9 +57,14 @@ namespace BLL
            sachDAL.xoaDL(maSH);
         }
 
-        public DataTable locSH(string maSH, string maTG, string maDM, string tenSH)
+        public DataTable locSH(string maSH, string maTG, string maDM)
         {
-            return sachDAL.locSH(maSH, maTG, maDM, tenSH);
+            return sachDAL.locSH(maSH, maTG, maDM);
+        }
+
+        public DataTable locTenSH(string tenSH)
+        {
+            return sachDAL.locTenSH(tenSH);
         }
 
         public DataTable locSLT(string SLT)

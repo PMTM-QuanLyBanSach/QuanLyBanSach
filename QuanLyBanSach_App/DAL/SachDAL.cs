@@ -43,9 +43,19 @@ namespace DAL
             return false;
         }
 
+        public bool ktraTenSH(string tenSH)
+        {
+            int? n = da.ktraTenSH(tenSH);
+
+            if (n > 0)
+                return true;// trùng
+
+            return false;
+        }
+
         public void themDL(string maSH, string maTG, string maDM, decimal giaBan, int slKho, string tenSH)
         {
-            da.Insert(maSH, maTG, maDM, giaBan, slKho, tenSH);
+            da.InsertT(maSH, maTG, maDM, giaBan, slKho, tenSH);
         }
 
         public void suaDL(string maTG, string maDM, decimal giaBan, int slKho, string tenSH, string maSH)
@@ -58,9 +68,14 @@ namespace DAL
             da.DeleteT(maSH);
         }
 
-        public DataTable locSH(string maSH, string maTG, string maDM, string tenSH)
+        public DataTable locSH(string maSH, string maTG, string maDM)
         {
-            return da.GetDataBy_DK(maSH, maTG, maDM, tenSH);
+            return da.GetDataBy_DK(maSH, maTG, maDM);
+        }
+
+        public DataTable locTenSH(string tenSH)
+        {
+            return da.GetDataBy_TenSH(tenSH);
         }
 
         public DataTable locSLT(string SLT)

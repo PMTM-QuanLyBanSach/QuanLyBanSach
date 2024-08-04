@@ -603,7 +603,7 @@ SELECT MaDanhMuc, TenDanhMuc FROM DanhMucSach WHERE (MaDanhMuc = @MaDanhMuc)</Co
               <Mapping SourceColumn="TenDanhMuc" DataSetColumn="TenDanhMuc" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteT" Modifier="Public" Name="DeleteT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteT">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteT" Modifier="Public" Name="DeleteT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteT">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM DanhMucSach
@@ -638,7 +638,7 @@ WHERE  (TenDanhMuc LIKE '%' + @tenDM + '%')</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ktraKC">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -650,7 +650,7 @@ WHERE  (MaDanhMuc = @maDM)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateT" Modifier="Public" Name="UpdateT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateT">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateT" Modifier="Public" Name="UpdateT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateT">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE DanhMucSach
@@ -716,7 +716,7 @@ SELECT MaTG, TenTG FROM TacGia WHERE (MaTG = @MaTG)</CommandText>
               <Mapping SourceColumn="TenTG" DataSetColumn="TenTG" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteT" Modifier="Public" Name="DeleteT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteT">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteT" Modifier="Public" Name="DeleteT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteT">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM TacGia
@@ -751,7 +751,7 @@ WHERE  (TenTG LIKE '%' + @tenTG + '%')</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ktraKC">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -763,7 +763,7 @@ WHERE  (MaTG = @maTG)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateT" Modifier="Public" Name="UpdateT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateT">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateT" Modifier="Public" Name="UpdateT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateT">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE TacGia
@@ -782,82 +782,28 @@ WHERE  (MaTG = @maTG);
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SachTableAdapter" GeneratorDataComponentClassName="SachTableAdapter" Name="Sach" UserDataComponentName="SachTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="QuanLyBanSach.dbo.Sach" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <DeleteCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM [dbo].[Sach] WHERE (([MaSach] = @Original_MaSach) AND ((@IsNull_MaTG = 1 AND [MaTG] IS NULL) OR ([MaTG] = @Original_MaTG)) AND ((@IsNull_MaDanhMuc = 1 AND [MaDanhMuc] IS NULL) OR ([MaDanhMuc] = @Original_MaDanhMuc)) AND ((@IsNull_GiaBan = 1 AND [GiaBan] IS NULL) OR ([GiaBan] = @Original_GiaBan)) AND ((@IsNull_SLKho = 1 AND [SLKho] IS NULL) OR ([SLKho] = @Original_SLKho)) AND ((@IsNull_TenSach = 1 AND [TenSach] IS NULL) OR ([TenSach] = @Original_TenSach)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_MaSach" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaSach" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MaTG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MaTG" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_MaTG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaTG" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MaDanhMuc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MaDanhMuc" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_MaDanhMuc" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaDanhMuc" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_GiaBan" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="GiaBan" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_GiaBan" Precision="10" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="GiaBan" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SLKho" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SLKho" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_SLKho" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SLKho" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TenSach" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TenSach" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TenSach" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TenSach" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </DeleteCommand>
-                <InsertCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO [dbo].[Sach] ([MaSach], [MaTG], [MaDanhMuc], [GiaBan], [SLKho], [TenSach]) VALUES (@MaSach, @MaTG, @MaDanhMuc, @GiaBan, @SLKho, @TenSach);
-SELECT MaSach, MaTG, MaDanhMuc, GiaBan, SLKho, TenSach FROM Sach WHERE (MaSach = @MaSach)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@MaSach" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaSach" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@MaTG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaTG" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@MaDanhMuc" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaDanhMuc" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@GiaBan" Precision="10" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="GiaBan" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@SLKho" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SLKho" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TenSach" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TenSach" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </InsertCommand>
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT MaSach, MaTG, MaDanhMuc, GiaBan, SLKho, TenSach FROM dbo.Sach</CommandText>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Sach.MaSach, Sach.TenSach, Sach.GiaBan, Sach.SLKho, TacGia.TenTG, DanhMucSach.TenDanhMuc
+FROM     Sach INNER JOIN
+                  DanhMucSach ON Sach.MaDanhMuc = DanhMucSach.MaDanhMuc INNER JOIN
+                  TacGia ON Sach.MaTG = TacGia.MaTG</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
-                <UpdateCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE [dbo].[Sach] SET [MaSach] = @MaSach, [MaTG] = @MaTG, [MaDanhMuc] = @MaDanhMuc, [GiaBan] = @GiaBan, [SLKho] = @SLKho, [TenSach] = @TenSach WHERE (([MaSach] = @Original_MaSach) AND ((@IsNull_MaTG = 1 AND [MaTG] IS NULL) OR ([MaTG] = @Original_MaTG)) AND ((@IsNull_MaDanhMuc = 1 AND [MaDanhMuc] IS NULL) OR ([MaDanhMuc] = @Original_MaDanhMuc)) AND ((@IsNull_GiaBan = 1 AND [GiaBan] IS NULL) OR ([GiaBan] = @Original_GiaBan)) AND ((@IsNull_SLKho = 1 AND [SLKho] IS NULL) OR ([SLKho] = @Original_SLKho)) AND ((@IsNull_TenSach = 1 AND [TenSach] IS NULL) OR ([TenSach] = @Original_TenSach)));
-SELECT MaSach, MaTG, MaDanhMuc, GiaBan, SLKho, TenSach FROM Sach WHERE (MaSach = @MaSach)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@MaSach" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaSach" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@MaTG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaTG" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@MaDanhMuc" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaDanhMuc" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@GiaBan" Precision="10" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="GiaBan" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@SLKho" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SLKho" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TenSach" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TenSach" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_MaSach" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaSach" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MaTG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MaTG" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_MaTG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaTG" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MaDanhMuc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MaDanhMuc" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_MaDanhMuc" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaDanhMuc" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_GiaBan" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="GiaBan" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_GiaBan" Precision="10" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="GiaBan" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SLKho" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SLKho" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_SLKho" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SLKho" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TenSach" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TenSach" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TenSach" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TenSach" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </UpdateCommand>
               </DbSource>
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="MaSach" DataSetColumn="MaSach" />
-              <Mapping SourceColumn="MaTG" DataSetColumn="MaTG" />
-              <Mapping SourceColumn="MaDanhMuc" DataSetColumn="MaDanhMuc" />
               <Mapping SourceColumn="GiaBan" DataSetColumn="GiaBan" />
               <Mapping SourceColumn="SLKho" DataSetColumn="SLKho" />
               <Mapping SourceColumn="TenSach" DataSetColumn="TenSach" />
+              <Mapping SourceColumn="TenTG" DataSetColumn="TenTG" />
+              <Mapping SourceColumn="TenDanhMuc" DataSetColumn="TenDanhMuc" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteT" Modifier="Public" Name="DeleteT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteT">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteT" Modifier="Public" Name="DeleteT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteT">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM Sach
@@ -868,38 +814,71 @@ WHERE  (MaSach = @maSH)</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="QuanLyBanSach.dbo.Sach" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_DK" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_DK" GeneratorSourceName="FillBy_DK" GetMethodModifier="Public" GetMethodName="GetDataBy_DK" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_DK" UserSourceName="FillBy_DK">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_DK" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_DK" GeneratorSourceName="FillBy_DK" GetMethodModifier="Public" GetMethodName="GetDataBy_DK" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_DK" UserSourceName="FillBy_DK">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT MaSach, MaTG, MaDanhMuc, GiaBan, SLKho, TenSach
-FROM     Sach
-WHERE  (MaSach = @maSH) OR
-                  (MaTG = @maTG) OR
-                  (MaDanhMuc = @maDM) OR
-                  (TenSach LIKE '%' + @tenDM + '%')</CommandText>
+                    <CommandText>SELECT Sach.MaSach, Sach.TenSach, Sach.GiaBan, Sach.SLKho, DanhMucSach.TenDanhMuc, TacGia.TenTG
+FROM     Sach INNER JOIN
+                  DanhMucSach ON Sach.MaDanhMuc = DanhMucSach.MaDanhMuc INNER JOIN
+                  TacGia ON Sach.MaTG = TacGia.MaTG
+WHERE  (Sach.MaSach = @maSH) OR
+                  (Sach.MaTG = @maTG) OR
+                  (Sach.MaDanhMuc = @maDM)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="maSH" ColumnName="MaSach" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="char(5)" DbType="AnsiString" Direction="Input" ParameterName="@maSH" Precision="0" ProviderType="Char" Scale="0" Size="5" SourceColumn="MaSach" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="maTG" ColumnName="MaTG" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="char(5)" DbType="AnsiString" Direction="Input" ParameterName="@maTG" Precision="0" ProviderType="Char" Scale="0" Size="5" SourceColumn="MaTG" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="maDM" ColumnName="MaDanhMuc" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="char(5)" DbType="AnsiString" Direction="Input" ParameterName="@maDM" Precision="0" ProviderType="Char" Scale="0" Size="5" SourceColumn="MaDanhMuc" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="tenDM" ColumnName="TenSach" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="nvarchar(200)" DbType="String" Direction="Input" ParameterName="@tenDM" Precision="0" ProviderType="NVarChar" Scale="0" Size="200" SourceColumn="TenSach" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="QuanLyBanSach.dbo.Sach" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_SLT" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_SLT" GeneratorSourceName="FillBy_SLT" GetMethodModifier="Public" GetMethodName="GetDataBy_SLT" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_SLT" UserSourceName="FillBy_SLT">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_SLT" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_SLT" GeneratorSourceName="FillBy_SLT" GetMethodModifier="Public" GetMethodName="GetDataBy_SLT" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_SLT" UserSourceName="FillBy_SLT">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT MaSach, MaTG, MaDanhMuc, GiaBan, SLKho, TenSach
-FROM     Sach
-WHERE  (@SLT = 0) AND (SLKho &lt;= 50) OR
-                  (@SLT = 1) AND (SLKho &gt; 50)</CommandText>
+                    <CommandText>SELECT Sach.MaSach, Sach.TenSach, Sach.GiaBan, Sach.SLKho, DanhMucSach.TenDanhMuc, TacGia.TenTG
+FROM     Sach INNER JOIN
+                  DanhMucSach ON Sach.MaDanhMuc = DanhMucSach.MaDanhMuc INNER JOIN
+                  TacGia ON Sach.MaTG = TacGia.MaTG
+WHERE  (@SLT = 0) AND (Sach.SLKho &lt;= 50) OR
+                  (@SLT = 1) AND (Sach.SLKho &gt; 50)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="SLT" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@SLT" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ktraKC">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_TenSH" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_TenSH" GeneratorSourceName="FillBy_TenSH" GetMethodModifier="Public" GetMethodName="GetDataBy_TenSH" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_TenSH" UserSourceName="FillBy_TenSH">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Sach.MaSach, Sach.TenSach, Sach.GiaBan, Sach.SLKho, TacGia.TenTG, DanhMucSach.TenDanhMuc
+FROM     Sach INNER JOIN
+                  DanhMucSach ON Sach.MaDanhMuc = DanhMucSach.MaDanhMuc INNER JOIN
+                  TacGia ON Sach.MaTG = TacGia.MaTG
+WHERE  (Sach.TenSach LIKE '%' + @tenSH + '%')</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="tenSH" ColumnName="TenSach" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="nvarchar(200)" DbType="String" Direction="Input" ParameterName="@tenSH" Precision="0" ProviderType="NVarChar" Scale="0" Size="200" SourceColumn="TenSach" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertT" Modifier="Public" Name="InsertT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="InsertT">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Sach
+                  (MaSach, MaTG, MaDanhMuc, GiaBan, SLKho, TenSach)
+VALUES (@maSH,@maTG,@maDM,@giaBan,@slKho,@tenSH)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="maSH" ColumnName="MaSach" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="char(5)" DbType="AnsiString" Direction="Input" ParameterName="@maSH" Precision="0" ProviderType="Char" Scale="0" Size="5" SourceColumn="MaSach" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="maTG" ColumnName="MaTG" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="char(5)" DbType="AnsiString" Direction="Input" ParameterName="@maTG" Precision="0" ProviderType="Char" Scale="0" Size="5" SourceColumn="MaTG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="maDM" ColumnName="MaDanhMuc" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="char(5)" DbType="AnsiString" Direction="Input" ParameterName="@maDM" Precision="0" ProviderType="Char" Scale="0" Size="5" SourceColumn="MaDanhMuc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="giaBan" ColumnName="GiaBan" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="decimal(10, 2)" DbType="Decimal" Direction="Input" ParameterName="@giaBan" Precision="10" ProviderType="Decimal" Scale="2" Size="9" SourceColumn="GiaBan" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="slKho" ColumnName="SLKho" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@slKho" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="SLKho" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="tenSH" ColumnName="TenSach" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="nvarchar(200)" DbType="String" Direction="Input" ParameterName="@tenSH" Precision="0" ProviderType="NVarChar" Scale="0" Size="200" SourceColumn="TenSach" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -911,7 +890,19 @@ WHERE  (MaSach = @maSH)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateT" Modifier="Public" Name="UpdateT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateT">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraTenSH" Modifier="Public" Name="ktraTenSH" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="ktraTenSH">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*)
+FROM     Sach
+WHERE  (TenSach = @tenSH)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="tenSH" ColumnName="TenSach" DataSourceName="QuanLyBanSach.dbo.Sach" DataTypeServer="nvarchar(200)" DbType="String" Direction="Input" ParameterName="@tenSH" Precision="0" ProviderType="NVarChar" Scale="0" Size="200" SourceColumn="TenSach" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateT" Modifier="Public" Name="UpdateT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateT">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE Sach
@@ -939,7 +930,7 @@ WHERE  (MaSach = @maSH);
   <xs:element name="dsQLBS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsQLBS" msprop:Generator_UserDSName="dsQLBS">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DM_ManHinh" msprop:Generator_TableClassName="DM_ManHinhDataTable" msprop:Generator_TableVarName="tableDM_ManHinh" msprop:Generator_TablePropName="DM_ManHinh" msprop:Generator_RowDeletingName="DM_ManHinhRowDeleting" msprop:Generator_RowChangingName="DM_ManHinhRowChanging" msprop:Generator_RowEvHandlerName="DM_ManHinhRowChangeEventHandler" msprop:Generator_RowDeletedName="DM_ManHinhRowDeleted" msprop:Generator_UserTableName="DM_ManHinh" msprop:Generator_RowChangedName="DM_ManHinhRowChanged" msprop:Generator_RowEvArgName="DM_ManHinhRowChangeEvent" msprop:Generator_RowClassName="DM_ManHinhRow">
+        <xs:element name="DM_ManHinh" msprop:Generator_TableClassName="DM_ManHinhDataTable" msprop:Generator_TableVarName="tableDM_ManHinh" msprop:Generator_RowChangedName="DM_ManHinhRowChanged" msprop:Generator_TablePropName="DM_ManHinh" msprop:Generator_RowDeletingName="DM_ManHinhRowDeleting" msprop:Generator_RowChangingName="DM_ManHinhRowChanging" msprop:Generator_RowEvHandlerName="DM_ManHinhRowChangeEventHandler" msprop:Generator_RowDeletedName="DM_ManHinhRowDeleted" msprop:Generator_RowClassName="DM_ManHinhRow" msprop:Generator_UserTableName="DM_ManHinh" msprop:Generator_RowEvArgName="DM_ManHinhRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaManHinh" msprop:Generator_ColumnVarNameInTable="columnMaManHinh" msprop:Generator_ColumnPropNameInRow="MaManHinh" msprop:Generator_ColumnPropNameInTable="MaManHinhColumn" msprop:Generator_UserColumnName="MaManHinh">
@@ -959,7 +950,7 @@ WHERE  (MaSach = @maSH);
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_NguoiDung" msprop:Generator_TableClassName="QL_NguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NguoiDung" msprop:Generator_TablePropName="QL_NguoiDung" msprop:Generator_RowDeletingName="QL_NguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungRowDeleted" msprop:Generator_UserTableName="QL_NguoiDung" msprop:Generator_RowChangedName="QL_NguoiDungRowChanged" msprop:Generator_RowEvArgName="QL_NguoiDungRowChangeEvent" msprop:Generator_RowClassName="QL_NguoiDungRow">
+        <xs:element name="QL_NguoiDung" msprop:Generator_TableClassName="QL_NguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NguoiDung" msprop:Generator_RowChangedName="QL_NguoiDungRowChanged" msprop:Generator_TablePropName="QL_NguoiDung" msprop:Generator_RowDeletingName="QL_NguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungRowDeleted" msprop:Generator_RowClassName="QL_NguoiDungRow" msprop:Generator_UserTableName="QL_NguoiDung" msprop:Generator_RowEvArgName="QL_NguoiDungRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TenDangNhap" msprop:Generator_ColumnVarNameInTable="columnTenDangNhap" msprop:Generator_ColumnPropNameInRow="TenDangNhap" msprop:Generator_ColumnPropNameInTable="TenDangNhapColumn" msprop:Generator_UserColumnName="TenDangNhap">
@@ -980,7 +971,7 @@ WHERE  (MaSach = @maSH);
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_NguoiDungNhomNguoiDung" msprop:Generator_TableClassName="QL_NguoiDungNhomNguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NguoiDungNhomNguoiDung" msprop:Generator_TablePropName="QL_NguoiDungNhomNguoiDung" msprop:Generator_RowDeletingName="QL_NguoiDungNhomNguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungNhomNguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungNhomNguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungNhomNguoiDungRowDeleted" msprop:Generator_UserTableName="QL_NguoiDungNhomNguoiDung" msprop:Generator_RowChangedName="QL_NguoiDungNhomNguoiDungRowChanged" msprop:Generator_RowEvArgName="QL_NguoiDungNhomNguoiDungRowChangeEvent" msprop:Generator_RowClassName="QL_NguoiDungNhomNguoiDungRow">
+        <xs:element name="QL_NguoiDungNhomNguoiDung" msprop:Generator_TableClassName="QL_NguoiDungNhomNguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NguoiDungNhomNguoiDung" msprop:Generator_RowChangedName="QL_NguoiDungNhomNguoiDungRowChanged" msprop:Generator_TablePropName="QL_NguoiDungNhomNguoiDung" msprop:Generator_RowDeletingName="QL_NguoiDungNhomNguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungNhomNguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungNhomNguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungNhomNguoiDungRowDeleted" msprop:Generator_RowClassName="QL_NguoiDungNhomNguoiDungRow" msprop:Generator_UserTableName="QL_NguoiDungNhomNguoiDung" msprop:Generator_RowEvArgName="QL_NguoiDungNhomNguoiDungRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TenDangNhap" msprop:Generator_ColumnVarNameInTable="columnTenDangNhap" msprop:Generator_ColumnPropNameInRow="TenDangNhap" msprop:Generator_ColumnPropNameInTable="TenDangNhapColumn" msprop:Generator_UserColumnName="TenDangNhap">
@@ -1007,7 +998,7 @@ WHERE  (MaSach = @maSH);
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_NhomNguoiDung" msprop:Generator_TableClassName="QL_NhomNguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NhomNguoiDung" msprop:Generator_TablePropName="QL_NhomNguoiDung" msprop:Generator_RowDeletingName="QL_NhomNguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NhomNguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NhomNguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NhomNguoiDungRowDeleted" msprop:Generator_UserTableName="QL_NhomNguoiDung" msprop:Generator_RowChangedName="QL_NhomNguoiDungRowChanged" msprop:Generator_RowEvArgName="QL_NhomNguoiDungRowChangeEvent" msprop:Generator_RowClassName="QL_NhomNguoiDungRow">
+        <xs:element name="QL_NhomNguoiDung" msprop:Generator_TableClassName="QL_NhomNguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NhomNguoiDung" msprop:Generator_RowChangedName="QL_NhomNguoiDungRowChanged" msprop:Generator_TablePropName="QL_NhomNguoiDung" msprop:Generator_RowDeletingName="QL_NhomNguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NhomNguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NhomNguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NhomNguoiDungRowDeleted" msprop:Generator_RowClassName="QL_NhomNguoiDungRow" msprop:Generator_UserTableName="QL_NhomNguoiDung" msprop:Generator_RowEvArgName="QL_NhomNguoiDungRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaNhom" msprop:Generator_ColumnVarNameInTable="columnMaNhom" msprop:Generator_ColumnPropNameInRow="MaNhom" msprop:Generator_ColumnPropNameInTable="MaNhomColumn" msprop:Generator_UserColumnName="MaNhom">
@@ -1034,7 +1025,7 @@ WHERE  (MaSach = @maSH);
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_PhanQuyen" msprop:Generator_TableClassName="QL_PhanQuyenDataTable" msprop:Generator_TableVarName="tableQL_PhanQuyen" msprop:Generator_TablePropName="QL_PhanQuyen" msprop:Generator_RowDeletingName="QL_PhanQuyenRowDeleting" msprop:Generator_RowChangingName="QL_PhanQuyenRowChanging" msprop:Generator_RowEvHandlerName="QL_PhanQuyenRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_PhanQuyenRowDeleted" msprop:Generator_UserTableName="QL_PhanQuyen" msprop:Generator_RowChangedName="QL_PhanQuyenRowChanged" msprop:Generator_RowEvArgName="QL_PhanQuyenRowChangeEvent" msprop:Generator_RowClassName="QL_PhanQuyenRow">
+        <xs:element name="QL_PhanQuyen" msprop:Generator_TableClassName="QL_PhanQuyenDataTable" msprop:Generator_TableVarName="tableQL_PhanQuyen" msprop:Generator_RowChangedName="QL_PhanQuyenRowChanged" msprop:Generator_TablePropName="QL_PhanQuyen" msprop:Generator_RowDeletingName="QL_PhanQuyenRowDeleting" msprop:Generator_RowChangingName="QL_PhanQuyenRowChanging" msprop:Generator_RowEvHandlerName="QL_PhanQuyenRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_PhanQuyenRowDeleted" msprop:Generator_RowClassName="QL_PhanQuyenRow" msprop:Generator_UserTableName="QL_PhanQuyen" msprop:Generator_RowEvArgName="QL_PhanQuyenRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaNhomNguoiDung" msprop:Generator_ColumnVarNameInTable="columnMaNhomNguoiDung" msprop:Generator_ColumnPropNameInRow="MaNhomNguoiDung" msprop:Generator_ColumnPropNameInTable="MaNhomNguoiDungColumn" msprop:Generator_UserColumnName="MaNhomNguoiDung">
@@ -1055,7 +1046,7 @@ WHERE  (MaSach = @maSH);
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_TableClassName="QL_NguoiDungNhomNguoiDung_DKDataTable" msprop:Generator_TableVarName="tableQL_NguoiDungNhomNguoiDung_DK" msprop:Generator_RowChangedName="QL_NguoiDungNhomNguoiDung_DKRowChanged" msprop:Generator_TablePropName="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_RowDeletingName="QL_NguoiDungNhomNguoiDung_DKRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungNhomNguoiDung_DKRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungNhomNguoiDung_DKRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungNhomNguoiDung_DKRowDeleted" msprop:Generator_RowClassName="QL_NguoiDungNhomNguoiDung_DKRow" msprop:Generator_UserTableName="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_RowEvArgName="QL_NguoiDungNhomNguoiDung_DKRowChangeEvent">
+        <xs:element name="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_TableClassName="QL_NguoiDungNhomNguoiDung_DKDataTable" msprop:Generator_TableVarName="tableQL_NguoiDungNhomNguoiDung_DK" msprop:Generator_TablePropName="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_RowDeletingName="QL_NguoiDungNhomNguoiDung_DKRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungNhomNguoiDung_DKRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungNhomNguoiDung_DKRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungNhomNguoiDung_DKRowDeleted" msprop:Generator_UserTableName="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_RowChangedName="QL_NguoiDungNhomNguoiDung_DKRowChanged" msprop:Generator_RowEvArgName="QL_NguoiDungNhomNguoiDung_DKRowChangeEvent" msprop:Generator_RowClassName="QL_NguoiDungNhomNguoiDung_DKRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaNhomNguoiDung" msprop:Generator_ColumnVarNameInTable="columnMaNhomNguoiDung" msprop:Generator_ColumnPropNameInRow="MaNhomNguoiDung" msprop:Generator_ColumnPropNameInTable="MaNhomNguoiDungColumn" msprop:Generator_UserColumnName="MaNhomNguoiDung">
@@ -1082,7 +1073,7 @@ WHERE  (MaSach = @maSH);
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_PhanQuyen_PQ" msprop:Generator_TableClassName="QL_PhanQuyen_PQDataTable" msprop:Generator_TableVarName="tableQL_PhanQuyen_PQ" msprop:Generator_TablePropName="QL_PhanQuyen_PQ" msprop:Generator_RowDeletingName="QL_PhanQuyen_PQRowDeleting" msprop:Generator_RowChangingName="QL_PhanQuyen_PQRowChanging" msprop:Generator_RowEvHandlerName="QL_PhanQuyen_PQRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_PhanQuyen_PQRowDeleted" msprop:Generator_UserTableName="QL_PhanQuyen_PQ" msprop:Generator_RowChangedName="QL_PhanQuyen_PQRowChanged" msprop:Generator_RowEvArgName="QL_PhanQuyen_PQRowChangeEvent" msprop:Generator_RowClassName="QL_PhanQuyen_PQRow">
+        <xs:element name="QL_PhanQuyen_PQ" msprop:Generator_TableClassName="QL_PhanQuyen_PQDataTable" msprop:Generator_TableVarName="tableQL_PhanQuyen_PQ" msprop:Generator_RowChangedName="QL_PhanQuyen_PQRowChanged" msprop:Generator_TablePropName="QL_PhanQuyen_PQ" msprop:Generator_RowDeletingName="QL_PhanQuyen_PQRowDeleting" msprop:Generator_RowChangingName="QL_PhanQuyen_PQRowChanging" msprop:Generator_RowEvHandlerName="QL_PhanQuyen_PQRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_PhanQuyen_PQRowDeleted" msprop:Generator_RowClassName="QL_PhanQuyen_PQRow" msprop:Generator_UserTableName="QL_PhanQuyen_PQ" msprop:Generator_RowEvArgName="QL_PhanQuyen_PQRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaManHinh" msprop:Generator_ColumnVarNameInTable="columnMaManHinh" msprop:Generator_ColumnPropNameInRow="MaManHinh" msprop:Generator_ColumnPropNameInTable="MaManHinhColumn" msprop:Generator_UserColumnName="MaManHinh">
@@ -1110,7 +1101,7 @@ WHERE  (MaSach = @maSH);
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DanhMucSach" msprop:Generator_TableClassName="DanhMucSachDataTable" msprop:Generator_TableVarName="tableDanhMucSach" msprop:Generator_TablePropName="DanhMucSach" msprop:Generator_RowDeletingName="DanhMucSachRowDeleting" msprop:Generator_RowChangingName="DanhMucSachRowChanging" msprop:Generator_RowEvHandlerName="DanhMucSachRowChangeEventHandler" msprop:Generator_RowDeletedName="DanhMucSachRowDeleted" msprop:Generator_UserTableName="DanhMucSach" msprop:Generator_RowChangedName="DanhMucSachRowChanged" msprop:Generator_RowEvArgName="DanhMucSachRowChangeEvent" msprop:Generator_RowClassName="DanhMucSachRow">
+        <xs:element name="DanhMucSach" msprop:Generator_TableClassName="DanhMucSachDataTable" msprop:Generator_TableVarName="tableDanhMucSach" msprop:Generator_RowChangedName="DanhMucSachRowChanged" msprop:Generator_TablePropName="DanhMucSach" msprop:Generator_RowDeletingName="DanhMucSachRowDeleting" msprop:Generator_RowChangingName="DanhMucSachRowChanging" msprop:Generator_RowEvHandlerName="DanhMucSachRowChangeEventHandler" msprop:Generator_RowDeletedName="DanhMucSachRowDeleted" msprop:Generator_RowClassName="DanhMucSachRow" msprop:Generator_UserTableName="DanhMucSach" msprop:Generator_RowEvArgName="DanhMucSachRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaDanhMuc" msprop:Generator_ColumnVarNameInTable="columnMaDanhMuc" msprop:Generator_ColumnPropNameInRow="MaDanhMuc" msprop:Generator_ColumnPropNameInTable="MaDanhMucColumn" msprop:Generator_UserColumnName="MaDanhMuc">
@@ -1130,7 +1121,7 @@ WHERE  (MaSach = @maSH);
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TacGia" msprop:Generator_TableClassName="TacGiaDataTable" msprop:Generator_TableVarName="tableTacGia" msprop:Generator_TablePropName="TacGia" msprop:Generator_RowDeletingName="TacGiaRowDeleting" msprop:Generator_RowChangingName="TacGiaRowChanging" msprop:Generator_RowEvHandlerName="TacGiaRowChangeEventHandler" msprop:Generator_RowDeletedName="TacGiaRowDeleted" msprop:Generator_UserTableName="TacGia" msprop:Generator_RowChangedName="TacGiaRowChanged" msprop:Generator_RowEvArgName="TacGiaRowChangeEvent" msprop:Generator_RowClassName="TacGiaRow">
+        <xs:element name="TacGia" msprop:Generator_TableClassName="TacGiaDataTable" msprop:Generator_TableVarName="tableTacGia" msprop:Generator_RowChangedName="TacGiaRowChanged" msprop:Generator_TablePropName="TacGia" msprop:Generator_RowDeletingName="TacGiaRowDeleting" msprop:Generator_RowChangingName="TacGiaRowChanging" msprop:Generator_RowEvHandlerName="TacGiaRowChangeEventHandler" msprop:Generator_RowDeletedName="TacGiaRowDeleted" msprop:Generator_RowClassName="TacGiaRow" msprop:Generator_UserTableName="TacGia" msprop:Generator_RowEvArgName="TacGiaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaTG" msprop:Generator_ColumnVarNameInTable="columnMaTG" msprop:Generator_ColumnPropNameInRow="MaTG" msprop:Generator_ColumnPropNameInTable="MaTGColumn" msprop:Generator_UserColumnName="MaTG">
@@ -1150,24 +1141,10 @@ WHERE  (MaSach = @maSH);
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Sach" msprop:Generator_TableClassName="SachDataTable" msprop:Generator_TableVarName="tableSach" msprop:Generator_TablePropName="Sach" msprop:Generator_RowDeletingName="SachRowDeleting" msprop:Generator_RowChangingName="SachRowChanging" msprop:Generator_RowEvHandlerName="SachRowChangeEventHandler" msprop:Generator_RowDeletedName="SachRowDeleted" msprop:Generator_UserTableName="Sach" msprop:Generator_RowChangedName="SachRowChanged" msprop:Generator_RowEvArgName="SachRowChangeEvent" msprop:Generator_RowClassName="SachRow">
+        <xs:element name="Sach" msprop:Generator_TableClassName="SachDataTable" msprop:Generator_TableVarName="tableSach" msprop:Generator_RowChangedName="SachRowChanged" msprop:Generator_TablePropName="Sach" msprop:Generator_RowDeletingName="SachRowDeleting" msprop:Generator_RowChangingName="SachRowChanging" msprop:Generator_RowEvHandlerName="SachRowChangeEventHandler" msprop:Generator_RowDeletedName="SachRowDeleted" msprop:Generator_RowClassName="SachRow" msprop:Generator_UserTableName="Sach" msprop:Generator_RowEvArgName="SachRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaSach" msprop:Generator_ColumnVarNameInTable="columnMaSach" msprop:Generator_ColumnPropNameInRow="MaSach" msprop:Generator_ColumnPropNameInTable="MaSachColumn" msprop:Generator_UserColumnName="MaSach">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="5" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="MaTG" msprop:Generator_ColumnVarNameInTable="columnMaTG" msprop:Generator_ColumnPropNameInRow="MaTG" msprop:Generator_ColumnPropNameInTable="MaTGColumn" msprop:Generator_UserColumnName="MaTG" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="5" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="MaDanhMuc" msprop:Generator_ColumnVarNameInTable="columnMaDanhMuc" msprop:Generator_ColumnPropNameInRow="MaDanhMuc" msprop:Generator_ColumnPropNameInTable="MaDanhMucColumn" msprop:Generator_UserColumnName="MaDanhMuc" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="5" />
@@ -1180,6 +1157,20 @@ WHERE  (MaSach = @maSH);
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenTG" msprop:Generator_ColumnVarNameInTable="columnTenTG" msprop:Generator_ColumnPropNameInRow="TenTG" msprop:Generator_ColumnPropNameInTable="TenTGColumn" msprop:Generator_UserColumnName="TenTG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenDanhMuc" msprop:Generator_ColumnVarNameInTable="columnTenDanhMuc" msprop:Generator_ColumnPropNameInRow="TenDanhMuc" msprop:Generator_ColumnPropNameInTable="TenDanhMucColumn" msprop:Generator_UserColumnName="TenDanhMuc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -1233,10 +1224,4 @@ WHERE  (MaSach = @maSH);
       <xs:field xpath="mstns:MaSach" />
     </xs:unique>
   </xs:element>
-  <xs:annotation>
-    <xs:appinfo>
-      <msdata:Relationship name="FK_Sach_DanhMucSach" msdata:parent="DanhMucSach" msdata:child="Sach" msdata:parentkey="MaDanhMuc" msdata:childkey="MaDanhMuc" msprop:Generator_UserChildTable="Sach" msprop:Generator_ChildPropName="GetSachRows" msprop:Generator_UserRelationName="FK_Sach_DanhMucSach" msprop:Generator_ParentPropName="DanhMucSachRow" msprop:Generator_RelationVarName="relationFK_Sach_DanhMucSach" msprop:Generator_UserParentTable="DanhMucSach" />
-      <msdata:Relationship name="FK_Sach_TacGia" msdata:parent="TacGia" msdata:child="Sach" msdata:parentkey="MaTG" msdata:childkey="MaTG" msprop:Generator_UserChildTable="Sach" msprop:Generator_ChildPropName="GetSachRows" msprop:Generator_UserRelationName="FK_Sach_TacGia" msprop:Generator_ParentPropName="TacGiaRow" msprop:Generator_RelationVarName="relationFK_Sach_TacGia" msprop:Generator_UserParentTable="TacGia" />
-    </xs:appinfo>
-  </xs:annotation>
 </xs:schema>

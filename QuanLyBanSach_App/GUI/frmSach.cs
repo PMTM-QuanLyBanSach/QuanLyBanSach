@@ -30,10 +30,10 @@ namespace GUI
 
         private void BtnLoc_Click(object sender, EventArgs e)
         {
-            string maSH = txtMaSH.Text;
-            string tenSH = txtTenSH.Text;
-            string maTG = cboTG.SelectedValue.ToString();
-            string maDM = cboDM.SelectedValue.ToString();
+            string maSH = txtMaSH.Text.Trim();
+            string tenSH = txtTenSH.Text.Trim();
+            string maTG = cboTG.SelectedValue.ToString().Trim();
+            string maDM = cboDM.SelectedValue.ToString().Trim();
 
             if (maSH == string.Empty && tenSH == string.Empty && maTG == string.Empty && maDM == string.Empty)
             {
@@ -42,18 +42,22 @@ namespace GUI
             }
             else
             {
-                if (maSH != string.Empty || tenSH != string.Empty || maTG != string.Empty || maDM != string.Empty)
+                string x = cboTon.SelectedItem.ToString();
+                if (x.CompareTo("All") == 0)
                 {
-                    dgvSach.DataSource = sachBLL.locSH(maSH, maTG, maDM, tenSH);
+                    if (tenSH != string.Empty)
+                    {
+                        dgvSach.DataSource = sachBLL.locTenSH(tenSH);
+                    }
+                    else if (maSH != string.Empty || maTG != string.Empty || maDM != string.Empty)
+                    {
+                        dgvSach.DataSource = sachBLL.locSH(maSH, maTG, maDM);
+                    }
                 }
+                else if (x.CompareTo("Dưới 50") == 0)
+                    dgvSach.DataSource = sachBLL.locSLT("0");
                 else
-                {
-                    string x = cboTon.SelectedText;
-                    if (x.CompareTo("Dưới 50") == 0)
-                        dgvSach.DataSource = sachBLL.locSLT("0");
-                    else
-                        dgvSach.DataSource = sachBLL.locSLT("1");
-                }
+                    dgvSach.DataSource = sachBLL.locSLT("1");
             }
         }
 
@@ -94,7 +98,14 @@ namespace GUI
             if (!kq)
             {
                 string maSH = txtMaSH.Text;
-                string tenSH = txtTenSH.Text;
+                string tenSH = txtTenSH.Text.Trim();
+                bool kqT = sachBLL.ktraTenSH(tenSH);
+                if (kqT)
+                {
+                    MessageBox.Show("Tên sách đã trùng vui lòng nhập lại");
+                    txtTenSH.Focus();
+                    return;
+                }
                 int slKho = int.Parse(txtSLK.Text);
                 string maTG = cboTG.SelectedValue.ToString();
                 string maDM = cboDM.SelectedValue.ToString();
@@ -116,11 +127,11 @@ namespace GUI
             if (n > 0)
             {
                 txtMaSH.Text = dgvSach.CurrentRow.Cells[0].Value.ToString();
-                txtTenSH.Text = dgvSach.CurrentRow.Cells[5].Value.ToString();
-                txtSLK.Text = dgvSach.CurrentRow.Cells[4].Value.ToString();
-                txtGB.Text = dgvSach.CurrentRow.Cells[3].Value.ToString();
-                cboTG.SelectedValue = dgvSach.CurrentRow.Cells[1].Value.ToString();
-                cboDM.SelectedValue = dgvSach.CurrentRow.Cells[2].Value.ToString();
+                txtTenSH.Text = dgvSach.CurrentRow.Cells[3].Value.ToString();
+                txtSLK.Text = dgvSach.CurrentRow.Cells[2].Value.ToString();
+                txtGB.Text = dgvSach.CurrentRow.Cells[1].Value.ToString();
+                cboTG.SelectedIndex = cboTG.FindString(dgvSach.CurrentRow.Cells[4].Value.ToString());
+                cboDM.SelectedIndex = cboDM.FindString(dgvSach.CurrentRow.Cells[5].Value.ToString());
             }
         }
 
@@ -145,8 +156,10 @@ namespace GUI
         private void FrmSach_Load(object sender, EventArgs e)
         {
             loadDT();
+            cboTon.Items.Add("All");
             cboTon.Items.Add("Dưới 50");
             cboTon.Items.Add("Trên 50");
+            cboTon.SelectedIndex = 0;
         }
     }
 }
