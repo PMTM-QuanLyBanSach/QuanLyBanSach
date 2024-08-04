@@ -69,5 +69,15 @@ namespace GUI
                 phanQuyenBLL.saveConfig(txtServerName.Text, txtUsername.Text, txtPass.Text, cboDB.Text);
             Properties.Settings.Default.Save();
         }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmConfig_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
