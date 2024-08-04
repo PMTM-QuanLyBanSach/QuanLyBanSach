@@ -131,6 +131,9 @@
     <EmbeddedResource Include="frmDanhMucSach.resx">
       <DependentUpon>frmDanhMucSach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDonHang.resx">
+      <DependentUpon>frmDonHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>

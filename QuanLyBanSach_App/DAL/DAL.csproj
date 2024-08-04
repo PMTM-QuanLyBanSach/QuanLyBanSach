@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DanhMucSachDAL.cs" />
+    <Compile Include="DonHangDAL.cs" />
     <Compile Include="dsQLBS.cs">
       <DependentUpon>dsQLBS.xsd</DependentUpon>
     </Compile>

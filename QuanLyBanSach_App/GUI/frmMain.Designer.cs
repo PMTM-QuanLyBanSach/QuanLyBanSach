@@ -126,7 +126,7 @@ namespace GUI
             // sáchToolStripMenuItem
             // 
             this.sáchToolStripMenuItem.Name = "sáchToolStripMenuItem";
-            this.sáchToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sáchToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.sáchToolStripMenuItem.Text = "Sách";
             this.sáchToolStripMenuItem.Click += new System.EventHandler(this.sáchToolStripMenuItem_Click);
             // 
@@ -149,6 +149,7 @@ namespace GUI
             this.đơnHàngToolStripMenuItem.Name = "đơnHàngToolStripMenuItem";
             this.đơnHàngToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.đơnHàngToolStripMenuItem.Text = "Đơn hàng";
+            this.đơnHàngToolStripMenuItem.Click += new System.EventHandler(this.đơnHàngToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 

@@ -138,5 +138,12 @@ namespace GUI
             Program.sachForm.Show();
             this.Dispose();
         }
+
+        private void đơnHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.donHangForm = new frmDonHang();
+            Program.donHangForm.Show();
+            this.Dispose();
+        }
     }
 }
