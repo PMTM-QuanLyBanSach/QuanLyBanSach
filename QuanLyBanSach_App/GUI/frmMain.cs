@@ -145,5 +145,10 @@ namespace GUI
             Program.donHangForm.Show();
             this.Dispose();
         }
+
+        private void frmMain_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

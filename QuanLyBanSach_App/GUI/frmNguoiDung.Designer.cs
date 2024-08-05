@@ -56,7 +56,7 @@ namespace GUI
             this.btnSua});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(932, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(932, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -65,7 +65,7 @@ namespace GUI
             this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
             this.btnMain.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(97, 24);
+            this.btnMain.Size = new System.Drawing.Size(97, 28);
             this.btnMain.Text = "Trang chủ";
             // 
             // btnThem
@@ -102,6 +102,7 @@ namespace GUI
             this.dgvNguoiDung.RowTemplate.Height = 24;
             this.dgvNguoiDung.Size = new System.Drawing.Size(748, 508);
             this.dgvNguoiDung.TabIndex = 1;
+            this.dgvNguoiDung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNguoiDung_CellContentClick);
             // 
             // label1
             // 
@@ -169,6 +170,7 @@ namespace GUI
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmNguoiDung";
             this.Text = "frmNguoiDung";
+            this.Load += new System.EventHandler(this.frmNguoiDung_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguoiDung)).EndInit();

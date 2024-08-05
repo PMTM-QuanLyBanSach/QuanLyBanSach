@@ -65,7 +65,7 @@ WHERE  (MaManHinh = @MaManHinh)</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC_MH" Modifier="Public" Name="ktraKC_MH" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC_MH">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC_MH" Modifier="Public" Name="ktraKC_MH" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC_MH">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*) AS Expr1
@@ -160,7 +160,7 @@ WHERE  (TenDangNhap = @tenDN)</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -309,7 +309,7 @@ WHERE  (MaNhom = @maNhom)</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktrKC_NND" Modifier="Public" Name="ktrKC_NND" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktrKC_NND">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktrKC_NND" Modifier="Public" Name="ktrKC_NND" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktrKC_NND">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -473,7 +473,7 @@ WHERE  (TenDangNhap = @tenDN)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKCNND_DK" Modifier="Public" Name="ktraKCNND_DK" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKCNND_DK">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKCNND_DK" Modifier="Public" Name="ktraKCNND_DK" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKCNND_DK">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*) AS Expr1
@@ -490,7 +490,7 @@ WHERE  (TenDangNhap = @tenDN) AND (MaNhomNguoiDung = @maNhom)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="QL_PhanQuyen_PQTableAdapter" GeneratorDataComponentClassName="QL_PhanQuyen_PQTableAdapter" Name="QL_PhanQuyen_PQ" UserDataComponentName="QL_PhanQuyen_PQTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill_DK" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData_DK" GeneratorSourceName="Fill_DK" GetMethodModifier="Public" GetMethodName="GetData_DK" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData_DK" UserSourceName="Fill_DK">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill_DK" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData_DK" GeneratorSourceName="Fill_DK" GetMethodModifier="Public" GetMethodName="GetData_DK" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData_DK" UserSourceName="Fill_DK">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        DM_ManHinh.MaManHinh, DM_ManHinh.TenManHinh, QL_PhanQuyen.CoQuyen, QL_PhanQuyen.MaNhomNguoiDung
@@ -525,7 +525,7 @@ VALUES (@MaNhomNguoiDung,@MaManHinh,@CoQuyen)</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktrKC_PQ" Modifier="Public" Name="ktrKC_PQ" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktrKC_PQ">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktrKC_PQ" Modifier="Public" Name="ktrKC_PQ" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktrKC_PQ">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -638,7 +638,7 @@ WHERE  (TenDanhMuc LIKE '%' + @tenDM + '%')</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -751,7 +751,7 @@ WHERE  (TenTG LIKE '%' + @tenTG + '%')</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -782,7 +782,7 @@ WHERE  (MaTG = @maTG);
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SachTableAdapter" GeneratorDataComponentClassName="SachTableAdapter" Name="Sach" UserDataComponentName="SachTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT Sach.MaSach, Sach.TenSach, Sach.GiaBan, Sach.SLKho, TacGia.TenTG, DanhMucSach.TenDanhMuc
@@ -814,7 +814,7 @@ WHERE  (MaSach = @maSH)</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_DK" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_DK" GeneratorSourceName="FillBy_DK" GetMethodModifier="Public" GetMethodName="GetDataBy_DK" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_DK" UserSourceName="FillBy_DK">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_DK" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_DK" GeneratorSourceName="FillBy_DK" GetMethodModifier="Public" GetMethodName="GetDataBy_DK" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_DK" UserSourceName="FillBy_DK">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT Sach.MaSach, Sach.TenSach, Sach.GiaBan, Sach.SLKho, DanhMucSach.TenDanhMuc, TacGia.TenTG
@@ -832,7 +832,7 @@ WHERE  (Sach.MaSach = @maSH) OR
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_SLT" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_SLT" GeneratorSourceName="FillBy_SLT" GetMethodModifier="Public" GetMethodName="GetDataBy_SLT" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_SLT" UserSourceName="FillBy_SLT">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_SLT" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_SLT" GeneratorSourceName="FillBy_SLT" GetMethodModifier="Public" GetMethodName="GetDataBy_SLT" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_SLT" UserSourceName="FillBy_SLT">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT Sach.MaSach, Sach.TenSach, Sach.GiaBan, Sach.SLKho, DanhMucSach.TenDanhMuc, TacGia.TenTG
@@ -847,7 +847,7 @@ WHERE  (@SLT = 0) AND (Sach.SLKho &lt;= 50) OR
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_TenSH" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_TenSH" GeneratorSourceName="FillBy_TenSH" GetMethodModifier="Public" GetMethodName="GetDataBy_TenSH" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_TenSH" UserSourceName="FillBy_TenSH">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_TenSH" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_TenSH" GeneratorSourceName="FillBy_TenSH" GetMethodModifier="Public" GetMethodName="GetDataBy_TenSH" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_TenSH" UserSourceName="FillBy_TenSH">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT Sach.MaSach, Sach.TenSach, Sach.GiaBan, Sach.SLKho, TacGia.TenTG, DanhMucSach.TenDanhMuc
@@ -861,7 +861,7 @@ WHERE  (Sach.TenSach LIKE '%' + @tenSH + '%')</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertT" Modifier="Public" Name="InsertT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="InsertT">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertT" Modifier="Public" Name="InsertT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertT">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO Sach
@@ -878,7 +878,7 @@ VALUES (@maSH,@maTG,@maDM,@giaBan,@slKho,@tenSH)</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC" Modifier="Public" Name="ktraKC" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ktraKC">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -890,7 +890,7 @@ WHERE  (MaSach = @maSH)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraTenSH" Modifier="Public" Name="ktraTenSH" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="ktraTenSH">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraTenSH" Modifier="Public" Name="ktraTenSH" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="ktraTenSH">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -902,7 +902,7 @@ WHERE  (TenSach = @tenSH)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateT" Modifier="Public" Name="UpdateT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateT">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateT" Modifier="Public" Name="UpdateT" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="UpdateT">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE Sach
@@ -924,7 +924,7 @@ WHERE  (MaSach = @maSH);
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DonHangTableAdapter" GeneratorDataComponentClassName="DonHangTableAdapter" Name="DonHang" UserDataComponentName="DonHangTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT DonHang.MaDH, KhachHang.TenKH, DonHang.NgayDat, DonHang.TongTien
@@ -942,7 +942,7 @@ FROM     DonHang INNER JOIN
               <Mapping SourceColumn="TenKH" DataSetColumn="TenKH" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertT_DH" Modifier="Public" Name="InsertT_DH" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="InsertT_DH">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertT_DH" Modifier="Public" Name="InsertT_DH" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertT_DH">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO DonHang
@@ -957,7 +957,7 @@ VALUES (@maDH,@maKH,@ngayDat,@tongTien)</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC_DH" Modifier="Public" Name="ktraKC_DH" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ktraKC_DH">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC_DH" Modifier="Public" Name="ktraKC_DH" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ktraKC_DH">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -987,7 +987,7 @@ WHERE  (MaDH = @maDH)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ChiTietDonHangTableAdapter" GeneratorDataComponentClassName="ChiTietDonHangTableAdapter" Name="ChiTietDonHang" UserDataComponentName="ChiTietDonHangTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT ChiTietDonHang.MaDH, Sach.TenSach, ChiTietDonHang.SoLuong, Sach.GiaBan
@@ -1008,7 +1008,7 @@ WHERE  (ChiTietDonHang.MaDH = @maDH)</CommandText>
               <Mapping SourceColumn="TenSach" DataSetColumn="TenSach" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteT_CTDH" Modifier="Public" Name="DeleteT_CTDH" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DeleteT_CTDH">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteT_CTDH" Modifier="Public" Name="DeleteT_CTDH" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteT_CTDH">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM ChiTietDonHang
@@ -1020,7 +1020,7 @@ WHERE  (MaDH = @maDH) AND (MaSach = @maSH)</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_MaSH" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_MaSH" GeneratorSourceName="FillBy_MaSH" GetMethodModifier="Public" GetMethodName="GetDataBy_MaSH" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_MaSH" UserSourceName="FillBy_MaSH">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy_MaSH" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_MaSH" GeneratorSourceName="FillBy_MaSH" GetMethodModifier="Public" GetMethodName="GetDataBy_MaSH" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_MaSH" UserSourceName="FillBy_MaSH">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT ChiTietDonHang.MaDH, Sach.TenSach, ChiTietDonHang.SoLuong, Sach.GiaBan
@@ -1033,7 +1033,7 @@ WHERE  (Sach.MaSach = @maSH)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertT_CTDH" Modifier="Public" Name="InsertT_CTDH" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="InsertT_CTDH">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertT_CTDH" Modifier="Public" Name="InsertT_CTDH" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertT_CTDH">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO ChiTietDonHang
@@ -1048,7 +1048,7 @@ VALUES (@maDH,@maSH,@soLuong,@giaBan)</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC_CTDH" Modifier="Public" Name="ktraKC_CTDH" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ktraKC_CTDH">
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ktraKC_CTDH" Modifier="Public" Name="ktraKC_CTDH" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ktraKC_CTDH">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*)
@@ -1146,7 +1146,47 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
               <Mapping SourceColumn="SDT" DataSetColumn="SDT" />
               <Mapping SourceColumn="Email" DataSetColumn="Email" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteT_KH" Modifier="Public" Name="DeleteT_KH" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteT_KH">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM [dbo].[KhachHang] WHERE ([MaKH] = @MaKH)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="MaKH" ColumnName="MaKH" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="char(5)" DbType="AnsiString" Direction="Input" ParameterName="@MaKH" Precision="0" ProviderType="Char" Scale="0" Size="5" SourceColumn="MaKH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertT_KH" Modifier="Public" Name="InsertT_KH" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertT_KH">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO [dbo].[KhachHang] ([MaKH], [TenKH], [DiaChi], [SDT], [Email]) VALUES (@MaKH, @TenKH, @DiaChi, @SDT, @Email);
+SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="MaKH" ColumnName="MaKH" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="char(5)" DbType="AnsiString" Direction="Input" ParameterName="@MaKH" Precision="0" ProviderType="Char" Scale="0" Size="5" SourceColumn="MaKH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="TenKH" ColumnName="TenKH" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@TenKH" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="TenKH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DiaChi" ColumnName="DiaChi" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="nvarchar(100)" DbType="String" Direction="Input" ParameterName="@DiaChi" Precision="0" ProviderType="NVarChar" Scale="0" Size="100" SourceColumn="DiaChi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="SDT" ColumnName="SDT" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="char(11)" DbType="AnsiString" Direction="Input" ParameterName="@SDT" Precision="0" ProviderType="Char" Scale="0" Size="11" SourceColumn="SDT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Email" ColumnName="Email" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@Email" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="Email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="QuanLyBanSachConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateT_KH" Modifier="Public" Name="UpdateT_KH" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="UpdateT_KH">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[KhachHang] SET [MaKH] = @MaKH, [TenKH] = @TenKH, [DiaChi] = @DiaChi, [SDT] = @SDT, [Email] = @Email WHERE (MaKH = @MaKH)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="MaKH" ColumnName="MaKH" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="char(5)" DbType="AnsiString" Direction="Input" ParameterName="@MaKH" Precision="0" ProviderType="Char" Scale="0" Size="5" SourceColumn="MaKH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="TenKH" ColumnName="TenKH" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@TenKH" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="TenKH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DiaChi" ColumnName="DiaChi" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="nvarchar(100)" DbType="String" Direction="Input" ParameterName="@DiaChi" Precision="0" ProviderType="NVarChar" Scale="0" Size="100" SourceColumn="DiaChi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="SDT" ColumnName="SDT" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="char(11)" DbType="AnsiString" Direction="Input" ParameterName="@SDT" Precision="0" ProviderType="Char" Scale="0" Size="11" SourceColumn="SDT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Email" ColumnName="Email" DataSourceName="QuanLyBanSach.dbo.KhachHang" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@Email" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="Email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
@@ -1156,7 +1196,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
   <xs:element name="dsQLBS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsQLBS" msprop:Generator_UserDSName="dsQLBS">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DM_ManHinh" msprop:Generator_TableClassName="DM_ManHinhDataTable" msprop:Generator_TableVarName="tableDM_ManHinh" msprop:Generator_RowChangedName="DM_ManHinhRowChanged" msprop:Generator_TablePropName="DM_ManHinh" msprop:Generator_RowDeletingName="DM_ManHinhRowDeleting" msprop:Generator_RowChangingName="DM_ManHinhRowChanging" msprop:Generator_RowEvHandlerName="DM_ManHinhRowChangeEventHandler" msprop:Generator_RowDeletedName="DM_ManHinhRowDeleted" msprop:Generator_RowClassName="DM_ManHinhRow" msprop:Generator_UserTableName="DM_ManHinh" msprop:Generator_RowEvArgName="DM_ManHinhRowChangeEvent">
+        <xs:element name="DM_ManHinh" msprop:Generator_TableClassName="DM_ManHinhDataTable" msprop:Generator_TableVarName="tableDM_ManHinh" msprop:Generator_TablePropName="DM_ManHinh" msprop:Generator_RowDeletingName="DM_ManHinhRowDeleting" msprop:Generator_RowChangingName="DM_ManHinhRowChanging" msprop:Generator_RowEvHandlerName="DM_ManHinhRowChangeEventHandler" msprop:Generator_RowDeletedName="DM_ManHinhRowDeleted" msprop:Generator_UserTableName="DM_ManHinh" msprop:Generator_RowChangedName="DM_ManHinhRowChanged" msprop:Generator_RowEvArgName="DM_ManHinhRowChangeEvent" msprop:Generator_RowClassName="DM_ManHinhRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaManHinh" msprop:Generator_ColumnVarNameInTable="columnMaManHinh" msprop:Generator_ColumnPropNameInRow="MaManHinh" msprop:Generator_ColumnPropNameInTable="MaManHinhColumn" msprop:Generator_UserColumnName="MaManHinh">
@@ -1176,7 +1216,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_NguoiDung" msprop:Generator_TableClassName="QL_NguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NguoiDung" msprop:Generator_RowChangedName="QL_NguoiDungRowChanged" msprop:Generator_TablePropName="QL_NguoiDung" msprop:Generator_RowDeletingName="QL_NguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungRowDeleted" msprop:Generator_RowClassName="QL_NguoiDungRow" msprop:Generator_UserTableName="QL_NguoiDung" msprop:Generator_RowEvArgName="QL_NguoiDungRowChangeEvent">
+        <xs:element name="QL_NguoiDung" msprop:Generator_TableClassName="QL_NguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NguoiDung" msprop:Generator_TablePropName="QL_NguoiDung" msprop:Generator_RowDeletingName="QL_NguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungRowDeleted" msprop:Generator_UserTableName="QL_NguoiDung" msprop:Generator_RowChangedName="QL_NguoiDungRowChanged" msprop:Generator_RowEvArgName="QL_NguoiDungRowChangeEvent" msprop:Generator_RowClassName="QL_NguoiDungRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TenDangNhap" msprop:Generator_ColumnVarNameInTable="columnTenDangNhap" msprop:Generator_ColumnPropNameInRow="TenDangNhap" msprop:Generator_ColumnPropNameInTable="TenDangNhapColumn" msprop:Generator_UserColumnName="TenDangNhap">
@@ -1197,7 +1237,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_NguoiDungNhomNguoiDung" msprop:Generator_TableClassName="QL_NguoiDungNhomNguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NguoiDungNhomNguoiDung" msprop:Generator_RowChangedName="QL_NguoiDungNhomNguoiDungRowChanged" msprop:Generator_TablePropName="QL_NguoiDungNhomNguoiDung" msprop:Generator_RowDeletingName="QL_NguoiDungNhomNguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungNhomNguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungNhomNguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungNhomNguoiDungRowDeleted" msprop:Generator_RowClassName="QL_NguoiDungNhomNguoiDungRow" msprop:Generator_UserTableName="QL_NguoiDungNhomNguoiDung" msprop:Generator_RowEvArgName="QL_NguoiDungNhomNguoiDungRowChangeEvent">
+        <xs:element name="QL_NguoiDungNhomNguoiDung" msprop:Generator_TableClassName="QL_NguoiDungNhomNguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NguoiDungNhomNguoiDung" msprop:Generator_TablePropName="QL_NguoiDungNhomNguoiDung" msprop:Generator_RowDeletingName="QL_NguoiDungNhomNguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungNhomNguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungNhomNguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungNhomNguoiDungRowDeleted" msprop:Generator_UserTableName="QL_NguoiDungNhomNguoiDung" msprop:Generator_RowChangedName="QL_NguoiDungNhomNguoiDungRowChanged" msprop:Generator_RowEvArgName="QL_NguoiDungNhomNguoiDungRowChangeEvent" msprop:Generator_RowClassName="QL_NguoiDungNhomNguoiDungRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TenDangNhap" msprop:Generator_ColumnVarNameInTable="columnTenDangNhap" msprop:Generator_ColumnPropNameInRow="TenDangNhap" msprop:Generator_ColumnPropNameInTable="TenDangNhapColumn" msprop:Generator_UserColumnName="TenDangNhap">
@@ -1224,7 +1264,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_NhomNguoiDung" msprop:Generator_TableClassName="QL_NhomNguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NhomNguoiDung" msprop:Generator_RowChangedName="QL_NhomNguoiDungRowChanged" msprop:Generator_TablePropName="QL_NhomNguoiDung" msprop:Generator_RowDeletingName="QL_NhomNguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NhomNguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NhomNguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NhomNguoiDungRowDeleted" msprop:Generator_RowClassName="QL_NhomNguoiDungRow" msprop:Generator_UserTableName="QL_NhomNguoiDung" msprop:Generator_RowEvArgName="QL_NhomNguoiDungRowChangeEvent">
+        <xs:element name="QL_NhomNguoiDung" msprop:Generator_TableClassName="QL_NhomNguoiDungDataTable" msprop:Generator_TableVarName="tableQL_NhomNguoiDung" msprop:Generator_TablePropName="QL_NhomNguoiDung" msprop:Generator_RowDeletingName="QL_NhomNguoiDungRowDeleting" msprop:Generator_RowChangingName="QL_NhomNguoiDungRowChanging" msprop:Generator_RowEvHandlerName="QL_NhomNguoiDungRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NhomNguoiDungRowDeleted" msprop:Generator_UserTableName="QL_NhomNguoiDung" msprop:Generator_RowChangedName="QL_NhomNguoiDungRowChanged" msprop:Generator_RowEvArgName="QL_NhomNguoiDungRowChangeEvent" msprop:Generator_RowClassName="QL_NhomNguoiDungRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaNhom" msprop:Generator_ColumnVarNameInTable="columnMaNhom" msprop:Generator_ColumnPropNameInRow="MaNhom" msprop:Generator_ColumnPropNameInTable="MaNhomColumn" msprop:Generator_UserColumnName="MaNhom">
@@ -1251,7 +1291,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_PhanQuyen" msprop:Generator_TableClassName="QL_PhanQuyenDataTable" msprop:Generator_TableVarName="tableQL_PhanQuyen" msprop:Generator_RowChangedName="QL_PhanQuyenRowChanged" msprop:Generator_TablePropName="QL_PhanQuyen" msprop:Generator_RowDeletingName="QL_PhanQuyenRowDeleting" msprop:Generator_RowChangingName="QL_PhanQuyenRowChanging" msprop:Generator_RowEvHandlerName="QL_PhanQuyenRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_PhanQuyenRowDeleted" msprop:Generator_RowClassName="QL_PhanQuyenRow" msprop:Generator_UserTableName="QL_PhanQuyen" msprop:Generator_RowEvArgName="QL_PhanQuyenRowChangeEvent">
+        <xs:element name="QL_PhanQuyen" msprop:Generator_TableClassName="QL_PhanQuyenDataTable" msprop:Generator_TableVarName="tableQL_PhanQuyen" msprop:Generator_TablePropName="QL_PhanQuyen" msprop:Generator_RowDeletingName="QL_PhanQuyenRowDeleting" msprop:Generator_RowChangingName="QL_PhanQuyenRowChanging" msprop:Generator_RowEvHandlerName="QL_PhanQuyenRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_PhanQuyenRowDeleted" msprop:Generator_UserTableName="QL_PhanQuyen" msprop:Generator_RowChangedName="QL_PhanQuyenRowChanged" msprop:Generator_RowEvArgName="QL_PhanQuyenRowChangeEvent" msprop:Generator_RowClassName="QL_PhanQuyenRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaNhomNguoiDung" msprop:Generator_ColumnVarNameInTable="columnMaNhomNguoiDung" msprop:Generator_ColumnPropNameInRow="MaNhomNguoiDung" msprop:Generator_ColumnPropNameInTable="MaNhomNguoiDungColumn" msprop:Generator_UserColumnName="MaNhomNguoiDung">
@@ -1272,7 +1312,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_TableClassName="QL_NguoiDungNhomNguoiDung_DKDataTable" msprop:Generator_TableVarName="tableQL_NguoiDungNhomNguoiDung_DK" msprop:Generator_TablePropName="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_RowDeletingName="QL_NguoiDungNhomNguoiDung_DKRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungNhomNguoiDung_DKRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungNhomNguoiDung_DKRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungNhomNguoiDung_DKRowDeleted" msprop:Generator_UserTableName="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_RowChangedName="QL_NguoiDungNhomNguoiDung_DKRowChanged" msprop:Generator_RowEvArgName="QL_NguoiDungNhomNguoiDung_DKRowChangeEvent" msprop:Generator_RowClassName="QL_NguoiDungNhomNguoiDung_DKRow">
+        <xs:element name="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_TableClassName="QL_NguoiDungNhomNguoiDung_DKDataTable" msprop:Generator_TableVarName="tableQL_NguoiDungNhomNguoiDung_DK" msprop:Generator_RowChangedName="QL_NguoiDungNhomNguoiDung_DKRowChanged" msprop:Generator_TablePropName="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_RowDeletingName="QL_NguoiDungNhomNguoiDung_DKRowDeleting" msprop:Generator_RowChangingName="QL_NguoiDungNhomNguoiDung_DKRowChanging" msprop:Generator_RowEvHandlerName="QL_NguoiDungNhomNguoiDung_DKRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_NguoiDungNhomNguoiDung_DKRowDeleted" msprop:Generator_RowClassName="QL_NguoiDungNhomNguoiDung_DKRow" msprop:Generator_UserTableName="QL_NguoiDungNhomNguoiDung_DK" msprop:Generator_RowEvArgName="QL_NguoiDungNhomNguoiDung_DKRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaNhomNguoiDung" msprop:Generator_ColumnVarNameInTable="columnMaNhomNguoiDung" msprop:Generator_ColumnPropNameInRow="MaNhomNguoiDung" msprop:Generator_ColumnPropNameInTable="MaNhomNguoiDungColumn" msprop:Generator_UserColumnName="MaNhomNguoiDung">
@@ -1299,7 +1339,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QL_PhanQuyen_PQ" msprop:Generator_TableClassName="QL_PhanQuyen_PQDataTable" msprop:Generator_TableVarName="tableQL_PhanQuyen_PQ" msprop:Generator_RowChangedName="QL_PhanQuyen_PQRowChanged" msprop:Generator_TablePropName="QL_PhanQuyen_PQ" msprop:Generator_RowDeletingName="QL_PhanQuyen_PQRowDeleting" msprop:Generator_RowChangingName="QL_PhanQuyen_PQRowChanging" msprop:Generator_RowEvHandlerName="QL_PhanQuyen_PQRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_PhanQuyen_PQRowDeleted" msprop:Generator_RowClassName="QL_PhanQuyen_PQRow" msprop:Generator_UserTableName="QL_PhanQuyen_PQ" msprop:Generator_RowEvArgName="QL_PhanQuyen_PQRowChangeEvent">
+        <xs:element name="QL_PhanQuyen_PQ" msprop:Generator_TableClassName="QL_PhanQuyen_PQDataTable" msprop:Generator_TableVarName="tableQL_PhanQuyen_PQ" msprop:Generator_TablePropName="QL_PhanQuyen_PQ" msprop:Generator_RowDeletingName="QL_PhanQuyen_PQRowDeleting" msprop:Generator_RowChangingName="QL_PhanQuyen_PQRowChanging" msprop:Generator_RowEvHandlerName="QL_PhanQuyen_PQRowChangeEventHandler" msprop:Generator_RowDeletedName="QL_PhanQuyen_PQRowDeleted" msprop:Generator_UserTableName="QL_PhanQuyen_PQ" msprop:Generator_RowChangedName="QL_PhanQuyen_PQRowChanged" msprop:Generator_RowEvArgName="QL_PhanQuyen_PQRowChangeEvent" msprop:Generator_RowClassName="QL_PhanQuyen_PQRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaManHinh" msprop:Generator_ColumnVarNameInTable="columnMaManHinh" msprop:Generator_ColumnPropNameInRow="MaManHinh" msprop:Generator_ColumnPropNameInTable="MaManHinhColumn" msprop:Generator_UserColumnName="MaManHinh">
@@ -1327,7 +1367,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DanhMucSach" msprop:Generator_TableClassName="DanhMucSachDataTable" msprop:Generator_TableVarName="tableDanhMucSach" msprop:Generator_RowChangedName="DanhMucSachRowChanged" msprop:Generator_TablePropName="DanhMucSach" msprop:Generator_RowDeletingName="DanhMucSachRowDeleting" msprop:Generator_RowChangingName="DanhMucSachRowChanging" msprop:Generator_RowEvHandlerName="DanhMucSachRowChangeEventHandler" msprop:Generator_RowDeletedName="DanhMucSachRowDeleted" msprop:Generator_RowClassName="DanhMucSachRow" msprop:Generator_UserTableName="DanhMucSach" msprop:Generator_RowEvArgName="DanhMucSachRowChangeEvent">
+        <xs:element name="DanhMucSach" msprop:Generator_TableClassName="DanhMucSachDataTable" msprop:Generator_TableVarName="tableDanhMucSach" msprop:Generator_TablePropName="DanhMucSach" msprop:Generator_RowDeletingName="DanhMucSachRowDeleting" msprop:Generator_RowChangingName="DanhMucSachRowChanging" msprop:Generator_RowEvHandlerName="DanhMucSachRowChangeEventHandler" msprop:Generator_RowDeletedName="DanhMucSachRowDeleted" msprop:Generator_UserTableName="DanhMucSach" msprop:Generator_RowChangedName="DanhMucSachRowChanged" msprop:Generator_RowEvArgName="DanhMucSachRowChangeEvent" msprop:Generator_RowClassName="DanhMucSachRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaDanhMuc" msprop:Generator_ColumnVarNameInTable="columnMaDanhMuc" msprop:Generator_ColumnPropNameInRow="MaDanhMuc" msprop:Generator_ColumnPropNameInTable="MaDanhMucColumn" msprop:Generator_UserColumnName="MaDanhMuc">
@@ -1347,7 +1387,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TacGia" msprop:Generator_TableClassName="TacGiaDataTable" msprop:Generator_TableVarName="tableTacGia" msprop:Generator_RowChangedName="TacGiaRowChanged" msprop:Generator_TablePropName="TacGia" msprop:Generator_RowDeletingName="TacGiaRowDeleting" msprop:Generator_RowChangingName="TacGiaRowChanging" msprop:Generator_RowEvHandlerName="TacGiaRowChangeEventHandler" msprop:Generator_RowDeletedName="TacGiaRowDeleted" msprop:Generator_RowClassName="TacGiaRow" msprop:Generator_UserTableName="TacGia" msprop:Generator_RowEvArgName="TacGiaRowChangeEvent">
+        <xs:element name="TacGia" msprop:Generator_TableClassName="TacGiaDataTable" msprop:Generator_TableVarName="tableTacGia" msprop:Generator_TablePropName="TacGia" msprop:Generator_RowDeletingName="TacGiaRowDeleting" msprop:Generator_RowChangingName="TacGiaRowChanging" msprop:Generator_RowEvHandlerName="TacGiaRowChangeEventHandler" msprop:Generator_RowDeletedName="TacGiaRowDeleted" msprop:Generator_UserTableName="TacGia" msprop:Generator_RowChangedName="TacGiaRowChanged" msprop:Generator_RowEvArgName="TacGiaRowChangeEvent" msprop:Generator_RowClassName="TacGiaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaTG" msprop:Generator_ColumnVarNameInTable="columnMaTG" msprop:Generator_ColumnPropNameInRow="MaTG" msprop:Generator_ColumnPropNameInTable="MaTGColumn" msprop:Generator_UserColumnName="MaTG">
@@ -1367,7 +1407,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Sach" msprop:Generator_TableClassName="SachDataTable" msprop:Generator_TableVarName="tableSach" msprop:Generator_RowChangedName="SachRowChanged" msprop:Generator_TablePropName="Sach" msprop:Generator_RowDeletingName="SachRowDeleting" msprop:Generator_RowChangingName="SachRowChanging" msprop:Generator_RowEvHandlerName="SachRowChangeEventHandler" msprop:Generator_RowDeletedName="SachRowDeleted" msprop:Generator_RowClassName="SachRow" msprop:Generator_UserTableName="Sach" msprop:Generator_RowEvArgName="SachRowChangeEvent">
+        <xs:element name="Sach" msprop:Generator_TableClassName="SachDataTable" msprop:Generator_TableVarName="tableSach" msprop:Generator_TablePropName="Sach" msprop:Generator_RowDeletingName="SachRowDeleting" msprop:Generator_RowChangingName="SachRowChanging" msprop:Generator_RowEvHandlerName="SachRowChangeEventHandler" msprop:Generator_RowDeletedName="SachRowDeleted" msprop:Generator_UserTableName="Sach" msprop:Generator_RowChangedName="SachRowChanged" msprop:Generator_RowEvArgName="SachRowChangeEvent" msprop:Generator_RowClassName="SachRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaSach" msprop:Generator_ColumnVarNameInTable="columnMaSach" msprop:Generator_ColumnPropNameInRow="MaSach" msprop:Generator_ColumnPropNameInTable="MaSachColumn" msprop:Generator_UserColumnName="MaSach">
@@ -1403,7 +1443,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DonHang" msprop:Generator_TableClassName="DonHangDataTable" msprop:Generator_TableVarName="tableDonHang" msprop:Generator_TablePropName="DonHang" msprop:Generator_RowDeletingName="DonHangRowDeleting" msprop:Generator_RowChangingName="DonHangRowChanging" msprop:Generator_RowEvHandlerName="DonHangRowChangeEventHandler" msprop:Generator_RowDeletedName="DonHangRowDeleted" msprop:Generator_UserTableName="DonHang" msprop:Generator_RowChangedName="DonHangRowChanged" msprop:Generator_RowEvArgName="DonHangRowChangeEvent" msprop:Generator_RowClassName="DonHangRow">
+        <xs:element name="DonHang" msprop:Generator_TableClassName="DonHangDataTable" msprop:Generator_TableVarName="tableDonHang" msprop:Generator_RowChangedName="DonHangRowChanged" msprop:Generator_TablePropName="DonHang" msprop:Generator_RowDeletingName="DonHangRowDeleting" msprop:Generator_RowChangingName="DonHangRowChanging" msprop:Generator_RowEvHandlerName="DonHangRowChangeEventHandler" msprop:Generator_RowDeletedName="DonHangRowDeleted" msprop:Generator_RowClassName="DonHangRow" msprop:Generator_UserTableName="DonHang" msprop:Generator_RowEvArgName="DonHangRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaDH" msprop:Generator_ColumnVarNameInTable="columnMaDH" msprop:Generator_ColumnPropNameInRow="MaDH" msprop:Generator_ColumnPropNameInTable="MaDHColumn" msprop:Generator_UserColumnName="MaDH">
@@ -1425,7 +1465,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ChiTietDonHang" msprop:Generator_TableClassName="ChiTietDonHangDataTable" msprop:Generator_TableVarName="tableChiTietDonHang" msprop:Generator_TablePropName="ChiTietDonHang" msprop:Generator_RowDeletingName="ChiTietDonHangRowDeleting" msprop:Generator_RowChangingName="ChiTietDonHangRowChanging" msprop:Generator_RowEvHandlerName="ChiTietDonHangRowChangeEventHandler" msprop:Generator_RowDeletedName="ChiTietDonHangRowDeleted" msprop:Generator_UserTableName="ChiTietDonHang" msprop:Generator_RowChangedName="ChiTietDonHangRowChanged" msprop:Generator_RowEvArgName="ChiTietDonHangRowChangeEvent" msprop:Generator_RowClassName="ChiTietDonHangRow">
+        <xs:element name="ChiTietDonHang" msprop:Generator_TableClassName="ChiTietDonHangDataTable" msprop:Generator_TableVarName="tableChiTietDonHang" msprop:Generator_RowChangedName="ChiTietDonHangRowChanged" msprop:Generator_TablePropName="ChiTietDonHang" msprop:Generator_RowDeletingName="ChiTietDonHangRowDeleting" msprop:Generator_RowChangingName="ChiTietDonHangRowChanging" msprop:Generator_RowEvHandlerName="ChiTietDonHangRowChangeEventHandler" msprop:Generator_RowDeletedName="ChiTietDonHangRowDeleted" msprop:Generator_RowClassName="ChiTietDonHangRow" msprop:Generator_UserTableName="ChiTietDonHang" msprop:Generator_RowEvArgName="ChiTietDonHangRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaDH" msprop:Generator_ColumnVarNameInTable="columnMaDH" msprop:Generator_ColumnPropNameInRow="MaDH" msprop:Generator_ColumnPropNameInTable="MaDHColumn" msprop:Generator_UserColumnName="MaDH">
@@ -1447,7 +1487,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="KhachHang" msprop:Generator_TableClassName="KhachHangDataTable" msprop:Generator_TableVarName="tableKhachHang" msprop:Generator_TablePropName="KhachHang" msprop:Generator_RowDeletingName="KhachHangRowDeleting" msprop:Generator_RowChangingName="KhachHangRowChanging" msprop:Generator_RowEvHandlerName="KhachHangRowChangeEventHandler" msprop:Generator_RowDeletedName="KhachHangRowDeleted" msprop:Generator_UserTableName="KhachHang" msprop:Generator_RowChangedName="KhachHangRowChanged" msprop:Generator_RowEvArgName="KhachHangRowChangeEvent" msprop:Generator_RowClassName="KhachHangRow">
+        <xs:element name="KhachHang" msprop:Generator_TableClassName="KhachHangDataTable" msprop:Generator_TableVarName="tableKhachHang" msprop:Generator_RowChangedName="KhachHangRowChanged" msprop:Generator_TablePropName="KhachHang" msprop:Generator_RowDeletingName="KhachHangRowDeleting" msprop:Generator_RowChangingName="KhachHangRowChanging" msprop:Generator_RowEvHandlerName="KhachHangRowChangeEventHandler" msprop:Generator_RowDeletedName="KhachHangRowDeleted" msprop:Generator_RowClassName="KhachHangRow" msprop:Generator_UserTableName="KhachHang" msprop:Generator_RowEvArgName="KhachHangRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaKH" msprop:Generator_ColumnVarNameInTable="columnMaKH" msprop:Generator_ColumnPropNameInRow="MaKH" msprop:Generator_ColumnPropNameInTable="MaKHColumn" msprop:Generator_UserColumnName="MaKH">
@@ -1545,7 +1585,7 @@ SELECT MaKH, TenKH, DiaChi, SDT, Email FROM KhachHang WHERE (MaKH = @MaKH)</Comm
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_ChiTietDonHang_DonHang" msdata:parent="DonHang" msdata:child="ChiTietDonHang" msdata:parentkey="MaDH" msdata:childkey="MaDH" msprop:Generator_UserChildTable="ChiTietDonHang" msprop:Generator_ChildPropName="GetChiTietDonHangRows" msprop:Generator_UserRelationName="FK_ChiTietDonHang_DonHang" msprop:Generator_ParentPropName="DonHangRow" msprop:Generator_RelationVarName="relationFK_ChiTietDonHang_DonHang" msprop:Generator_UserParentTable="DonHang" />
+      <msdata:Relationship name="FK_ChiTietDonHang_DonHang" msdata:parent="DonHang" msdata:child="ChiTietDonHang" msdata:parentkey="MaDH" msdata:childkey="MaDH" msprop:Generator_UserChildTable="ChiTietDonHang" msprop:Generator_ChildPropName="GetChiTietDonHangRows" msprop:Generator_UserRelationName="FK_ChiTietDonHang_DonHang" msprop:Generator_RelationVarName="relationFK_ChiTietDonHang_DonHang" msprop:Generator_UserParentTable="DonHang" msprop:Generator_ParentPropName="DonHangRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
