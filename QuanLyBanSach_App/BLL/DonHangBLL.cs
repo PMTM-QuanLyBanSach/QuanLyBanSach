@@ -51,6 +51,7 @@ namespace BLL
         }
         #endregion
 
+        #region Thêm dữ liệu
         public void themDH(string maDH, string maKH, string ngayDat, decimal tongTien)
         {
             donHangDAL.themDH(maDH, maKH, ngayDat, tongTien);
@@ -65,5 +66,25 @@ namespace BLL
         {
             donHangDAL.themCT(maDH, maSH, soLuong, giaBan);
         }
+        #endregion
+
+        #region Sửa dữ liệu
+        public void suaDH(string maKH, string ngayDat, string maDH)
+        {
+            donHangDAL.suaDH(maKH, ngayDat, maDH);
+        }
+
+        public void suaCT(int soLuong, string maDH, string maSH)
+        {
+            donHangDAL.suaCT(soLuong, maDH, maSH);
+        }
+        #endregion
+
+        #region Xóa dữ liệu
+        public void xoaCT(string maDH, string maSH)
+        {
+            donHangDAL.xoaCT(maDH, maSH);
+        }
+        #endregion
     }
 }
