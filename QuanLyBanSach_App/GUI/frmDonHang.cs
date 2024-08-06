@@ -28,6 +28,12 @@ namespace GUI
             btnSuaCT.Click += BtnSuaCT_Click;
             btnXoaCT.Click += BtnXoaCT_Click;
             cboNV.Enabled = false;
+            btnMain.Click += BtnMain_Click;
+        }
+
+        private void BtnMain_Click(object sender, EventArgs e)
+        {
+            frmNguoiDung.processMain(this);
         }
 
         private void BtnXoaCT_Click(object sender, EventArgs e)
