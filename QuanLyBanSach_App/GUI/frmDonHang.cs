@@ -23,64 +23,6 @@ namespace GUI
             btnThemDH.Click += BtnThemDH_Click;
             cboSach.SelectedIndexChanged += CboSach_SelectedIndexChanged;
             btnThemCT.Click += BtnThemCT_Click;
-            btnSuaDH.Click += BtnSuaDH_Click;
-            btnReload.Click += BtnReload_Click;
-            btnSuaCT.Click += BtnSuaCT_Click;
-            btnXoaCT.Click += BtnXoaCT_Click;
-        }
-
-        private void BtnXoaCT_Click(object sender, EventArgs e)
-        {
-            string maDH = txtDH2.Text;
-            string maSH = cboSach.SelectedValue.ToString();
-            donHangBLL.xoaCT(maDH, maSH);
-            loadDH();
-            loadCTDH(maDH);
-        }
-
-        private void BtnSuaCT_Click(object sender, EventArgs e)
-        {
-            string maDH = txtDH2.Text;
-            string maSH = cboSach.SelectedValue.ToString();
-            int soLuong = int.Parse(txtSoLuong.Text.Trim());
-
-            donHangBLL.suaCT(soLuong, maDH, maSH);
-            loadDH();
-            loadCTDH(maDH);
-        }
-
-        private void BtnReload_Click(object sender, EventArgs e)
-        {
-            foreach (Control c in this.Controls)
-            {
-                if (c is Panel)
-                {
-                    foreach (Control child in c.Controls)
-                    {
-                        if (child is TextBox)
-                        {
-                            ((TextBox)child).Clear();
-                        }
-                        else if (child is DateTimePicker)
-                        {
-                            ((DateTimePicker)child).Value = DateTime.Today;
-                        }
-                    }
-                }
-            }
-            loadDH();
-            loadCTDH("");
-            loadKH();
-            loadSH();
-        }
-
-        private void BtnSuaDH_Click(object sender, EventArgs e)
-        {
-            string maKH = cboKH.SelectedValue.ToString().Trim();
-            string maDH = txtDH.Text;
-            string ngayDat = dtND.Value.ToString("yyyy-MM-dd");
-            donHangBLL.suaDH(maKH, ngayDat, maDH);
-            loadDH();
         }
 
         private void BtnThemCT_Click(object sender, EventArgs e)
@@ -156,7 +98,7 @@ namespace GUI
 
         private void DgvCTDH_SelectionChanged(object sender, EventArgs e)
         {
-            int n = dgvCTDH.SelectedRows.Count;
+            int n = dgvDH.SelectedRows.Count;
             if (n > 0)
             {
                 txtSoLuong.Text = dgvCTDH.CurrentRow.Cells[1].Value.ToString().Trim();
