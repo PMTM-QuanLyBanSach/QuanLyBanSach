@@ -42,8 +42,6 @@ namespace GUI
             this.txtTDN = new System.Windows.Forms.TextBox();
             this.txtMK = new System.Windows.Forms.TextBox();
             this.ckHD = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cboNV = new System.Windows.Forms.ComboBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguoiDung)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +56,7 @@ namespace GUI
             this.btnSua});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(932, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(932, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -67,7 +65,7 @@ namespace GUI
             this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
             this.btnMain.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(97, 28);
+            this.btnMain.Size = new System.Drawing.Size(97, 24);
             this.btnMain.Text = "Trang chủ";
             // 
             // btnThem
@@ -75,7 +73,7 @@ namespace GUI
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(70, 28);
+            this.btnThem.Size = new System.Drawing.Size(70, 24);
             this.btnThem.Text = "Thêm";
             // 
             // btnXoa
@@ -83,7 +81,7 @@ namespace GUI
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(59, 28);
+            this.btnXoa.Size = new System.Drawing.Size(59, 24);
             this.btnXoa.Text = "Xóa";
             // 
             // btnSua
@@ -91,7 +89,7 @@ namespace GUI
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(58, 28);
+            this.btnSua.Size = new System.Drawing.Size(58, 24);
             this.btnSua.Text = "Sửa";
             // 
             // dgvNguoiDung
@@ -109,7 +107,7 @@ namespace GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 45);
+            this.label1.Location = new System.Drawing.Point(193, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 17);
             this.label1.TabIndex = 2;
@@ -118,7 +116,7 @@ namespace GUI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 88);
+            this.label2.Location = new System.Drawing.Point(193, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 17);
             this.label2.TabIndex = 3;
@@ -127,7 +125,7 @@ namespace GUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(499, 45);
+            this.label3.Location = new System.Drawing.Point(193, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 17);
             this.label3.TabIndex = 4;
@@ -135,52 +133,33 @@ namespace GUI
             // 
             // txtTDN
             // 
-            this.txtTDN.Location = new System.Drawing.Point(233, 42);
+            this.txtTDN.Location = new System.Drawing.Point(342, 43);
             this.txtTDN.Name = "txtTDN";
-            this.txtTDN.Size = new System.Drawing.Size(219, 22);
+            this.txtTDN.Size = new System.Drawing.Size(292, 22);
             this.txtTDN.TabIndex = 5;
             // 
             // txtMK
             // 
-            this.txtMK.Location = new System.Drawing.Point(233, 85);
+            this.txtMK.Location = new System.Drawing.Point(342, 86);
             this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(219, 22);
+            this.txtMK.Size = new System.Drawing.Size(292, 22);
             this.txtMK.TabIndex = 6;
             // 
             // ckHD
             // 
             this.ckHD.AutoSize = true;
-            this.ckHD.Location = new System.Drawing.Point(606, 44);
+            this.ckHD.Location = new System.Drawing.Point(342, 129);
             this.ckHD.Name = "ckHD";
             this.ckHD.Size = new System.Drawing.Size(96, 21);
             this.ckHD.TabIndex = 7;
             this.ckHD.Text = "Hoạt động";
             this.ckHD.UseVisualStyleBackColor = true;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(499, 88);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 17);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Nhân viên";
-            // 
-            // cboNV
-            // 
-            this.cboNV.FormattingEnabled = true;
-            this.cboNV.Location = new System.Drawing.Point(606, 85);
-            this.cboNV.Name = "cboNV";
-            this.cboNV.Size = new System.Drawing.Size(231, 24);
-            this.cboNV.TabIndex = 9;
-            // 
             // frmNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 688);
-            this.Controls.Add(this.cboNV);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.ckHD);
             this.Controls.Add(this.txtMK);
             this.Controls.Add(this.txtTDN);
@@ -214,7 +193,5 @@ namespace GUI
         private System.Windows.Forms.TextBox txtTDN;
         private System.Windows.Forms.TextBox txtMK;
         private System.Windows.Forms.CheckBox ckHD;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cboNV;
     }
 }
