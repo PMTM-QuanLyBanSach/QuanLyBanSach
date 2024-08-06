@@ -54,6 +54,12 @@ namespace DAL
             return da.GetData();
         }
 
+        public DataTable getNV()
+        {
+            NhanVienTableAdapter daNV = new NhanVienTableAdapter();
+            return daNV.GetData();
+        }
+
         public bool ktraKC(string tenDN)
         {
             QL_NguoiDungTableAdapter da = new QL_NguoiDungTableAdapter();
@@ -64,9 +70,9 @@ namespace DAL
             return false;
         }
 
-        public void themND(string tenDN, string matKhau, bool hoatDong)
+        public void themND(string tenDN, string matKhau, bool hoatDong, string maNV)
         {
-            da.Insert(tenDN, matKhau, hoatDong);
+            da.InsertT(tenDN, matKhau, hoatDong, maNV);
         }
 
         public void suaND(string matKhau, bool hoatDong, string tenDN)

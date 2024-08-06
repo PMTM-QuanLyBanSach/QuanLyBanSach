@@ -67,7 +67,6 @@ namespace GUI
             this.btnSave.TabIndex = 18;
             this.btnSave.Text = "Lưu lại";
             this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // txtPass
             // 
@@ -151,7 +150,6 @@ namespace GUI
             this.Controls.Add(this.label1);
             this.Name = "frmConfig";
             this.Text = "frmConfig";
-            this.Load += new System.EventHandler(this.frmConfig_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

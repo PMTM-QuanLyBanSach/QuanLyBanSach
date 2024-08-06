@@ -37,6 +37,11 @@ namespace BLL
         {
             return donHangDAL.loadCTDH(maDH);
         }
+
+        public DataTable loadNV()
+        {
+            return donHangDAL.loadNV();
+        }
         #endregion
 
         #region Kiểm tra khóa chính
@@ -52,9 +57,9 @@ namespace BLL
         #endregion
 
         #region Thêm dữ liệu
-        public void themDH(string maDH, string maKH, string ngayDat, decimal tongTien)
+        public void themDH(string maDH, string maKH, string ngayDat, decimal tongTien, string maNV)
         {
-            donHangDAL.themDH(maDH, maKH, ngayDat, tongTien);
+            donHangDAL.themDH(maDH, maKH, ngayDat, tongTien, maNV);
         }
 
         public DataTable layGiaBan(string maSH)
@@ -65,6 +70,11 @@ namespace BLL
         public void themCT(string maDH, string maSH, int soLuong, decimal giaBan)
         {
             donHangDAL.themCT(maDH, maSH, soLuong, giaBan);
+        }
+
+        public DataTable layMaNV(string tenDN)
+        {
+            return donHangDAL.layMaNV(tenDN);
         }
         #endregion
 

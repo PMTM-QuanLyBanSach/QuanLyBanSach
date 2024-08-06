@@ -60,14 +60,19 @@ namespace BLL
             return phanQuyenDAL.getND();
         }
 
+        public DataTable getNV()
+        {
+            return phanQuyenDAL.getNV();
+        }
+
         public bool ktraKC(string tenDN)
         {
             return phanQuyenDAL.ktraKC(tenDN);
         }
 
-        public void themND(string tenDN, string matKhau, bool hoatDong)
+        public void themND(string tenDN, string matKhau, bool hoatDong, string maNV)
         {
-            phanQuyenDAL.themND(tenDN, matKhau, hoatDong);
+            phanQuyenDAL.themND(tenDN, matKhau, hoatDong, maNV);
         }
 
         public void suaND(string matKhau, bool hoatDong, string tenDN)

@@ -38,6 +38,7 @@ namespace GUI
             txtTDN.Text = dgvNguoiDung.CurrentRow.Cells[0].Value.ToString();
             txtMK.Text = dgvNguoiDung.CurrentRow.Cells[1].Value.ToString();
             ckHD.Checked = (bool)dgvNguoiDung.CurrentRow.Cells[2].Value;
+            cboNV.SelectedIndex = cboNV.FindString(dgvNguoiDung.CurrentRow.Cells[3].Value.ToString());
         }
 
         private void BtnSua_Click(object sender, EventArgs e)
@@ -61,7 +62,7 @@ namespace GUI
             }
             else
             {
-                phanQuyenBLL.themND(txtTDN.Text, txtMK.Text, ckHD.Checked);
+                phanQuyenBLL.themND(txtTDN.Text, txtMK.Text, ckHD.Checked, cboNV.SelectedValue.ToString().Trim());
                 loadND();
             }
         }
@@ -70,10 +71,18 @@ namespace GUI
         {
             dgvNguoiDung.DataSource = phanQuyenBLL.getND();
         }
+        
+        void loadNV()
+        {
+            cboNV.DataSource = phanQuyenBLL.getNV();
+            cboNV.ValueMember = "MaNV";
+            cboNV.DisplayMember = "TenNV";
+        }
 
         private void FrmNguoiDung_Load(object sender, EventArgs e)
         {
             loadND();
+            loadNV();
         }
 
         public static void processMain(Form f)
