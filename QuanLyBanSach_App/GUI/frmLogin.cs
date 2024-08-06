@@ -94,15 +94,5 @@ namespace GUI
             this.Visible = false;
             Program.configForm.Show();
         }
-
-        private void btnDN_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

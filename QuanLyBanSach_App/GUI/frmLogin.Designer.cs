@@ -56,7 +56,6 @@ namespace GUI
             this.btnDN.TabIndex = 10;
             this.btnDN.Text = "Đăng nhập";
             this.btnDN.UseVisualStyleBackColor = true;
-            this.btnDN.Click += new System.EventHandler(this.btnDN_Click_1);
             // 
             // txtPass
             // 
@@ -107,7 +106,6 @@ namespace GUI
             this.Controls.Add(this.labUsername);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
-            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

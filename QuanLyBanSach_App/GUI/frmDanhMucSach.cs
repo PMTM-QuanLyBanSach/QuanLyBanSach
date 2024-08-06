@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using BLL;
+using BLL;
 
 namespace GUI
 {
     public partial class frmDanhMucSach : Form
     {
-        //DanhMucSachBLL danhMucSachBLL = new DanhMucSachBLL();
+        DanhMucSachBLL danhMucSachBLL = new DanhMucSachBLL();
         public frmDanhMucSach()
         {
             InitializeComponent();
@@ -52,47 +52,47 @@ namespace GUI
 
         private void BtnLoc_Click(object sender, EventArgs e)
         {
-            //if (txtMaDM.Text == string.Empty && txtTenDM.Text == string.Empty)
-            //    MessageBox.Show("Để lọc vui lòng nhập mã danh mục hoặc tên danh mục");
-            //else
-            //{
-            //    if (txtMaDM.Text != string.Empty)
-            //        dgvDanhMuc.DataSource = danhMucSachBLL.locMaDM(txtMaDM.Text);
-            //    else if (txtTenDM.Text != string.Empty)
-            //        dgvDanhMuc.DataSource = danhMucSachBLL.locTenDM(txtTenDM.Text);
-            //}
+            if (txtMaDM.Text == string.Empty && txtTenDM.Text == string.Empty)
+                MessageBox.Show("Để lọc vui lòng nhập mã danh mục hoặc tên danh mục");
+            else
+            {
+                if (txtMaDM.Text != string.Empty)
+                    dgvDanhMuc.DataSource = danhMucSachBLL.locMaDM(txtMaDM.Text);
+                else if (txtTenDM.Text != string.Empty)
+                    dgvDanhMuc.DataSource = danhMucSachBLL.locTenDM(txtTenDM.Text);
+            }
         }
 
         private void BtnXoa_Click(object sender, EventArgs e)
         {
-           // danhMucSachBLL.xoaDL(txtMaDM.Text);
+            danhMucSachBLL.xoaDL(txtMaDM.Text);
             loadDT();
         }
 
         private void BtnSua_Click(object sender, EventArgs e)
         {
-            //danhMucSachBLL.suaDL(txtTenDM.Text, txtMaDM.Text);
+            danhMucSachBLL.suaDL(txtTenDM.Text, txtMaDM.Text);
             loadDT();
         }
 
         private void BtnThem_Click(object sender, EventArgs e)
         {
-            //bool kq = danhMucSachBLL.ktraKC(txtMaDM.Text);
-            //if (!kq)
-            //{
-            //    danhMucSachBLL.themDL(txtMaDM.Text, txtTenDM.Text);
-            //    loadDT();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Mã danh mục đã trùng vui lòng nhập lại");
-            //    txtMaDM.Focus();
-            //}
+            bool kq = danhMucSachBLL.ktraKC(txtMaDM.Text);
+            if (!kq)
+            {
+                danhMucSachBLL.themDL(txtMaDM.Text, txtTenDM.Text);
+                loadDT();
+            }
+            else
+            {
+                MessageBox.Show("Mã danh mục đã trùng vui lòng nhập lại");
+                txtMaDM.Focus();
+            }
         }
 
         void loadDT()
         {
-            //dgvDanhMuc.DataSource = danhMucSachBLL.loadDMS();
+            dgvDanhMuc.DataSource = danhMucSachBLL.loadDMS();
         }
 
         private void FrmDanhMucSach_Load(object sender, EventArgs e)

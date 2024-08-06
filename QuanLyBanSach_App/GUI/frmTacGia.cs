@@ -99,10 +99,5 @@ namespace GUI
         {
             loadDT();
         }
-
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
     }
 }

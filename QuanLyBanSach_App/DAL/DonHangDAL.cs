@@ -40,6 +40,12 @@ namespace DAL
         {
             return daCT.GetData(maDH);
         }
+
+        public DataTable loadNV()
+        {
+            NhanVienTableAdapter daNV = new NhanVienTableAdapter();
+            return daNV.GetData();
+        }
         #endregion
 
         #region Kiểm tra khóa chính
@@ -64,9 +70,10 @@ namespace DAL
         }
         #endregion
 
-        public void themDH(string maDH, string maKH, string ngayDat, decimal tongTien)
+        #region Thêm dữ liệu
+        public void themDH(string maDH, string maKH, string ngayDat, decimal tongTien, string maNV)
         {
-            daDH.InsertT_DH(maDH, maKH, ngayDat, tongTien);
+            daDH.InsertT_DH(maDH, maKH, ngayDat, tongTien, maNV);
         }
 
         public DataTable layGiaBan(string maSH)
@@ -78,5 +85,31 @@ namespace DAL
         {
             daCT.InsertT_CTDH(maDH, maSH, soLuong, giaBan);
         }
+
+        public DataTable layMaNV(string tenDN)
+        {
+            NhanVienTableAdapter daNV = new NhanVienTableAdapter();
+            return daNV.GetDataBy_ND(tenDN);
+        }
+        #endregion
+
+        #region Sửa dữ liệu
+        public void suaDH(string maKH, string ngayDat, string maDH)
+        {
+            daDH.UpdateT_DH(maKH, ngayDat, maDH);
+        }
+
+        public void suaCT(int soLuong, string maDH, string maSH)
+        {
+            daCT.UpdateT_CTDH(soLuong, maDH, maSH);
+        }
+        #endregion
+
+        #region Xóa dữ liệu
+        public void xoaCT(string maDH, string maSH)
+        {
+            daCT.DeleteT_CTDH(maDH, maSH);
+        }
+        #endregion
     }
 }

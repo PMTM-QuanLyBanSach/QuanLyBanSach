@@ -23,6 +23,66 @@ namespace GUI
             btnThemDH.Click += BtnThemDH_Click;
             cboSach.SelectedIndexChanged += CboSach_SelectedIndexChanged;
             btnThemCT.Click += BtnThemCT_Click;
+            btnSuaDH.Click += BtnSuaDH_Click;
+            btnReload.Click += BtnReload_Click;
+            btnSuaCT.Click += BtnSuaCT_Click;
+            btnXoaCT.Click += BtnXoaCT_Click;
+            cboNV.Enabled = false;
+        }
+
+        private void BtnXoaCT_Click(object sender, EventArgs e)
+        {
+            string maDH = txtDH2.Text;
+            string maSH = cboSach.SelectedValue.ToString();
+            donHangBLL.xoaCT(maDH, maSH);
+            loadDH();
+            loadCTDH(maDH);
+        }
+
+        private void BtnSuaCT_Click(object sender, EventArgs e)
+        {
+            string maDH = txtDH2.Text;
+            string maSH = cboSach.SelectedValue.ToString();
+            int soLuong = int.Parse(txtSoLuong.Text.Trim());
+
+            donHangBLL.suaCT(soLuong, maDH, maSH);
+            loadDH();
+            loadCTDH(maDH);
+        }
+
+        private void BtnReload_Click(object sender, EventArgs e)
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is Panel)
+                {
+                    foreach (Control child in c.Controls)
+                    {
+                        if (child is TextBox)
+                        {
+                            ((TextBox)child).Clear();
+                        }
+                        else if (child is DateTimePicker)
+                        {
+                            ((DateTimePicker)child).Value = DateTime.Today;
+                        }
+                    }
+                }
+            }
+            loadDH();
+            loadCTDH("");
+            loadKH();
+            loadSH();
+            loadNV_TDN(Program.mainForm.TenDangNhap);
+        }
+
+        private void BtnSuaDH_Click(object sender, EventArgs e)
+        {
+            string maKH = cboKH.SelectedValue.ToString().Trim();
+            string maDH = txtDH.Text;
+            string ngayDat = dtND.Value.ToString("yyyy-MM-dd");
+            donHangBLL.suaDH(maKH, ngayDat, maDH);
+            loadDH();
         }
 
         private void BtnThemCT_Click(object sender, EventArgs e)
@@ -40,7 +100,15 @@ namespace GUI
                 string maSH = cboSach.SelectedValue.ToString();
                 int soLuong = int.Parse(sl);
                 decimal giaBan = decimal.Parse(txtGiaBan.Text);
-                donHangBLL.themCT(maDH, maSH, soLuong, giaBan);
+                if(donHangBLL.ktraKC_CT(maDH, maSH))
+                {
+                    MessageBox.Show("Sách này đã có trong đơn hàng nên sẽ tăng thêm số lượng của sách vừa thêm");
+                    soLuong = int.Parse(dgvCTDH.CurrentRow.Cells[1].Value.ToString());
+                    donHangBLL.suaCT(soLuong + int.Parse(sl), maDH, maSH);
+                }
+                    
+                else
+                    donHangBLL.themCT(maDH, maSH, soLuong, giaBan);
                 loadCTDH(maDH);
                 loadDH();
             }
@@ -73,7 +141,14 @@ namespace GUI
                 string maKH = cboKH.SelectedValue.ToString().Trim();
                 decimal tongTien = 0;
                 string ngayDat = dtND.Value.ToString("yyyy-MM-dd");
-                donHangBLL.themDH(maDH, maKH, ngayDat, tongTien);
+
+                string maNV = "";
+                DataTable nv = donHangBLL.layMaNV(Program.mainForm.TenDangNhap);
+                if (nv.Rows.Count > 0)
+                    maNV = nv.Rows[0]["MaNV"].ToString();
+
+                donHangBLL.themDH(maDH, maKH, ngayDat, tongTien, maNV);
+
                 loadDH();
             }
         }
@@ -98,7 +173,7 @@ namespace GUI
 
         private void DgvCTDH_SelectionChanged(object sender, EventArgs e)
         {
-            int n = dgvDH.SelectedRows.Count;
+            int n = dgvCTDH.SelectedRows.Count;
             if (n > 0)
             {
                 txtSoLuong.Text = dgvCTDH.CurrentRow.Cells[1].Value.ToString().Trim();
@@ -117,6 +192,7 @@ namespace GUI
                 cboKH.SelectedIndex = cboKH.FindString(dgvDH.CurrentRow.Cells[3].Value.ToString());
                 txtTongTien.Text = dgvDH.CurrentRow.Cells[2].Value.ToString();
                 dtND.Value = chuyenStr(dgvDH.CurrentRow.Cells[1].Value.ToString());
+                cboNV.SelectedIndex = cboNV.FindString(dgvDH.CurrentRow.Cells[4].Value.ToString().Trim());
                 loadCTDH(txtDH.Text);
             }
         }
@@ -145,6 +221,20 @@ namespace GUI
             dgvCTDH.DataSource = donHangBLL.loadCTDH(maDH);
         }
 
+        void loadNV_TDN(string TDN)
+        {
+            cboNV.DataSource = donHangBLL.layMaNV(TDN);
+            cboNV.ValueMember = "MaNV";
+            cboNV.DisplayMember = "TenNV";
+        }
+
+        void loadNV()
+        {
+            cboNV.DataSource = donHangBLL.loadNV();
+            cboNV.ValueMember = "MaNV";
+            cboNV.DisplayMember = "TenNV";
+        }
+
         private void FrmDonHang_Load(object sender, EventArgs e)
         {
             txtTongTien.Enabled = false;
@@ -155,21 +245,7 @@ namespace GUI
             loadKH();
             loadSH();
             loadCTDH("");
-        }
-
-        private void btnMain_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmDonHang_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
+            loadNV();
         }
     }
 }
