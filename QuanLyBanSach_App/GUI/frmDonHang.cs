@@ -247,5 +247,20 @@ namespace GUI
             loadCTDH("");
             loadNV();
         }
+
+        private void btnMain_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmDonHang_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

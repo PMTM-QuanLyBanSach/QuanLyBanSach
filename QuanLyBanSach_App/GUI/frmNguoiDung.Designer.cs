@@ -104,6 +104,7 @@ namespace GUI
             this.dgvNguoiDung.RowTemplate.Height = 24;
             this.dgvNguoiDung.Size = new System.Drawing.Size(748, 508);
             this.dgvNguoiDung.TabIndex = 1;
+            this.dgvNguoiDung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNguoiDung_CellContentClick);
             // 
             // label1
             // 
@@ -190,6 +191,7 @@ namespace GUI
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmNguoiDung";
             this.Text = "frmNguoiDung";
+            this.Load += new System.EventHandler(this.frmNguoiDung_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguoiDung)).EndInit();

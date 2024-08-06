@@ -54,7 +54,7 @@ namespace GUI
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvCTDH = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnReload = new System.Windows.Forms.Button();
             this.btnSuaCT = new System.Windows.Forms.Button();
             this.btnXoaCT = new System.Windows.Forms.Button();
@@ -66,6 +66,15 @@ namespace GUI
             this.label12 = new System.Windows.Forms.Label();
             this.cboKH = new System.Windows.Forms.ComboBox();
             this.cboNV = new System.Windows.Forms.ComboBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnThemKH = new System.Windows.Forms.Button();
+            this.btnThemDH = new System.Windows.Forms.Button();
+            this.btnSuaDH = new System.Windows.Forms.Button();
+            this.btnThemCT = new System.Windows.Forms.Button();
+            this.btnXoaCT = new System.Windows.Forms.Button();
+            this.btnSuaCT = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDH)).BeginInit();
@@ -84,6 +93,7 @@ namespace GUI
             this.toolStrip1.Size = new System.Drawing.Size(1442, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // btnMain
             // 
@@ -92,6 +102,7 @@ namespace GUI
             this.btnMain.Name = "btnMain";
             this.btnMain.Size = new System.Drawing.Size(97, 24);
             this.btnMain.Text = "Trang chủ";
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // panel1
             // 
@@ -104,15 +115,6 @@ namespace GUI
             this.panel1.Controls.Add(this.txtDH);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dgvDH);
-            this.panel1.Location = new System.Drawing.Point(0, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1152, 457);
-            this.panel1.TabIndex = 1;
-            // 
             // panel3
             // 
             this.panel3.Location = new System.Drawing.Point(1158, 3);
@@ -179,6 +181,15 @@ namespace GUI
             this.label3.TabIndex = 2;
             this.label3.Text = "Mã đơn hàng";
             // 
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.dgvDH);
+            this.panel1.Location = new System.Drawing.Point(0, 43);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1152, 457);
+            this.panel1.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -232,15 +243,6 @@ namespace GUI
             this.txtGiaBan.Size = new System.Drawing.Size(185, 22);
             this.txtGiaBan.TabIndex = 16;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(494, 114);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 17);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Giá bán";
-            // 
             // txtSoLuong
             // 
             this.txtSoLuong.Location = new System.Drawing.Point(135, 111);
@@ -257,34 +259,34 @@ namespace GUI
             this.label9.TabIndex = 11;
             this.label9.Text = "Số lượng";
             // 
-            // cboSach
+            this.label4.Text = "Mã khách hàng";
             // 
-            this.cboSach.FormattingEnabled = true;
-            this.cboSach.Location = new System.Drawing.Point(611, 47);
-            this.cboSach.Name = "cboSach";
-            this.cboSach.Size = new System.Drawing.Size(267, 24);
-            this.cboSach.TabIndex = 14;
+            // label5
             // 
-            // label8
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(508, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 17);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Ngày đặt";
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(494, 50);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 17);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Mã sách";
+            // label6
             // 
-            // label7
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(508, 107);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 17);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Tổng tiền";
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 17);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Mã đơn hàng";
+            // txtDH
             // 
-            // label2
+            this.txtDH.Location = new System.Drawing.Point(135, 36);
+            this.txtDH.Name = "txtDH";
+            this.txtDH.Size = new System.Drawing.Size(268, 22);
+            this.txtDH.TabIndex = 6;
             // 
+            // txtTongTien
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
@@ -304,22 +306,22 @@ namespace GUI
             this.dgvCTDH.RowTemplate.Height = 24;
             this.dgvCTDH.Size = new System.Drawing.Size(1146, 355);
             this.dgvCTDH.TabIndex = 0;
+            this.cboKH.Name = "cboKH";
+            this.cboKH.Size = new System.Drawing.Size(268, 24);
+            this.cboKH.TabIndex = 10;
             // 
-            // panel4
+            // label7
             // 
-            this.panel4.Controls.Add(this.btnReload);
-            this.panel4.Controls.Add(this.btnSuaCT);
-            this.panel4.Controls.Add(this.btnXoaCT);
-            this.panel4.Controls.Add(this.btnThemCT);
-            this.panel4.Controls.Add(this.btnSuaDH);
-            this.panel4.Controls.Add(this.btnThemDH);
-            this.panel4.Controls.Add(this.btnThemKH);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Location = new System.Drawing.Point(1179, 43);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(174, 1010);
-            this.panel4.TabIndex = 3;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 17);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Mã đơn hàng";
             // 
+            // cboSach
+            // 
+            this.cboSach.FormattingEnabled = true;
             // btnReload
             // 
             this.btnReload.Location = new System.Drawing.Point(15, 470);
@@ -346,18 +348,18 @@ namespace GUI
             this.btnXoaCT.TabIndex = 9;
             this.btnXoaCT.Text = "Xóa chi tiết";
             this.btnXoaCT.UseVisualStyleBackColor = true;
-            // 
+            this.cboSach.Name = "cboSach";
             // btnThemCT
-            // 
+            this.cboSach.TabIndex = 14;
             this.btnThemCT.Location = new System.Drawing.Point(15, 244);
             this.btnThemCT.Name = "btnThemCT";
             this.btnThemCT.Size = new System.Drawing.Size(138, 38);
             this.btnThemCT.TabIndex = 8;
             this.btnThemCT.Text = "Thêm chi tiết";
             this.btnThemCT.UseVisualStyleBackColor = true;
-            // 
+            // label8
             // btnSuaDH
-            // 
+            this.label8.AutoSize = true;
             this.btnSuaDH.Location = new System.Drawing.Point(15, 172);
             this.btnSuaDH.Name = "btnSuaDH";
             this.btnSuaDH.Size = new System.Drawing.Size(138, 38);
@@ -366,23 +368,18 @@ namespace GUI
             this.btnSuaDH.UseVisualStyleBackColor = true;
             // 
             // btnThemDH
-            // 
-            this.btnThemDH.Location = new System.Drawing.Point(15, 104);
-            this.btnThemDH.Name = "btnThemDH";
-            this.btnThemDH.Size = new System.Drawing.Size(138, 38);
-            this.btnThemDH.TabIndex = 6;
-            this.btnThemDH.Text = "Thêm đơn hàng";
-            this.btnThemDH.UseVisualStyleBackColor = true;
-            // 
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 17);
+            this.label8.TabIndex = 13;
             // btnThemKH
             // 
-            this.btnThemKH.Location = new System.Drawing.Point(15, 34);
-            this.btnThemKH.Name = "btnThemKH";
-            this.btnThemKH.Size = new System.Drawing.Size(138, 38);
-            this.btnThemKH.TabIndex = 5;
-            this.btnThemKH.Text = "Thêm khách hàng";
-            this.btnThemKH.UseVisualStyleBackColor = true;
+            // label7
             // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 17);
+            this.label7.TabIndex = 11;
             // label11
             // 
             this.label11.AutoSize = true;
@@ -417,6 +414,93 @@ namespace GUI
             this.cboNV.Size = new System.Drawing.Size(203, 24);
             this.cboNV.TabIndex = 12;
             // 
+            this.panel3.Location = new System.Drawing.Point(1158, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(174, 1004);
+            this.panel3.TabIndex = 3;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnReload);
+            this.panel4.Controls.Add(this.btnSuaCT);
+            this.panel4.Controls.Add(this.btnXoaCT);
+            this.panel4.Controls.Add(this.btnThemCT);
+            this.panel4.Controls.Add(this.btnSuaDH);
+            this.panel4.Controls.Add(this.btnThemDH);
+            this.panel4.Controls.Add(this.btnThemKH);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Location = new System.Drawing.Point(1179, 43);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(174, 1010);
+            this.panel4.TabIndex = 3;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 17);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Thao tác";
+            // 
+            // btnThemKH
+            // 
+            this.btnThemKH.Location = new System.Drawing.Point(15, 34);
+            this.btnThemKH.Name = "btnThemKH";
+            this.btnThemKH.Size = new System.Drawing.Size(138, 38);
+            this.btnThemKH.TabIndex = 5;
+            this.btnThemKH.Text = "Thêm khách hàng";
+            this.btnThemKH.UseVisualStyleBackColor = true;
+            // 
+            // btnThemDH
+            // 
+            // btnThemCT
+            // 
+            // btnSuaDH
+            // 
+            this.btnThemKH.Location = new System.Drawing.Point(15, 34);
+            this.btnThemKH.Name = "btnThemKH";
+            this.btnThemKH.Size = new System.Drawing.Size(138, 38);
+            this.btnThemKH.TabIndex = 5;
+            this.btnThemKH.Text = "Thêm khách hàng";
+            this.btnThemKH.UseVisualStyleBackColor = true;
+            // 
+            // btnThemCT
+            // 
+            this.btnThemCT.Location = new System.Drawing.Point(15, 244);
+            this.btnThemCT.Name = "btnThemCT";
+            this.btnThemCT.Size = new System.Drawing.Size(138, 38);
+            this.btnThemCT.TabIndex = 8;
+            this.btnThemCT.Text = "Thêm chi tiết";
+            this.btnThemCT.UseVisualStyleBackColor = true;
+            // 
+            // btnXoaCT
+            // 
+            this.btnXoaCT.Location = new System.Drawing.Point(15, 317);
+            this.btnXoaCT.Name = "btnXoaCT";
+            this.btnXoaCT.Size = new System.Drawing.Size(138, 38);
+            this.btnXoaCT.TabIndex = 9;
+            this.btnXoaCT.Text = "Xóa chi tiết";
+            this.btnXoaCT.UseVisualStyleBackColor = true;
+            // 
+            // btnSuaCT
+            // 
+            this.btnSuaCT.Location = new System.Drawing.Point(15, 394);
+            this.btnSuaCT.Name = "btnSuaCT";
+            this.btnSuaCT.Size = new System.Drawing.Size(138, 38);
+            this.btnSuaCT.TabIndex = 10;
+            this.btnSuaCT.Text = "Sửa chi tiết";
+            this.btnSuaCT.UseVisualStyleBackColor = true;
+            // 
+            // btnReload
+            // 
+            this.btnReload.Location = new System.Drawing.Point(15, 470);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(138, 38);
+            this.btnReload.TabIndex = 11;
+            this.btnReload.Text = "Tải lại";
+            this.btnReload.UseVisualStyleBackColor = true;
+            // 
             // frmDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -429,6 +513,7 @@ namespace GUI
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmDonHang";
             this.Text = "frmDonHang";
+            this.Load += new System.EventHandler(this.frmDonHang_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);

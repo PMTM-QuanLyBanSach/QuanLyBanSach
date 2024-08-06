@@ -140,7 +140,7 @@ namespace BLL
         }
         #endregion
 
-        #region Quản lý thêm người dùng vào nhóm
+         #region Quản lý thêm người dùng vào nhóm
         public DataTable getNND_DK(string maNhom)
         {
             return phanQuyenDAL.getNND_DK(maNhom);
@@ -188,5 +188,8 @@ namespace BLL
             return phanQuyenDAL.GetMaNhomNguoiDung(pTDN);
         }
         #endregion
+
+
+        
     }
 }
