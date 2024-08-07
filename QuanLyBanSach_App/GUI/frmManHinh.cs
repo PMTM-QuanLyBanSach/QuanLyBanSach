@@ -47,6 +47,8 @@ namespace GUI
             else
             {
                 phanQuyenBLL.themMH(txtMMH.Text, txtTMH.Text);
+                phanQuyenBLL.themQuyen("admin", txtMMH.Text, false);
+                phanQuyenBLL.themQuyen("emp", txtMMH.Text, false);
                 loadMH();
             }
         }
@@ -58,8 +60,12 @@ namespace GUI
 
         private void DgvManHinh_SelectionChanged(object sender, EventArgs e)
         {
-            txtMMH.Text = dgvManHinh.CurrentRow.Cells[0].Value.ToString();
-            txtTMH.Text = dgvManHinh.CurrentRow.Cells[1].Value.ToString();
+            int n = dgvManHinh.SelectedRows.Count;
+            if(n > 0)
+            {
+                txtMMH.Text = dgvManHinh.CurrentRow.Cells[0].Value.ToString();
+                txtTMH.Text = dgvManHinh.CurrentRow.Cells[1].Value.ToString();
+            }
         }
         
         void loadMH()

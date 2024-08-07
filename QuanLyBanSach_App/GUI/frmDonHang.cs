@@ -29,6 +29,14 @@ namespace GUI
             btnXoaCT.Click += BtnXoaCT_Click;
             cboNV.Enabled = false;
             btnMain.Click += BtnMain_Click;
+            btnThemKH.Click += BtnThemKH_Click;
+        }
+
+        private void BtnThemKH_Click(object sender, EventArgs e)
+        {
+            Program.khachHangForm = new frmKhachHang();
+            Program.khachHangForm.ShowDialog();
+            loadKH();
         }
 
         private void BtnMain_Click(object sender, EventArgs e)

@@ -34,7 +34,11 @@ namespace GUI
             for (int i = 0; i < dgvPQ.Rows.Count; i++)
             {
                 string maMH = dgvPQ.Rows[i].Cells[0].Value.ToString();
-                bool coQuyen = (bool)(dgvPQ.Rows[i].Cells[1].Value);
+                bool coQuyen;
+                if (dgvPQ.Rows[i].Cells[1].Value.ToString() == string.Empty)
+                    coQuyen = false;
+                else
+                    coQuyen = (bool)(dgvPQ.Rows[i].Cells[1].Value);
                 bool ktr = phanQuyenBLL.ktraKC_PQ(maNhomND, maMH);
 
                 if (ktr)
@@ -75,11 +79,6 @@ namespace GUI
         private void FrmPhanQuyen_Load(object sender, EventArgs e)
         {
             dgvNND.DataSource = phanQuyenBLL.getNND();
-        }
-
-        private void frmPhanQuyen_Load_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

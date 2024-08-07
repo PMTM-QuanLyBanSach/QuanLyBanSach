@@ -26,8 +26,8 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=KAIT-120304\\SQLEXPRESS;Initial Catalog=QuanLyBanSach;User ID=sa;Passw" +
-            "ord=123")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-MIJ3F8K;Initial Catalog=QuanLyBanSach;User ID=sa;Password=123" +
+            "")]
         public string QuanLyBanSachConnectionString {
             get {
                 return ((string)(this["QuanLyBanSachConnectionString"]));

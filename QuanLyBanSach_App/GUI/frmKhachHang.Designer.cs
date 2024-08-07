@@ -166,7 +166,7 @@ namespace GUI
             this.btn_luukhachhang.TabIndex = 12;
             this.btn_luukhachhang.Text = "Lưu khách hàng";
             this.btn_luukhachhang.UseVisualStyleBackColor = true;
-            this.btn_luukhachhang.Click += new System.EventHandler(this.btn_luukhachhang_Click_1);
+            this.btn_luukhachhang.Click += new System.EventHandler(this.btn_luukhachhang_Click);
             // 
             // btn_suakhachhang
             // 
@@ -177,7 +177,7 @@ namespace GUI
             this.btn_suakhachhang.TabIndex = 13;
             this.btn_suakhachhang.Text = "Sửa khách hàng";
             this.btn_suakhachhang.UseVisualStyleBackColor = true;
-            this.btn_suakhachhang.Click += new System.EventHandler(this.btn_suakhachhang_Click_1);
+            this.btn_suakhachhang.Click += new System.EventHandler(this.btn_suakhachhang_Click);
             // 
             // btn_xoakhachhang
             // 
@@ -188,7 +188,7 @@ namespace GUI
             this.btn_xoakhachhang.TabIndex = 14;
             this.btn_xoakhachhang.Text = "Xóa khách hàng";
             this.btn_xoakhachhang.UseVisualStyleBackColor = true;
-            this.btn_xoakhachhang.Click += new System.EventHandler(this.btn_xoakhachhang_Click_1);
+            this.btn_xoakhachhang.Click += new System.EventHandler(this.btn_xoakhachhang_Click);
             // 
             // toolStrip1
             // 
@@ -200,7 +200,6 @@ namespace GUI
             this.toolStrip1.Size = new System.Drawing.Size(1018, 25);
             this.toolStrip1.TabIndex = 15;
             this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // toolStripLabel1
             // 

@@ -47,11 +47,6 @@ namespace GUI
             }    
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
             Program.mainForm = new frmMain();
@@ -70,8 +65,6 @@ namespace GUI
         private void btn_themkhachhang_Click(object sender, EventArgs e)
         {
             ClearForm();
-            txt_makhachhang.Enabled = false;
-
         }
 
         private void btn_luukhachhang_Click(object sender, EventArgs e)
@@ -113,11 +106,6 @@ namespace GUI
                 LoadDataKhachHang();
                 ClearForm();
             }
-        }
-
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
 
         private void btn_suakhachhang_Click(object sender, EventArgs e)
@@ -175,21 +163,6 @@ namespace GUI
                 MessageBox.Show("Vui lòng chọn thông tin của khách hàng", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-        }
-
-        private void btn_luukhachhang_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_suakhachhang_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_xoakhachhang_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

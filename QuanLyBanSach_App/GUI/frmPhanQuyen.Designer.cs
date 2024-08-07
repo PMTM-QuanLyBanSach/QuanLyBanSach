@@ -123,7 +123,6 @@ namespace GUI
             this.Controls.Add(this.btnLuu);
             this.Name = "frmPhanQuyen";
             this.Text = "frmPhanQuyen";
-            this.Load += new System.EventHandler(this.frmPhanQuyen_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNND)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPQ)).EndInit();
             this.toolStrip1.ResumeLayout(false);

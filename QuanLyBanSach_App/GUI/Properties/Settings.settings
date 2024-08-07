@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="connectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=KAIT-120304\SQLEXPRESS;Initial Catalog=QuanLyBanSach;User ID=sa;Password=123</Value>
+      <Value Profile="(Default)">Data Source=DESKTOP-MIJ3F8K;Initial Catalog=QuanLyBanSach;User ID=sa;Password=123</Value>
     </Setting>
   </Settings>
 </SettingsFile>
