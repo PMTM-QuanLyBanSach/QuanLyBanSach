@@ -96,5 +96,12 @@ namespace BLL
             donHangDAL.xoaCT(maDH, maSH);
         }
         #endregion
+
+
+
+        public DataTable LayDonHangTheoThang(int thang)
+        {
+            return donHangDAL.LayDonHangTheoThang(thang);
+        }
     }
 }

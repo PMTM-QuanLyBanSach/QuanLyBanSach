@@ -152,5 +152,13 @@ namespace GUI
                 return;
             }
         }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+            Program.mainForm = new frmMain();
+            Program.mainForm.TenDangNhap = frmLogin.tenND;
+            Program.mainForm.Show();
+            this.Dispose();
+        }
     }
 }

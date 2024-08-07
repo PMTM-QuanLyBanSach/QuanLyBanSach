@@ -46,18 +46,22 @@ namespace GUI
             this.btn_xoakhachhang = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_DSKH)).BeginInit();
             this.toolStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbl_DSKH
             // 
             this.tbl_DSKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tbl_DSKH.Location = new System.Drawing.Point(482, 20);
+            this.tbl_DSKH.Location = new System.Drawing.Point(15, 316);
             this.tbl_DSKH.Name = "tbl_DSKH";
             this.tbl_DSKH.RowHeadersWidth = 51;
             this.tbl_DSKH.RowTemplate.Height = 24;
-            this.tbl_DSKH.Size = new System.Drawing.Size(524, 595);
+            this.tbl_DSKH.Size = new System.Drawing.Size(991, 291);
             this.tbl_DSKH.TabIndex = 0;
             this.tbl_DSKH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbl_DSKH_CellContentClick);
             this.tbl_DSKH.SelectionChanged += new System.EventHandler(this.tbl_DSKH_SelectionChanged);
@@ -65,7 +69,7 @@ namespace GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 86);
+            this.label1.Location = new System.Drawing.Point(22, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 17);
             this.label1.TabIndex = 1;
@@ -73,22 +77,22 @@ namespace GUI
             // 
             // txt_makhachhang
             // 
-            this.txt_makhachhang.Location = new System.Drawing.Point(15, 107);
+            this.txt_makhachhang.Location = new System.Drawing.Point(25, 59);
             this.txt_makhachhang.Name = "txt_makhachhang";
-            this.txt_makhachhang.Size = new System.Drawing.Size(440, 22);
+            this.txt_makhachhang.Size = new System.Drawing.Size(161, 22);
             this.txt_makhachhang.TabIndex = 2;
             // 
             // txt_tenkhachhang
             // 
-            this.txt_tenkhachhang.Location = new System.Drawing.Point(15, 178);
+            this.txt_tenkhachhang.Location = new System.Drawing.Point(225, 58);
             this.txt_tenkhachhang.Name = "txt_tenkhachhang";
-            this.txt_tenkhachhang.Size = new System.Drawing.Size(440, 22);
+            this.txt_tenkhachhang.Size = new System.Drawing.Size(259, 22);
             this.txt_tenkhachhang.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 157);
+            this.label2.Location = new System.Drawing.Point(222, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 17);
             this.label2.TabIndex = 3;
@@ -96,15 +100,15 @@ namespace GUI
             // 
             // txt_diachi
             // 
-            this.txt_diachi.Location = new System.Drawing.Point(15, 252);
+            this.txt_diachi.Location = new System.Drawing.Point(25, 117);
             this.txt_diachi.Name = "txt_diachi";
-            this.txt_diachi.Size = new System.Drawing.Size(440, 22);
+            this.txt_diachi.Size = new System.Drawing.Size(459, 22);
             this.txt_diachi.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 231);
+            this.label3.Location = new System.Drawing.Point(22, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 17);
             this.label3.TabIndex = 5;
@@ -112,15 +116,15 @@ namespace GUI
             // 
             // txt_sdt
             // 
-            this.txt_sdt.Location = new System.Drawing.Point(15, 331);
+            this.txt_sdt.Location = new System.Drawing.Point(25, 193);
             this.txt_sdt.Name = "txt_sdt";
-            this.txt_sdt.Size = new System.Drawing.Size(440, 22);
+            this.txt_sdt.Size = new System.Drawing.Size(161, 22);
             this.txt_sdt.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 310);
+            this.label4.Location = new System.Drawing.Point(22, 172);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 17);
             this.label4.TabIndex = 7;
@@ -128,15 +132,15 @@ namespace GUI
             // 
             // txt_email
             // 
-            this.txt_email.Location = new System.Drawing.Point(15, 415);
+            this.txt_email.Location = new System.Drawing.Point(201, 193);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(440, 22);
+            this.txt_email.Size = new System.Drawing.Size(283, 22);
             this.txt_email.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 394);
+            this.label5.Location = new System.Drawing.Point(198, 172);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 17);
             this.label5.TabIndex = 9;
@@ -144,10 +148,10 @@ namespace GUI
             // 
             // btn_themkhachhang
             // 
-            this.btn_themkhachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_themkhachhang.Location = new System.Drawing.Point(40, 451);
+            this.btn_themkhachhang.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_themkhachhang.Location = new System.Drawing.Point(17, 31);
             this.btn_themkhachhang.Name = "btn_themkhachhang";
-            this.btn_themkhachhang.Size = new System.Drawing.Size(185, 70);
+            this.btn_themkhachhang.Size = new System.Drawing.Size(208, 49);
             this.btn_themkhachhang.TabIndex = 11;
             this.btn_themkhachhang.Text = "Thêm Khách hàng";
             this.btn_themkhachhang.UseVisualStyleBackColor = true;
@@ -155,10 +159,10 @@ namespace GUI
             // 
             // btn_luukhachhang
             // 
-            this.btn_luukhachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_luukhachhang.Location = new System.Drawing.Point(264, 451);
+            this.btn_luukhachhang.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luukhachhang.Location = new System.Drawing.Point(17, 90);
             this.btn_luukhachhang.Name = "btn_luukhachhang";
-            this.btn_luukhachhang.Size = new System.Drawing.Size(185, 70);
+            this.btn_luukhachhang.Size = new System.Drawing.Size(208, 49);
             this.btn_luukhachhang.TabIndex = 12;
             this.btn_luukhachhang.Text = "Lưu khách hàng";
             this.btn_luukhachhang.UseVisualStyleBackColor = true;
@@ -166,10 +170,10 @@ namespace GUI
             // 
             // btn_suakhachhang
             // 
-            this.btn_suakhachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_suakhachhang.Location = new System.Drawing.Point(40, 545);
+            this.btn_suakhachhang.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_suakhachhang.Location = new System.Drawing.Point(240, 32);
             this.btn_suakhachhang.Name = "btn_suakhachhang";
-            this.btn_suakhachhang.Size = new System.Drawing.Size(185, 70);
+            this.btn_suakhachhang.Size = new System.Drawing.Size(200, 49);
             this.btn_suakhachhang.TabIndex = 13;
             this.btn_suakhachhang.Text = "Sửa khách hàng";
             this.btn_suakhachhang.UseVisualStyleBackColor = true;
@@ -177,10 +181,10 @@ namespace GUI
             // 
             // btn_xoakhachhang
             // 
-            this.btn_xoakhachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoakhachhang.Location = new System.Drawing.Point(264, 545);
+            this.btn_xoakhachhang.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_xoakhachhang.Location = new System.Drawing.Point(240, 90);
             this.btn_xoakhachhang.Name = "btn_xoakhachhang";
-            this.btn_xoakhachhang.Size = new System.Drawing.Size(185, 70);
+            this.btn_xoakhachhang.Size = new System.Drawing.Size(200, 49);
             this.btn_xoakhachhang.TabIndex = 14;
             this.btn_xoakhachhang.Text = "Xóa khách hàng";
             this.btn_xoakhachhang.UseVisualStyleBackColor = true;
@@ -205,24 +209,44 @@ namespace GUI
             this.toolStripLabel1.Text = "Trang chủ";
             this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txt_makhachhang);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txt_tenkhachhang);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txt_diachi);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txt_email);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txt_sdt);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Location = new System.Drawing.Point(15, 48);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(490, 242);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin cá nhân";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btn_themkhachhang);
+            this.groupBox2.Controls.Add(this.btn_luukhachhang);
+            this.groupBox2.Controls.Add(this.btn_suakhachhang);
+            this.groupBox2.Controls.Add(this.btn_xoakhachhang);
+            this.groupBox2.Location = new System.Drawing.Point(550, 48);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(456, 242);
+            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "hành động";
+            // 
             // frmKhachHang
             // 
             this.ClientSize = new System.Drawing.Size(1018, 619);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.btn_xoakhachhang);
-            this.Controls.Add(this.btn_suakhachhang);
-            this.Controls.Add(this.btn_luukhachhang);
-            this.Controls.Add(this.btn_themkhachhang);
-            this.Controls.Add(this.txt_email);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txt_sdt);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txt_diachi);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt_tenkhachhang);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_makhachhang);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.tbl_DSKH);
             this.Name = "frmKhachHang";
             this.Text = "Quản Lý Khách Hàng";
@@ -230,6 +254,9 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.tbl_DSKH)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,5 +281,7 @@ namespace GUI
         private System.Windows.Forms.Button btn_xoakhachhang;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

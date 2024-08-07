@@ -111,5 +111,11 @@ namespace DAL
             daCT.DeleteT_CTDH(maDH, maSH);
         }
         #endregion
+
+
+        public DataTable LayDonHangTheoThang(int thang)
+        {
+            return daDH.GetDonHangByMonth(thang);
+        }
     }
 }
