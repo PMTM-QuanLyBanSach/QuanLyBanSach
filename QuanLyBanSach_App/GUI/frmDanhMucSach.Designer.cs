@@ -53,7 +53,7 @@ namespace GUI
             this.btnMain});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1132, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(1132, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -62,7 +62,7 @@ namespace GUI
             this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
             this.btnMain.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(97, 28);
+            this.btnMain.Size = new System.Drawing.Size(97, 24);
             this.btnMain.Text = "Trang chủ";
             // 
             // dgvDanhMuc
@@ -175,6 +175,7 @@ namespace GUI
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmDanhMucSach";
             this.Text = "frmDanhMucSach";
+            this.Load += new System.EventHandler(this.frmDanhMucSach_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMuc)).EndInit();

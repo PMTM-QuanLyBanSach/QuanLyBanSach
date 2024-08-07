@@ -107,16 +107,17 @@ namespace GUI
             this.btnMain});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1244, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(1244, 27);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // btnMain
             // 
             this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
             this.btnMain.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(97, 28);
+            this.btnMain.Size = new System.Drawing.Size(97, 24);
             this.btnMain.Text = "Trang chủ";
             // 
             // frmThemNDVaoNhom
@@ -133,6 +134,7 @@ namespace GUI
             this.Controls.Add(this.dgvND);
             this.Name = "frmThemNDVaoNhom";
             this.Text = "frmThemNDVaoNhom";
+            this.Load += new System.EventHandler(this.frmThemNDVaoNhom_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvND)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNND)).EndInit();
             this.toolStrip1.ResumeLayout(false);

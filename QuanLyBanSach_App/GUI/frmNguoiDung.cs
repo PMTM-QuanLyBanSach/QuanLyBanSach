@@ -92,5 +92,25 @@ namespace GUI
             Program.mainForm.Show();
             f.Dispose();
         }
+
+        private void dgvNguoiDung_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void btnMain_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmNguoiDung_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

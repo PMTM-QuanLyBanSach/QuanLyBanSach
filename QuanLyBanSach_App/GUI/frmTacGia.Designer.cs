@@ -175,6 +175,7 @@ namespace GUI
             this.Controls.Add(this.dgvTacGia);
             this.Name = "frmTacGia";
             this.Text = "frmTacGia";
+            this.Load += new System.EventHandler(this.frmTacGia_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTacGia)).EndInit();

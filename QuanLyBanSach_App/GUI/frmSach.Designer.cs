@@ -302,6 +302,7 @@ namespace GUI
             this.Controls.Add(this.dgvSach);
             this.Name = "frmSach";
             this.Text = "frmSach";
+            this.Load += new System.EventHandler(this.frmSach_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSach)).EndInit();

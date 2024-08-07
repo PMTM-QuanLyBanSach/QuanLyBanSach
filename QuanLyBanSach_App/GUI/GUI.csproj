@@ -35,11 +35,14 @@
     <Reference Include="BLL">
       <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
     </Reference>
+    <Reference Include="DAL">
+      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
     <Reference Include="DTO">
       <HintPath>..\DTO\bin\Debug\DTO.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -113,6 +116,12 @@
     <Compile Include="frmPhanQuyen.Designer.cs">
       <DependentUpon>frmPhanQuyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQL_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQL_NhanVien.Designer.cs">
+      <DependentUpon>frmQL_NhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +139,12 @@
     </Compile>
     <Compile Include="frmThemNDVaoNhom.Designer.cs">
       <DependentUpon>frmThemNDVaoNhom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKe.Designer.cs">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -163,6 +178,9 @@
     <EmbeddedResource Include="frmPhanQuyen.resx">
       <DependentUpon>frmPhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQL_NhanVien.resx">
+      <DependentUpon>frmQL_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSach.resx">
       <DependentUpon>frmSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemNDVaoNhom.resx">
       <DependentUpon>frmThemNDVaoNhom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKe.resx">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

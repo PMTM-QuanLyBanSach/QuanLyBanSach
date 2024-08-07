@@ -33,7 +33,10 @@ namespace GUI
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnMain = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cboNV = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cboKH = new System.Windows.Forms.ComboBox();
             this.dtND = new System.Windows.Forms.DateTimePicker();
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.txtDH = new System.Windows.Forms.TextBox();
@@ -63,9 +66,6 @@ namespace GUI
             this.btnThemDH = new System.Windows.Forms.Button();
             this.btnThemKH = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cboKH = new System.Windows.Forms.ComboBox();
-            this.cboNV = new System.Windows.Forms.ComboBox();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDH)).BeginInit();
@@ -113,12 +113,37 @@ namespace GUI
             this.panel1.Size = new System.Drawing.Size(1152, 457);
             this.panel1.TabIndex = 1;
             // 
+            // cboNV
+            // 
+            this.cboNV.FormattingEnabled = true;
+            this.cboNV.Location = new System.Drawing.Point(514, 36);
+            this.cboNV.Name = "cboNV";
+            this.cboNV.Size = new System.Drawing.Size(203, 24);
+            this.cboNV.TabIndex = 12;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(397, 39);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 17);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Nhân viên";
+            // 
             // panel3
             // 
             this.panel3.Location = new System.Drawing.Point(1158, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(174, 1004);
             this.panel3.TabIndex = 3;
+            // 
+            // cboKH
+            // 
+            this.cboKH.FormattingEnabled = true;
+            this.cboKH.Location = new System.Drawing.Point(135, 104);
+            this.cboKH.Name = "cboKH";
+            this.cboKH.Size = new System.Drawing.Size(203, 24);
+            this.cboKH.TabIndex = 10;
             // 
             // dtND
             // 
@@ -200,6 +225,7 @@ namespace GUI
             this.dgvDH.RowTemplate.Height = 24;
             this.dgvDH.Size = new System.Drawing.Size(1146, 269);
             this.dgvDH.TabIndex = 0;
+            this.dgvDH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDH_CellContentClick);
             // 
             // panel2
             // 
@@ -382,6 +408,7 @@ namespace GUI
             this.btnThemKH.TabIndex = 5;
             this.btnThemKH.Text = "Thêm khách hàng";
             this.btnThemKH.UseVisualStyleBackColor = true;
+            this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
             // 
             // label11
             // 
@@ -391,31 +418,6 @@ namespace GUI
             this.label11.Size = new System.Drawing.Size(64, 17);
             this.label11.TabIndex = 4;
             this.label11.Text = "Thao tác";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(397, 39);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 17);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Nhân viên";
-            // 
-            // cboKH
-            // 
-            this.cboKH.FormattingEnabled = true;
-            this.cboKH.Location = new System.Drawing.Point(135, 104);
-            this.cboKH.Name = "cboKH";
-            this.cboKH.Size = new System.Drawing.Size(203, 24);
-            this.cboKH.TabIndex = 10;
-            // 
-            // cboNV
-            // 
-            this.cboNV.FormattingEnabled = true;
-            this.cboNV.Location = new System.Drawing.Point(514, 36);
-            this.cboNV.Name = "cboNV";
-            this.cboNV.Size = new System.Drawing.Size(203, 24);
-            this.cboNV.TabIndex = 12;
             // 
             // frmDonHang
             // 
@@ -429,6 +431,7 @@ namespace GUI
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmDonHang";
             this.Text = "frmDonHang";
+            this.Load += new System.EventHandler(this.frmDonHang_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);

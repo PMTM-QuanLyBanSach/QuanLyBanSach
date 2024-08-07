@@ -185,5 +185,10 @@ namespace GUI
             cboTon.Items.Add("Trên 50");
             cboTon.SelectedIndex = 0;
         }
+
+        private void frmSach_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -50,7 +50,7 @@ namespace DAL
         QL_NguoiDungTableAdapter da = new QL_NguoiDungTableAdapter();
 
         public DataTable getND()
-        {   
+        {
             return da.GetData();
         }
 
@@ -97,7 +97,7 @@ namespace DAL
         public bool ktrKC_NND(string maNhom)
         {
             int? n = daNND.ktrKC_NND(maNhom);
-            
+
             if (n > 0)
                 return true; // trùng
 
@@ -206,7 +206,7 @@ namespace DAL
             daPQ.InsertT_PQ(MaNhomNguoiDung, maMH, coQuyen);
         }
 
-        public void suaQuyen(bool coQuyen,string maNhom, string maMH)
+        public void suaQuyen(bool coQuyen, string maNhom, string maMH)
         {
             daPQ.UpdateT_PQ(coQuyen, maNhom, maMH);
         }

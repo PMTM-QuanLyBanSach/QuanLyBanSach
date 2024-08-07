@@ -65,6 +65,7 @@ namespace GUI
             this.btnMain.Name = "btnMain";
             this.btnMain.Size = new System.Drawing.Size(97, 24);
             this.btnMain.Text = "Trang chủ";
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click_1);
             // 
             // btnThem
             // 
@@ -146,6 +147,7 @@ namespace GUI
             this.Controls.Add(this.label1);
             this.Name = "frmManHinh";
             this.Text = "frmManHinh";
+            this.Load += new System.EventHandler(this.frmManHinh_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManHinh)).EndInit();

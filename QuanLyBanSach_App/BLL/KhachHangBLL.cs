@@ -14,7 +14,7 @@ namespace BLL
         {
 
         }
-         KhachHangDAL khachhangDAL = new KhachHangDAL();
+        KhachHangDAL khachhangDAL = new KhachHangDAL();
 
 
         public DataTable loadKH()
@@ -22,14 +22,19 @@ namespace BLL
             return khachhangDAL.loadDataKH();
         }
 
-        public void themKH(string makh,string tenkh, string email,string sdt, string diachi)
+        public DataTable getOneKhachHang(string makh)
+        {
+            return khachhangDAL.getOne(makh);
+        }
+
+        public void themKH(string makh, string tenkh, string email, string sdt, string diachi)
         {
             khachhangDAL.themKhachHang(makh, tenkh, diachi, sdt, email);
         }
 
-        public void suaKH(string makh, string tenkh, string email, string sdt, string diachi)
+        public void suaKH(string tenKH, string diaChi, string sdt, string email, string maKH)
         {
-            khachhangDAL.suaKhachHang(makh, tenkh, diachi, sdt, email);
+            khachhangDAL.suaKhachHang(tenKH, diaChi, sdt, email, maKH);
         }
         public void xoaKH(string makh)
         {

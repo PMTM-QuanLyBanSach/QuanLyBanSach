@@ -23,6 +23,11 @@ namespace DAL
             return da.GetData();
         }
 
+        public DataTable getOne(string maKH)
+        {
+            return da.GetKhachHangById(maKH);
+        }
+
         public void themKhachHang(string maKH, string tenKH, string diaChi, string sdt, string email)
         {
             da.InsertT_KH(maKH,tenKH,diaChi,sdt,email);
@@ -30,7 +35,7 @@ namespace DAL
 
         public void suaKhachHang(string tenKH, string diaChi, string sdt, string email, string maKH)
         {
-            da.UpdateT_KH(tenKH, diaChi, sdt, email, maKH) ;
+            da.UpdateT_KH(tenKH, diaChi , sdt, email, maKH) ;
         }
 
         public void xoaKhachHang(string maKh)
@@ -38,6 +43,6 @@ namespace DAL
             da.DeleteT_KH(maKh);
         }
 
-    }
+    } 
 
 }

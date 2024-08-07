@@ -150,6 +150,7 @@ namespace GUI
             this.Controls.Add(this.label1);
             this.Name = "frmConfig";
             this.Text = "frmConfig";
+            this.Load += new System.EventHandler(this.frmConfig_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

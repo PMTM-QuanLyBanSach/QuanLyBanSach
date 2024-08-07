@@ -99,5 +99,10 @@ namespace GUI
         {
             loadDT();
         }
+
+        private void frmTacGia_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

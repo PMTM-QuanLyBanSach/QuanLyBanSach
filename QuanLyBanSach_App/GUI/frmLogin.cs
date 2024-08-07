@@ -66,8 +66,7 @@ namespace GUI
         {
             enumLogin.LoginResult result;
             result = phanQuyenBLL.Check_User(txtUsername.Text, txtPass.Text);
-            //Check_User viết trong Class QL_NguoiDung
-            // Wrong username or pass
+            //Check_User viết trong Class QL_NguoiDung  Wrong username or pass
             if (result == enumLogin.LoginResult.Invalid)
             {
                 MessageBox.Show("Sai " + labUsername.Text + " Hoặc " + labPass.Text);
@@ -93,6 +92,11 @@ namespace GUI
             Program.configForm = new frmConfig();
             this.Visible = false;
             Program.configForm.Show();
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

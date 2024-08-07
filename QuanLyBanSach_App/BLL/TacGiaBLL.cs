@@ -16,7 +16,7 @@ namespace BLL
         }
 
         TacGiaDAL tacGiaDAL = new TacGiaDAL();
-     
+
         public DataTable loadTG()
         {
             return tacGiaDAL.loadTG();

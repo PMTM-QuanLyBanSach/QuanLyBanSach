@@ -72,5 +72,10 @@ namespace GUI
         {
             loadNND();
         }
+
+        private void frmNhomNguoiDung_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

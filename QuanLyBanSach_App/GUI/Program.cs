@@ -20,6 +20,9 @@ namespace GUI
         public static frmTacGia tacGiaForm;
         public static frmSach sachForm;
         public static frmDonHang donHangForm;
+        public static frmKhachHang khachHangForm;
+        public static frmQL_NhanVien nhanVienFrom;
+        public static frmThongKe thongKeFrom;
 
         /// <summary>
         /// The main entry point for the application.

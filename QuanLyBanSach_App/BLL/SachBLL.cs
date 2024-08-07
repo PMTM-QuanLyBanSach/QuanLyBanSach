@@ -55,7 +55,7 @@ namespace BLL
 
         public void xoaDL(string maSH)
         {
-           sachDAL.xoaDL(maSH);
+            sachDAL.xoaDL(maSH);
         }
 
         public DataTable locSH(string maSH, string maTG, string maDM)

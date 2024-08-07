@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GUI">
+      <HintPath>..\GUI\bin\Debug\GUI.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,12 +47,6 @@
     <Compile Include="enumLogin.cs" />
     <Compile Include="PhanQuyenDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GUI\GUI.csproj">
-      <Project>{4856E1F4-2CA7-465A-AC37-D92413E4C935}</Project>
-      <Name>GUI</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -99,5 +99,10 @@ namespace GUI
         {
             loadDT();
         }
+
+        private void frmDanhMucSach_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

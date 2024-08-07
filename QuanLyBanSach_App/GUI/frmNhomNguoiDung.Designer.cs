@@ -167,6 +167,7 @@ namespace GUI
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmNhomNguoiDung";
             this.Text = "frmNhomNguoiDung";
+            this.Load += new System.EventHandler(this.frmNhomNguoiDung_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhomNguoiDung)).EndInit();

@@ -145,5 +145,31 @@ namespace GUI
             Program.donHangForm.Show();
             this.Dispose();
         }
+
+        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.khachHangForm = new frmKhachHang();
+            Program.khachHangForm.Show();
+            this.Dispose();
+        }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.nhanVienFrom = new frmQL_NhanVien();
+            Program.nhanVienFrom.Show();
+            this.Dispose();
+        }
+
+        private void frmMain_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.thongKeFrom = new frmThongKe();
+            Program.thongKeFrom.Show();
+            this.Dispose();
+        }
     }
 }

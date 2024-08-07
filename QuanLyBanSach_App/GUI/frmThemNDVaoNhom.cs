@@ -87,5 +87,15 @@ namespace GUI
             cboNND.ValueMember = "MaNhom";
             cboNND.DisplayMember = "TenNhom";
         }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void frmThemNDVaoNhom_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

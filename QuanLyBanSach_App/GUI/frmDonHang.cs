@@ -106,13 +106,13 @@ namespace GUI
                 string maSH = cboSach.SelectedValue.ToString();
                 int soLuong = int.Parse(sl);
                 decimal giaBan = decimal.Parse(txtGiaBan.Text);
-                if(donHangBLL.ktraKC_CT(maDH, maSH))
+                if (donHangBLL.ktraKC_CT(maDH, maSH))
                 {
                     MessageBox.Show("Sách này đã có trong đơn hàng nên sẽ tăng thêm số lượng của sách vừa thêm");
                     soLuong = int.Parse(dgvCTDH.CurrentRow.Cells[1].Value.ToString());
                     donHangBLL.suaCT(soLuong + int.Parse(sl), maDH, maSH);
                 }
-                    
+
                 else
                     donHangBLL.themCT(maDH, maSH, soLuong, giaBan);
                 loadCTDH(maDH);
@@ -252,6 +252,21 @@ namespace GUI
             loadSH();
             loadCTDH("");
             loadNV();
+        }
+
+        private void dgvDH_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnThemKH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmDonHang_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

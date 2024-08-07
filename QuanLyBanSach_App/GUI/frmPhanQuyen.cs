@@ -76,5 +76,10 @@ namespace GUI
         {
             dgvNND.DataSource = phanQuyenBLL.getNND();
         }
+
+        private void frmPhanQuyen_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

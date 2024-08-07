@@ -58,24 +58,26 @@ namespace GUI
             this.btnSua});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(932, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(932, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // btnMain
             // 
             this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
             this.btnMain.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(97, 28);
+            this.btnMain.Size = new System.Drawing.Size(97, 24);
             this.btnMain.Text = "Trang chủ";
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click_1);
             // 
             // btnThem
             // 
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(70, 28);
+            this.btnThem.Size = new System.Drawing.Size(70, 24);
             this.btnThem.Text = "Thêm";
             // 
             // btnXoa
@@ -83,7 +85,7 @@ namespace GUI
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(59, 28);
+            this.btnXoa.Size = new System.Drawing.Size(59, 24);
             this.btnXoa.Text = "Xóa";
             // 
             // btnSua
@@ -91,7 +93,7 @@ namespace GUI
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(58, 28);
+            this.btnSua.Size = new System.Drawing.Size(58, 24);
             this.btnSua.Text = "Sửa";
             // 
             // dgvNguoiDung
@@ -104,6 +106,7 @@ namespace GUI
             this.dgvNguoiDung.RowTemplate.Height = 24;
             this.dgvNguoiDung.Size = new System.Drawing.Size(748, 508);
             this.dgvNguoiDung.TabIndex = 1;
+            this.dgvNguoiDung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNguoiDung_CellContentClick);
             // 
             // label1
             // 
@@ -190,6 +193,7 @@ namespace GUI
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmNguoiDung";
             this.Text = "frmNguoiDung";
+            this.Load += new System.EventHandler(this.frmNguoiDung_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguoiDung)).EndInit();
