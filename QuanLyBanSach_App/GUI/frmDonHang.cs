@@ -120,9 +120,18 @@ namespace GUI
                     soLuong = int.Parse(dgvCTDH.CurrentRow.Cells[1].Value.ToString());
                     donHangBLL.suaCT(soLuong + int.Parse(sl), maDH, maSH);
                 }
-
                 else
-                    donHangBLL.themCT(maDH, maSH, soLuong, giaBan);
+                {
+                    try
+                    {
+                        donHangBLL.themCT(maDH, maSH, soLuong, giaBan);
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString());
+                    }
+                }
+                    
                 loadCTDH(maDH);
                 loadDH();
             }

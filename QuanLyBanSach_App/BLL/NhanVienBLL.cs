@@ -33,7 +33,7 @@ namespace BLL
 
         public void suaNV(string tenNV, string diaChi, string sdt, string email, string manv, string chucVu)
         {
-            nhanVienDAL.suaNhanVien(tenNV, diaChi, sdt, email, manv, chucVu);
+            nhanVienDAL.suaNhanVien(manv, tenNV, diaChi, sdt, email, chucVu);
         }
         public void xoaNV(string manv)
         {
